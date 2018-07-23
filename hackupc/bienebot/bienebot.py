@@ -11,10 +11,11 @@ def run_bienebot():
     Run Biene Bot
     :return: biene bot ran
     """
+    slack = Slack()
     try:
-        slack = Slack()
         if slack.rtm_connect():
             log.info('|BIENE| Biene Bot connected and running!')
+            slack.notify(':bee: Biene Bot connected and running!')
             while True:
                 message, channel = slack.retrieve_message()
                 if message:
@@ -27,3 +28,4 @@ def run_bienebot():
         log.error(e)
     finally:
         log.info('|BIENE| Biene Bot stopped!')
+        slack.notify(':bee: Biene Bot stopped!')
