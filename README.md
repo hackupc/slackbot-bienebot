@@ -22,6 +22,14 @@ To run the server, please execute the following from the root directory:
     ```bash
     pip3 install -r requirements.txt
     ```
+    
+3. Add init file to `hackupc/bienebot/` with the following fields
+    ```
+    __all__ = [
+        'SLACK_API_TOKEN',
+        'SLACK_API_METHOD'
+    ]
+    ```
 
 3. Run Startup server as python module
     ```bash
