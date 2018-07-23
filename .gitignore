@@ -105,3 +105,6 @@ venv.bak/
 
 # JetBrains
 .idea/
+
+# init
+hackupc/bienebot/__init__.py
