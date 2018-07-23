@@ -12,9 +12,6 @@ __logger_stdout = logging.getLogger('hackupc_bienebot')
 __formatter = logging.Formatter('{%(name)s} - <%(asctime)s> - [%(levelname)-7s] - %(message)s')
 
 # setup stdout stream handler
-__handler_stdout = logging.StreamHandler(sys.stdout)
-__handler_stdout.setFormatter(__formatter)
-__logger_stdout.addHandler(__handler_stdout)
 __logger_stdout.setLevel(logging.INFO)
 
 
