@@ -1,4 +1,4 @@
-from hackupc.bienebot.util import log
+from hackupc.bienebot.bienebot import run_bienebot
 
 if __name__ == '__main__':
-    log.info('Hello world!')
+    run_bienebot()
