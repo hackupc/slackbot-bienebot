@@ -4,7 +4,9 @@
 HackUPC Slack bot.
 
 ## Requirements
-Python 3.5+
+1. Python 3.5+
+2. docker-ce (as provided by docker package repos)
+3. docker-compose (as provided by PyPI)
 
 ## Recommendations
 Usage of [virtualenv](https://realpython.com/blog/python/python-virtual-environments-a-primer/) is recommended for package library / runtime isolation.
@@ -29,3 +31,19 @@ To run the server, please execute the following from the root directory:
     ```bash
     python3 -m hackupc.bienebot
     ```
+    
+## Deploy
+
+via docker-compose
+
+```bash
+docker-compose up -d --build && docker image prune -f
+```
+
+## Log
+
+Run logs from docker-compose once it's up and running
+
+```bash
+docker-compose logs -f --timestamps bienebot
+```

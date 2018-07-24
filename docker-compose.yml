@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bienebot:
+    container_name: hackupc-bienebot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: "always"
