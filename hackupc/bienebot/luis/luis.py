@@ -2,6 +2,7 @@ import requests
 
 from hackupc.bienebot import *
 from hackupc.bienebot.util import log
+from hackupc.bienebot.responses import responses
 
 
 def get_intent(query):
@@ -29,6 +30,6 @@ def get_intent(query):
 def analyze_response(response_data):
     intent = response_data['topScoringIntent']['intent']
     if intent.startswith('Sponsors'):
-        return 'Hello'
+        return responses.sponsors.sponsors.analyze(response_data)
     else:
         return 'Don\'t understand'
