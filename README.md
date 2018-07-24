@@ -31,7 +31,19 @@ To run the server, please execute the following from the root directory:
     ```bash
     python3 -m hackupc.bienebot
     ```
-    or via docker-compose
-    ```bash
-    docker-compose up -d --build && docker image prune -f
-    ```
+    
+## Deploy
+
+via docker-compose
+
+```bash
+docker-compose up -d --build && docker image prune -f
+```
+
+## Log
+
+Run logs from docker-compose once it's up and running
+
+```bash
+docker-compose logs -f --timestamps bienebot
+```
