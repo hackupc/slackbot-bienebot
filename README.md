@@ -15,27 +15,26 @@ Usage of [virtualenv](https://realpython.com/blog/python/python-virtual-environm
 To run the server, please execute the following from the root directory:
 
 1. Setup virtual environment
-    ```bash
-    python3 -venv env
-    source env/bin/activate
-    ```
+```bash
+python3 -venv env
+source env/bin/activate
+```
 
 2. Install dependencies
-    ```bash
-    pip3 install -r requirements.txt
-    ```
+```bash
+pip3 install -r requirements.txt
+```
     
 3. Copy `__init__.template.py` to `__init__.py` with correct values
 
 4. Run Startup server as python module
-    ```bash
-    python3 -m hackupc.bienebot
-    ```
+```bash
+python3 -m hackupc.bienebot
+```
     
 ## Deploy
 
 via docker-compose
-
 ```bash
 docker-compose up -d --build && docker image prune -f
 ```
@@ -43,7 +42,6 @@ docker-compose up -d --build && docker image prune -f
 ## Log
 
 Run logs from docker-compose once it's up and running
-
 ```bash
 docker-compose logs -f --timestamps bienebot
 ```
