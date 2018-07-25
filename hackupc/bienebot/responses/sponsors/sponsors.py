@@ -14,8 +14,8 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         switcher = {
-            'which': which,
-            'where': where
+            'Which': which,
+            'Where': where
         }
         # Get the function from switcher dictionary
         func = switcher.get(list_intent[1], lambda: "No understand")
@@ -28,5 +28,5 @@ def which(data, intent, entities):
 
 
 def where(data, intent, entities):
-    sponsor = entities['0']['entity']
+    sponsor = entities[0]['entity']
     return data['where'][sponsor]
