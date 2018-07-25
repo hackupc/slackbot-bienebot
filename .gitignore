@@ -108,3 +108,6 @@ venv.bak/
 
 # init
 hackupc/bienebot/__init__.py
+
+# csv
+*.csv

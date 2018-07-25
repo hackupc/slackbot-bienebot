@@ -1,7 +1,7 @@
 from slackclient import SlackClient
 
 from hackupc.bienebot import *
-from hackupc.bienebot.util import log, count
+from hackupc.bienebot.util import log
 
 
 class Slack:
@@ -26,10 +26,10 @@ class Slack:
                 text = event['text']
                 channel = event['channel']
                 user = event['user']
-                log.info('|{}| |Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'
-                         .format(count.get_count(), user, channel, text))
-                return text, channel
-        return None, None
+                log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'
+                         .format(user, channel, text))
+                return text, channel, user
+        return None, None, None
 
     def send_message(self, message, channel):
         """
@@ -38,9 +38,8 @@ class Slack:
         :param channel: channel where send
         :return: message sent
         """
-        log.info('|{}| |Slack| Sent the following message in channel [{}]: [{}]'
-                 .format(count.get_count(), channel, message))
-        count.update_count()
+        log.info('|Slack| Sent the following message in channel [{}]: [{}]'
+                 .format(channel, message))
         return self.client.api_call(
             SLACK_API_METHOD,
             channel=channel,

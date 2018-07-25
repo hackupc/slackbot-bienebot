@@ -17,10 +17,11 @@ def run_bienebot():
             log.info('|BIENE| Biene Bot connected and running!')
             slack.notify(':bee: Biene Bot connected and running!')
             while True:
-                message, channel = slack.retrieve_message()
+                message, channel, user = slack.retrieve_message()
                 if message:
-                    response = luis.get_intent(message)
+                    response, intent = luis.get_intent(message)
                     slack.send_message(response, channel)
+                    log.save_activity(user, channel, intent, message, response)
                 time.sleep(RTM_READ_DELAY)
         else:
             log.error('Connection failed. Exception traceback printed above.')

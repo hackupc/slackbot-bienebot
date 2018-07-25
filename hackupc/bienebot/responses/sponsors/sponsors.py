@@ -1,6 +1,7 @@
 import json
 
 
+# noinspection PyBroadException
 def get_message(response_type):
     """
     Return a message from a sponsor intent
@@ -13,14 +14,18 @@ def get_message(response_type):
         entities = response_type['entities']
         list_intent = intent.split('.')
 
-        switcher = {
-            'Which': which,
-            'Where': where
-        }
-        # Get the function from switcher dictionary
-        func = switcher.get(list_intent[1], lambda: "No understand")
-        # Execute the function
-        return func(data, intent, entities)
+        try:
+            switcher = {
+                'Which': which,
+                'Where': where
+            }
+            # Get the function from switcher dictionary
+            func = switcher.get(list_intent[1], lambda: "No understand")
+            # Execute the function
+            return func(data, intent, entities)
+
+        except Exception:
+            return "Don't understand"
 
 
 def which(data, intent, entities):
