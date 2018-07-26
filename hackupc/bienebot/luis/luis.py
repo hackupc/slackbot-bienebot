@@ -4,6 +4,7 @@ from hackupc.bienebot import *
 from hackupc.bienebot.util import log
 from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
+from hackupc.bienebot.responses.places import places
 
 
 def get_intent(query):
@@ -46,5 +47,7 @@ def analyze_response(response_data):
         return sponsors.get_message(response_data)
     elif intent.startswith('Smalltalk'):
         return smalltalk.get_message(response_data)
+    elif intent.startswith('Indication.Place'):
+        return places.get_message(response_data)
     else:
         return 'Don\'t understand'

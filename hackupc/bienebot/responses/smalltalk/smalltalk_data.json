@@ -1,12 +1,13 @@
 {
     "Hello": [
-      "Hi there, friend!",
-      "Hi!",
-      "Hey there!",
-      "Hey",
-      "Good day!",
-      "Hello",
-      "Greetings"
+      "Hi there! :wave:",
+      "Hi! :raised_hands:",
+      "Hey there! :upside_down_face:",
+      "Hey :smile:",
+      "Good day! :sun:",
+      "Hello :bee:",
+      "Greetings :grin:",
+      "Hello mate :sunglasses:"
     ],
     "Thanks": [
       "Anytime. That's what I'm here for.",
@@ -14,10 +15,11 @@
       "You're welcome, my friend"
     ],
     "Goodbye": [
-      "Hasta la vista, baby",
-      "Adiós",
-      "Goodbye",
-      "See you soon"
+      "Hasta la vista, baby :sunglasses:",
+      "Adiós :wave:",
+      "Goodbye :wave:",
+      "See you soon :smile:",
+      "I will miss you :kissing_heart:"
     ],
     "None": [
       "I didn't get that. Can you say it again?",

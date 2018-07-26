@@ -13,7 +13,7 @@ def get_message(response_type):
 
         intent = response_type['topScoringIntent']['intent']
         list_intent = intent.split('.')
-        log.info('|RESPONSES| HI : ' + list_intent[1])
+        
         entities = response_type['entities']
 
         try:
@@ -32,20 +32,19 @@ def get_message(response_type):
 
 
 def which(data, intent, entities):
-
+    log.info('|RESPONSE|: Know all the sponsors')
     response = data['default']['total'] + '\n'
-
     for key, value in data['sponsors'].items():
         response = response + '- ' + value['name'] + '\n'
-
     return response;
 
 
 def where(data, intent, entities):
     sponsor = entities[0]['entity'].lower()
-    log.info('|RESPONSE|: Entity [' + sponsor + ']')
+    log.info('|RESPONSE|: About [' + sponsor + '] getting WHERE')
     return data['sponsors'][sponsor]['where']
 
 def challenge(data, intent, entities):
     sponsor = entities[0]['entity'].lower()
+    log.info('|RESPONSE|: About [' + sponsor + '] getting CHALLENGE')
     return data['sponsors'][sponsor]['nothing']
