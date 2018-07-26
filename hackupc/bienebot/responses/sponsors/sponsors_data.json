@@ -1,10 +1,52 @@
 {
-    "Which": "HackUPC is possible thanks to Soprasteria, Between, InfoJobs, Everis, Opentrends, ...",
-    "Where": {
-        "soprasteria": "Soprasteria placed on second floor",
-        "itequia": "Itequia is placed on fist floor",
-        "between": "Between is placed on fist floor",
-        "infojobs": "Infojobs is placed on fist floor",
-        "opentrends": "Opentrends is placed on fist floor"
+    "itequia": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "soprasteria": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "infojobs": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "everis": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "between": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "opentrends": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "wolfran": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "thoughworks": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "bsc": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "default": {
+      "where": "Any place is assigned for this sponsor",
+      "challenge": "This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
     }
 }
