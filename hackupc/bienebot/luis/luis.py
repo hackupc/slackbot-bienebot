@@ -3,6 +3,7 @@ import requests
 from hackupc.bienebot import *
 from hackupc.bienebot.util import log
 from hackupc.bienebot.responses.sponsors import sponsors
+from hackupc.bienebot.responses.smalltalk import smalltalk
 
 
 def get_intent(query):
@@ -43,5 +44,7 @@ def analyze_response(response_data):
     log.info('|LUIS| Intent that we got [{}]'.format(intent))
     if intent.startswith('Sponsors'):
         return sponsors.get_message(response_data)
+    elif intent.startswith('Smalltalk'):
+        return smalltalk.get_message(response_data)
     else:
         return 'Don\'t understand'

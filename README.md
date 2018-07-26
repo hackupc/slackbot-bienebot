@@ -19,19 +19,25 @@ To run the server, please execute the following from the root directory:
 python3 -venv env
 source env/bin/activate
 ```
+or
+
+```bash
+virtualenv env --python=pythonX.X
+source env/bin/activate
+```
 
 2. Install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
-    
+
 3. Copy `__init__.template.py` to `__init__.py` with correct values
 
 4. Run Startup server as python module
 ```bash
 python3 -m hackupc.bienebot
 ```
-    
+
 ## Deploy
 
 via docker-compose
