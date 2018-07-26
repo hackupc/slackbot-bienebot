@@ -13,8 +13,15 @@ def get_message(response_type):
 
         intent = response_type['topScoringIntent']['intent']
         list_intent = intent.split('.')
-        
+
         entities = response_type['entities']
+
+        if entities:
+            inf = '|RESPONSE| About [{}]'.format(entities[0]['entity'])
+            inf += ' getting [{}]'.format(list_intent[1])
+            log.info(inf)
+        else:
+            log.info('|RESPONSE| Getting [{}] about all sponsors'.format(list_intent[1]))
 
         try:
             switcher = {
@@ -32,7 +39,6 @@ def get_message(response_type):
 
 
 def which(data, intent, entities):
-    log.info('|RESPONSE|: Know all the sponsors')
     response = data['default']['total'] + '\n'
     for key, value in data['sponsors'].items():
         response = response + '- ' + value['name'] + '\n'
@@ -40,11 +46,15 @@ def which(data, intent, entities):
 
 
 def where(data, intent, entities):
-    sponsor = entities[0]['entity'].lower()
-    log.info('|RESPONSE|: About [' + sponsor + '] getting WHERE')
-    return data['sponsors'][sponsor]['where']
+    if entities:
+        sponsor = entities[0]['entity'].lower()
+        return data['sponsors'][sponsor]['where']
+    else:
+        return data['default']['where']
 
 def challenge(data, intent, entities):
-    sponsor = entities[0]['entity'].lower()
-    log.info('|RESPONSE|: About [' + sponsor + '] getting CHALLENGE')
-    return data['sponsors'][sponsor]['nothing']
+    if entities:
+        sponsor = entities[0]['entity'].lower()
+        return data['sponsors'][sponsor]['challenge']
+    else:
+        return data['default']['challenge']

@@ -45,9 +45,7 @@ def analyze_response(response_data):
     log.info('|LUIS| Intent that we got [{}]'.format(intent))
     if intent.startswith('Sponsors'):
         return sponsors.get_message(response_data)
-    elif intent.startswith('Smalltalk'):
-        return smalltalk.get_message(response_data)
     elif intent.startswith('Indication.Place'):
         return places.get_message(response_data)
     else:
-        return 'Don\'t understand'
+        return smalltalk.get_message(response_data)

@@ -2,63 +2,63 @@
   "sponsors": {
     "itequia": {
       "name": "Itequia",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "soprasteria": {
       "name": "SopraSteria",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "infojobs": {
       "name": "Infojobs",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
       "contact": "For contact contact@hackupc.com"
     },
     "everis": {
       "name": "Everis",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "between": {
       "name": "Between",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "opentrends": {
       "name": "Opentrends",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "wolfran": {
       "name": "Wolfran",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "thoughworks": {
       "name": "ThoughWorks",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     },
     "bsc": {
       "name": "BSC",
-      "where": "Any place is assigned for this sponsor",
-      "challenge": "This sponsor don't have any challenge",
-      "contact": "For contact contact@hackupc.com"
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
     }
   },
   "default": {
     "total": "HackUPC is possible thanks to:",
-    "where": "Any place is assigned for this sponsor",
-    "challenge": "This sponsor don't have any challenge",
-    "contact": "For contact contact@hackupc.com"
+    "where": "TODO: Tell no place detected, find it in maps",
+    "challenge": "TODO: Explain all challenges",
+    "contact": "TODO: Send contat for sponsor purposes"
   }
 }
