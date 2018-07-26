@@ -1,11 +1,48 @@
 {
-    "where": [
-        "I don't know",
-        "please"
+    "Hello": [
+      "Hi there! :wave:",
+      "Hi! :raised_hands:",
+      "Hey there! :upside_down_face:",
+      "Hey :smile:",
+      "Good day! :sunny:",
+      "Hello :bee:",
+      "Greetings :grin:",
+      "Hello mate :sunglasses:"
     ],
-    "answer": [
-        "HI",
-        "Yupi",
-        "Hehe"
+    "Thanks": [
+      "Anytime. That's what I'm here for.",
+      "It's my pleasure to help.",
+      "You're welcome, my friend"
+    ],
+    "Goodbye": [
+      "Hasta la vista, baby :sunglasses:",
+      "Adiós :wave:",
+      "Goodbye :wave:",
+      "See you soon :smile:",
+      "I will miss you :kissing_heart:"
+    ],
+    "None": [
+      "I didn't get that. Can you say it again?",
+      "I missed what you said. Say it again?",
+      "Sorry, could you say that again?",
+      "Sorry, I didn't get that.",
+      "One more time?",
+      "What was that?",
+      "I didn't get that.",
+      "I missed that."
+    ],
+    "Help": [
+      "I'll certainly try my best. How can I help?",
+      "Sure. I'd be happy to. What's up?",
+      "I'm glad to help. What can I do for you?"
+    ],
+    "Test": [
+      "Hope I'm doing well. You're welcome to test me as often as you want.",
+      "I hope to pass your tests. Feel free to test me often.",
+      "When you test me that helps my developers improve my performance.",
+      "I like being tested. It helps keep me sharp."
+    ],
+    "Biene": [
+        "BIENE"
     ]
 }

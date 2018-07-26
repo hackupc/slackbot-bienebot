@@ -1,0 +1,31 @@
+{
+  "places": {
+    "vertex": {
+      "where": "maps.hackupc.com",
+      "when": "open and close ceremony"
+    },
+    "showers": {
+      "where": "Need a shower?:shower:\n",
+      "when": "mornings"
+    },
+    "bathrooms": {
+      "where": "In each floor",
+      "when": "Always open"
+    },
+    "a4room": {
+      "where": "see the map",
+      "when": "Always open"
+    },
+    "a5room": {
+      "where": "see the map",
+      "when": "Always open"
+    },
+    "a6room": {
+      "where": "see the map",
+      "when": "Always open"
+    }
+  },
+  "default": {
+    "where": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+  }
+}

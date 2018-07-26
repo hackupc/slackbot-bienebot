@@ -1,11 +1,64 @@
 {
-    "where": [
-        "I don't know",
-        "please"
-    ],
-    "answer": [
-        "HI",
-        "Yupi",
-        "Hehe"
-    ]
+  "sponsors": {
+    "itequia": {
+      "name": "Itequia",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "soprasteria": {
+      "name": "SopraSteria",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "infojobs": {
+      "name": "Infojobs",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "For contact contact@hackupc.com"
+    },
+    "everis": {
+      "name": "Everis",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "between": {
+      "name": "Between",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "opentrends": {
+      "name": "Opentrends",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "wolfran": {
+      "name": "Wolfran",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "thoughworks": {
+      "name": "ThoughWorks",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    },
+    "bsc": {
+      "name": "BSC",
+      "where": "TODO:Any place is assigned for this sponsor",
+      "challenge": "TODO:This sponsor don't have any challenge",
+      "contact": "TODO:For contact contact@hackupc.com"
+    }
+  },
+  "default": {
+    "total": "HackUPC is possible thanks to:",
+    "where": "TODO: Tell no place detected, find it in maps",
+    "challenge": "TODO: Explain all challenges",
+    "contact": "TODO: Send contat for sponsor purposes"
+  }
 }
