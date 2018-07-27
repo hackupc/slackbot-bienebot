@@ -72,7 +72,7 @@ def save_activity(user, channel, intent, message, response):
             user,
             channel,
             intent,
-            message,
-            response
+            message.replace('\n', ''),
+            response.replace('\n', '')
         )
         file.write(row)

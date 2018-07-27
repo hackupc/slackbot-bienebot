@@ -1,4 +1,6 @@
 import json
+
+from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
 
@@ -13,48 +15,47 @@ def get_message(response_type):
 
         intent = response_type['topScoringIntent']['intent']
         list_intent = intent.split('.')
-
         entities = response_type['entities']
 
+        # Log stuff
         if entities:
-            inf = '|RESPONSE| About [{}]'.format(entities[0]['entity'])
-            inf += ' getting [{}]'.format(list_intent[1])
-            log.info(inf)
+            log_info = '|RESPONSE| About [{}] getting [{}]'.format(entities[0]['entity'], list_intent[1])
         else:
-            log.info('|RESPONSE| Getting [{}] about all sponsors'.format(list_intent[1]))
+            log_info = '|RESPONSE| Getting [{}] about all sponsors'.format(list_intent[1])
+        log.info(log_info)
 
-        try:
-            switcher = {
-                'Which': which,
-                'Where': where,
-                'Challenge':challenge
-            }
-            # Get the function from switcher dictionary
-            func = switcher.get(list_intent[1], lambda: "No understand")
-            # Execute the function
-            return func(data, intent, entities)
-
-        except Exception:
-            return "Don't understand"
+        switcher = {
+            'Which': which,
+            'Where': where,
+            'Challenge': challenge
+        }
+        # Get the function from switcher dictionary
+        func = switcher.get(list_intent[1], lambda: error.get_message())
+        # Execute the function
+        return func(data, entities)
 
 
-def which(data, intent, entities):
-    response = data['default']['total'] + '\n'
-    for key, value in data['sponsors'].items():
-        response = response + '- ' + value['name'] + '\n'
-    return response;
+# noinspection PyUnusedLocal
+def which(data, entities):
+    response = '{}\n'.format(data['default']['total'])
+    for value in data['sponsors'].values():
+        response += '- {}\n'.format(value['name'])
+    return response
 
 
-def where(data, intent, entities):
+def where(data, entities):
     if entities:
         sponsor = entities[0]['entity'].lower()
+        log.info('|RESPONSE|: About [{}] getting WHERE'.format(sponsor))
         return data['sponsors'][sponsor]['where']
     else:
         return data['default']['where']
 
-def challenge(data, intent, entities):
+
+def challenge(data, entities):
     if entities:
         sponsor = entities[0]['entity'].lower()
+        log.info('|RESPONSE|: About [{}] getting CHALLENGE'.format(sponsor))
         return data['sponsors'][sponsor]['challenge']
     else:
         return data['default']['challenge']

@@ -1,5 +1,6 @@
 import json
-from random import randint
+import random
+
 from hackupc.bienebot.util import log
 
 
@@ -9,16 +10,13 @@ def get_message(response_type):
     :param response_type luis response
     """
 
-
     with open('hackupc/bienebot/responses/smalltalk/smalltalk_data.json') as json_data:
         data = json.load(json_data)
 
         intent = response_type['topScoringIntent']['intent']
-        #entities = response_type['entities']
         list_intent = intent.split('.')
 
-        log.info('|RESPONSES| Looking for ['+ list_intent[1] + '] from JSON element')
+        # Log stuff
+        log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
 
-        length = len(data[list_intent[1]])
-        nrandom = randint(0,length-1)
-        return data[list_intent[1]][nrandom]
+        return random.choice(data[list_intent[1]])

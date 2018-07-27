@@ -30,3 +30,4 @@ def run_bienebot():
     finally:
         log.info('|BIENE| Biene Bot stopped!')
         slack.notify(':bee: Biene Bot stopped!')
+        return

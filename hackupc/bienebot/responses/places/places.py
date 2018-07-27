@@ -1,4 +1,6 @@
 import json
+
+from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
 
@@ -16,35 +18,36 @@ def get_message(response_type):
 
         entities = response_type['entities']
 
-        try:
-            switcher = {
-                'When': when,
-                'Where': where,
-            }
-            # Get the function from switcher dictionary
-            func = switcher.get(list_intent[2], lambda: "No understand")
-            # Execute the function
-            return func(data, intent, entities)
+        # Log stuff
+        if entities:
+            log_info = '|RESPONSE| About [{}] getting [{}]'.format(entities[0]['entity'], list_intent[1])
+        else:
+            log_info = '|RESPONSE| No entities about places'
+        log.info(log_info)
 
-        except Exception:
-            return "Don't understand"
+        switcher = {
+            'When': when,
+            'Where': where,
+        }
+        # Get the function from switcher dictionary
+        func = switcher.get(list_intent[2], lambda: error.get_message())
+        # Execute the function
+        return func(data, entities)
 
 
-def where(data, intent, entities):
-    try:
+def where(data, entities):
+    if entities:
         place = entities[0]['entity'].lower()
-
-        log.info('|RESPONSE|: About [' + place + '] getting WHERE')
+        log.info('|RESPONSE|: About [{}] getting WHERE'.format(place))
         return data['places'][place]['where']
-
-    except Exception:
+    else:
         return data['default']['where']
 
-def when(data, intent, entities):
-    try:
-        place = entities[0]['entity'].lower()
 
-        log.info('|RESPONSE|: About [' + place + '] getting WHEN')
+def when(data, entities):
+    if entities:
+        place = entities[0]['entity'].lower()
+        log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
         return data['places'][place]['when']
-    except Exception:
+    else:
         return data['default']['when']

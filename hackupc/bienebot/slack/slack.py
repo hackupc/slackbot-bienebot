@@ -27,7 +27,7 @@ class Slack:
                 channel = event['channel']
                 user = event['user']
                 log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'
-                         .format(user, channel, text))
+                         .format(user, channel, text.replace('\n', '')))
                 return text, channel, user
         return None, None, None
 
@@ -39,7 +39,7 @@ class Slack:
         :return: message sent
         """
         log.info('|Slack| Sent the following message in channel [{}]: [{}]'
-                 .format(channel, message))
+                 .format(channel, message.replace('\n', '')))
         return self.client.api_call(
             SLACK_API_METHOD,
             channel=channel,
