@@ -1,5 +1,5 @@
 import json
-import random
+from random import randint
 
 
 def get_message(response_type):
@@ -9,4 +9,12 @@ def get_message(response_type):
     """
     with open('hackupc/bienebot/responses/smalltalk/smalltalk_data.json') as json_data:
         doc = json.load(json_data)
-        return random.choice(doc['answer'])
+        data = json.load(f)
+
+        intent = response_type['topScoringIntent']['intent']
+        entities = response_type['entities']
+        list_intent = intent.split('.')
+
+        length = data[intent[1]].length
+        nrandom = randint(0,length-1)
+        return data[intent[1]][nrandom]

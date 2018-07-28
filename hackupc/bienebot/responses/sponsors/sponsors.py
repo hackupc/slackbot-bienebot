@@ -11,8 +11,9 @@ def get_message(response_type):
         data = json.load(f)
 
         intent = response_type['topScoringIntent']['intent']
-        entities = response_type['entities']
         list_intent = intent.split('.')
+
+        entities = response_type['entities']
 
         try:
             switcher = {
