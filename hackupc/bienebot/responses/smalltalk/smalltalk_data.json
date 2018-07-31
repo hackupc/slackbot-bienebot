@@ -9,6 +9,9 @@
       "Greetings :grin:",
       "Hello mate :sunglasses:"
     ],
+    "HowAreYou": [
+      "At this moment running on Elena's computer :running:"
+    ],
     "Thanks": [
       "Anytime. That's what I'm here for.",
       "It's my pleasure to help.",
@@ -22,15 +25,16 @@
       "I will miss you :kissing_heart:"
     ],
     "Help": [
-      "I'll certainly try my best. How can I help?",
-      "Sure. I'd be happy to. What's up?",
-      "I'm glad to help. What can I do for you?"
+      "Sure. I'd be happy to. I can talk about: Sponsors, Places and  Project information"
     ],
     "Test": [
       "Hope I'm doing well. You're welcome to test me as often as you want.",
       "I hope to pass your tests. Feel free to test me often.",
       "When you test me that helps my developers improve my performance.",
       "I like being tested. It helps keep me sharp."
+    ],
+    "Joke": [
+      "At this moment I don't know any joke."
     ],
     "Biene": [
         "BIENE"

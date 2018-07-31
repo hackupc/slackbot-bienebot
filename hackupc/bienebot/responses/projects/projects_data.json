@@ -1,11 +1,14 @@
 {
-    "where": [
-        "I don't know",
-        "please"
+    "Build": [
+        "Web, mobile, hardware, anything is on the table! :iphone: :computer:"
     ],
-    "answer": [
-        "HI",
-        "Yupi",
-        "Hehe"
+    "Team": [
+        "Teams of up to four are welcome. You can also hack solo if you want!"
+    ],
+    "NoTeam" : [
+      "No need to worry! Part of the fun of a hackathon is meeting new people. We will have time at the beginning of the event for everyone to meet and form teams. "
+    ],
+    "Five": [
+      "Sorry, the maximum team size allowed is 4 people. I recommend you to split you in two teams and be less people on the team, or meet others hackers!"
     ]
 }
