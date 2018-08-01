@@ -1,8 +1,6 @@
-import requests
-
 from hackupc.bienebot import *
 from hackupc.bienebot.responses.error import error
-from hackupc.bienebot.util import log
+from hackupc.bienebot.util import log, request
 from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
 from hackupc.bienebot.responses.places import places
@@ -29,7 +27,7 @@ def get_intent(query):
     }
     try:
         url = 'https://{}/luis/v2.0/apps/{}'.format(LUIS_SERVER, LUIS_ID)
-        r = requests.get(url=url, headers=headers, params=params)
+        r = request.execute(method='GET', url=url, headers=headers, params=params)
         response_data = r.json()
         answers = analyze_response(response_data)
         for an in answers:
