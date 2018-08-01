@@ -1,36 +1,41 @@
 {
   "places": {
     "vertex": {
-      "where": "maps.hackupc.com",
-      "when": "open and close ceremony"
+      "where": "*Vertex* building is walking up from A6 building. You can follow the arrows.",
+      "when": "Vertex will me accessible at *open and close ceremony*. :tada:"
     },
     "showers": {
-      "where": "Need a shower?:shower:\n",
-      "when": "mornings"
+      "where": "Need a shower?:shower:\n You have to go to GYM building",
+      "when": "Saturday and Sunday morning will be open to be used"
     },
     "toilets": {
-      "where": "In each floor",
-      "when": "Always open"
+      "where": "You will find in each floor of each building at the sides",
+      "when": "They will always be open when you need it"
     },
     "a4room": {
-      "where": "see the map",
-      "when": "Always open"
+      "where": "Is on the *blue* building.",
+      "when": "They will always be open when you need it"
     },
     "a5room": {
-      "where": "see the map",
-      "when": "Always open"
+      "where": "Is on the *purple* building.",
+      "when": "They will always be open when you need it"
     },
     "a6room": {
-      "where": "see the map",
-      "when": "Always open"
+      "where": "Is on the *green* building.",
+      "when": "They will always be open when you need it"
+    },
+    "marenostrum": {
+        "where": "Outside Campus Nord",
+        "when": "Schedules will be publish soon !!"
     }
   },
   "default": {
-    "where": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+    "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+    "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
   },
   "help": [
-    "If you want to know about places I can explain:",
-    "- Where are some places",
-    "- When are open"
+    "Want to know about HackUPC venue? You can ask me about:",
+    "- Where are some places: Bathrooms, hackers rooms, showers, ...",
+    "- Some places have openning hours. Ask me about they scheduled."
   ]
 }

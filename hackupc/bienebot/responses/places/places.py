@@ -42,7 +42,9 @@ def where(data, entities):
         place = entities[0]['resolution']['values'][0].lower()
         log.info('|RESPONSE|: About [{}] getting WHERE'.format(place))
         array.append(data['places'][place]['where'])
-    array.append(data['default']['where'])
+        array.append(data['default']['more'])
+    else:
+        array.append(data['default']['where'])
     return array
 
 
@@ -52,9 +54,9 @@ def when(data, entities):
         place = entities[0]['resolution']['values'][0].lower()
         log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
         array.append(data['places'][place]['when'])
-        log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
+        array.append(data['default']['more'])
     else:
-        array.append(data['default']['when'])
+        array.append(data['default']['where'])
     return array
 
 
