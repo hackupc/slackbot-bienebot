@@ -28,7 +28,7 @@ def get_message(response_type):
         switcher = {
             'When': when,
             'Where': where,
-            'Help': helpplace
+            'Help': help_place
         }
         # Get the function from switcher dictionary
         func = switcher.get(list_intent[2], lambda: error.get_message())
@@ -57,5 +57,7 @@ def when(data, entities):
         array.append(data['default']['when'])
     return array
 
-def helpplace(data,entities):
+
+# noinspection PyUnusedLocal
+def help_place(data, entities):
     return data['help']

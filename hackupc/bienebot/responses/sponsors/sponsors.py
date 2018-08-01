@@ -28,7 +28,7 @@ def get_message(response_type):
             'Which': which,
             'Where': where,
             'Challenge': challenge,
-            'Help': helpsponsor,
+            'Help': help_sponsor,
             'Contact': contact
         }
         # Get the function from switcher dictionary
@@ -42,8 +42,7 @@ def which(data, entities):
     response = '{}\n'.format(data['default']['total'])
     for value in data['sponsors'].values():
         response += '- {}\n'.format(value['name'])
-    array = []
-    array.append(response)
+    array = [response]
     return array
 
 
@@ -68,9 +67,13 @@ def challenge(data, entities):
         array.append(data['default']['challenge'])
     return array
 
-def helpsponsor(data,entities):
+
+# noinspection PyUnusedLocal
+def help_sponsor(data, entities):
     return data['help']
-def contact(data,entities):
+
+
+def contact(data, entities):
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()

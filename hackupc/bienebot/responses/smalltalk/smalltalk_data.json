@@ -10,12 +10,17 @@
       "Hello mate :sunglasses:"
     ],
     "HowAreYou": [
-      "At this moment running on Elena's computer :running:"
+      "Good!",
+      "Doing fine.",
+      "Fine, thanks.",
+      "All good mate.",
+      "So good."
     ],
     "Thanks": [
       "Anytime. That's what I'm here for.",
       "It's my pleasure to help.",
-      "You're welcome, my friend"
+      "You're welcome, my friend",
+      "No worries mate :call_me_hand:"
     ],
     "Goodbye": [
       "Hasta la vista, baby :sunglasses:",
@@ -34,12 +39,27 @@
       "I like being tested. It helps keep me sharp."
     ],
     "Joke": [
-      "At this moment I don't know any joke."
+      "Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.",
+      "Anton, do you think I’m a bad mother? My name is Paul.",
+      "My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.",
+      "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
+      "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+      "Why do we tell actors to 'break a leg?' Because every play has a cast.",
+      "Helvetica and Times New Roman walk into a bar. 'Get out of here!' shouts the bartender. 'We don’t serve your type.'",
+      "There were two peanuts walking down a dark alley, one was assaulted.",
+      "What did the 0 say to the 8? Nice belt!",
+      "Why did the orange stop? Because, it ran outta juice.",
+      "What’s brown and sounds like a bell? Dung!",
+      "Knock knock. Who’s there? Interrupting Cow. Interrupting Cow who- MOOOOOOO!",
+      "Why did the storm trooper buy an iphone? He couldn’t find the Droid he was looking for.",
+      "Why is six afraid of seven? Because seven ate nine.",
+      "What do you get when you cross an elephant and a rhino? Elephino!"
     ],
     "Biene": [
-        "BIENE"
+      "BIENE"
     ],
     "Nice": [
-      "Agree!"
+      "Agree!",
+      "For sure"
     ]
 }

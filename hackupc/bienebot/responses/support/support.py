@@ -18,6 +18,5 @@ def get_message(response_type):
         # Log stuff
         log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
 
-        array = []
-        array.append( random.choice(data[list_intent[1]]))
+        array = [random.choice(data[list_intent[1]])]
         return array

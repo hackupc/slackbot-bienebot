@@ -12,8 +12,9 @@ def get_message():
 
     with open('hackupc/bienebot/responses/error/error_data.json') as json_data:
         data = json.load(json_data)
+
         # Log stuff
         log.info('|RESPONSES| Looking for [error] from JSON element')
-        array = []
-        array.append(random.choice(data['No response']))
+
+        array = [random.choice(data['No response'])]
         return array
