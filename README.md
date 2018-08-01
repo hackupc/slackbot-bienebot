@@ -1,7 +1,13 @@
-# HackUPC Slack bot
+<br>
+<p align="center">
+  <img alt="HackUPC" src="https://github.com/hackupc/frontend/raw/master/src/images/hackupc-ogimage@2x.png"/>
+</p>
+<br>
+
+# Biene bot
 
 ## Overview
-HackUPC Slack bot.
+HackUPC Slack helper bot.
 
 ## Requirements
 1. Python 3.5+
