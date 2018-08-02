@@ -61,5 +61,9 @@
     "Nice": [
       "Agree!",
       "For sure"
+    ],
+    "DifLanguage":[
+      "Sorry, my creators give me the powers only to speak in English",
+      "Ups, I can't recognize this language. My memory has space only for one language"
     ]
 }
