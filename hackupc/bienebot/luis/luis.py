@@ -46,20 +46,30 @@ def analyze_response(response_data):
     try:
         intent = response_data['topScoringIntent']['intent']
         log.info('|LUIS| Intent that we got [{}]'.format(intent))
+
+        answer = []
+
         if intent.startswith('Sponsors'):
-            return sponsors.get_message(response_data)
+            answer = sponsors.get_message(response_data)
         elif intent.startswith('Indication.Place'):
-            return places.get_message(response_data)
+            answer =  places.get_message(response_data)
         elif intent.startswith('Smalltalk'):
-            return smalltalk.get_message(response_data)
+            answer =  smalltalk.get_message(response_data)
         elif intent.startswith('Project'):
-            return projects.get_message(response_data)
+            answer =  projects.get_message(response_data)
         elif intent.startswith('Support'):
-            return support.get_message(response_data)
+            answer =  support.get_message(response_data)
         elif intent.startswith('Indication.Activity'):
-            return support.get_message(response_data)
+            answer =  support.get_message(response_data)
         else:
-            return error.get_message()
+            answer =  error.get_message()
+        
+        inp = response_data['query']
+        if 'biene' in inp.lower() and not 'Smalltalk.Biene' in intent:
+            log.info('|LUIS| BIENE detected')
+            answer.append('BIENE')
+        return array
+
     except Exception as e:
         log.error(e)
         return error.get_message()
