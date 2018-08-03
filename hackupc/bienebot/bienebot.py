@@ -20,8 +20,9 @@ def run_bienebot():
                 message, channel, user = slack.retrieve_message()
                 if message:
                     response, intent = luis.get_intent(message)
-                    slack.send_message(response, channel)
-                    log.save_activity(user, channel, intent, message, response)
+                    for mess in response:
+                        slack.send_message(mess, channel)
+                        log.save_activity(user, channel, intent, message, mess)
                 time.sleep(RTM_READ_DELAY)
         else:
             log.error('Connection failed. Exception traceback printed above.')

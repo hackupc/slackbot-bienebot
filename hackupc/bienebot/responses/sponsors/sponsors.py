@@ -27,7 +27,9 @@ def get_message(response_type):
         switcher = {
             'Which': which,
             'Where': where,
-            'Challenge': challenge
+            'Challenge': challenge,
+            'Help': helpsponsor,
+            'Contact': contact
         }
         # Get the function from switcher dictionary
         func = switcher.get(list_intent[1], lambda: error.get_message())
@@ -40,22 +42,40 @@ def which(data, entities):
     response = '{}\n'.format(data['default']['total'])
     for value in data['sponsors'].values():
         response += '- {}\n'.format(value['name'])
-    return response
+    array = []
+    array.append(response)
+    return array
 
 
 def where(data, entities):
+    array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
         log.info('|RESPONSE|: About [{}] getting WHERE'.format(sponsor))
-        return data['sponsors'][sponsor]['where']
+        array.append(data['sponsors'][sponsor]['where'])
     else:
-        return data['default']['where']
+        array.append(data['default']['where'])
+    return array
 
 
 def challenge(data, entities):
+    array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
         log.info('|RESPONSE|: About [{}] getting CHALLENGE'.format(sponsor))
-        return data['sponsors'][sponsor]['challenge']
+        array.append(data['sponsors'][sponsor]['challenge'])
     else:
-        return data['default']['challenge']
+        array.append(data['default']['challenge'])
+    return array
+
+def helpsponsor(data,entities):
+    return data['help']
+def contact(data,entities):
+    array = []
+    if entities:
+        sponsor = entities[0]['entity'].lower()
+        log.info('|RESPONSE|: About [{}] getting CONTACT'.format(sponsor))
+        array.append(data['sponsors'][sponsor]['contact'])
+    else:
+        array.append(data['default']['contact'])
+    return array

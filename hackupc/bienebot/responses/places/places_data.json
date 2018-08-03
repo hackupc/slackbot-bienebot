@@ -8,7 +8,7 @@
       "where": "Need a shower?:shower:\n",
       "when": "mornings"
     },
-    "bathrooms": {
+    "toilets": {
       "where": "In each floor",
       "when": "Always open"
     },
@@ -27,5 +27,10 @@
   },
   "default": {
     "where": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
-  }
+  },
+  "help": [
+    "If you want to know about places I can explain:",
+    "- Where are some places",
+    "- When are open"
+  ]
 }

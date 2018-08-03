@@ -49,6 +49,12 @@
       "contact": "TODO:For contact contact@hackupc.com"
     }
   },
+  "help": [
+    "If you want to know more about sponsors you can ask me about:",
+    "- Where are each sponsor",
+    "- Which challenges there are",
+    "- How contact with a sponsor"
+  ],
   "default": {
     "total": "HackUPC is possible thanks to:",
     "where": "TODO: Tell no place detected, find it in maps",

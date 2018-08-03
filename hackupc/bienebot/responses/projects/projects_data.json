@@ -10,5 +10,11 @@
     ],
     "Five": [
       "Sorry, the maximum team size allowed is 4 people. I recommend you to split you in two teams and be less people on the team, or meet others hackers!"
+    ],
+    "Help": [
+      "What do you need? I can answer you about",
+      "- What do you have to build",
+      "- Team size",
+      "- No team"
     ]
 }

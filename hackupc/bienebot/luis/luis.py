@@ -7,6 +7,7 @@ from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
 from hackupc.bienebot.responses.places import places
 from hackupc.bienebot.responses.projects import projects
+from hackupc.bienebot.responses.support import support
 
 
 def get_intent(query):
@@ -30,9 +31,10 @@ def get_intent(query):
         url = 'https://{}/luis/v2.0/apps/{}'.format(LUIS_SERVER, LUIS_ID)
         r = requests.get(url=url, headers=headers, params=params)
         response_data = r.json()
-        answer = analyze_response(response_data)
-        log.info('|LUIS| After analyzing data, we got [{}]'.format(answer.replace('\n', '')))
-        return answer, response_data['topScoringIntent']['intent']
+        answers = analyze_response(response_data)
+        for an in answers:
+            log.info('|LUIS| After analyzing data, we got [{}]'.format(an.replace('\n', '')))
+        return answers, response_data['topScoringIntent']['intent']
     except Exception as e:
         log.error(e)
 
@@ -54,6 +56,10 @@ def analyze_response(response_data):
             return smalltalk.get_message(response_data)
         elif intent.startswith('Project'):
             return projects.get_message(response_data)
+        elif intent.startswith('Support'):
+            return support.get_message(response_data)
+        elif intent.startswith('Indication.Activity'):
+            return support.get_message(response_data)
         else:
             return error.get_message()
     except Exception as e:

@@ -28,6 +28,7 @@ def get_message(response_type):
         switcher = {
             'When': when,
             'Where': where,
+            'Help': helpplace
         }
         # Get the function from switcher dictionary
         func = switcher.get(list_intent[2], lambda: error.get_message())
@@ -36,18 +37,25 @@ def get_message(response_type):
 
 
 def where(data, entities):
+    array = []
     if entities:
-        place = entities[0]['entity'].lower()
+        place = entities[0]['resolution']['values'][0].lower()
         log.info('|RESPONSE|: About [{}] getting WHERE'.format(place))
-        return data['places'][place]['where']
-    else:
-        return data['default']['where']
+        array.append(data['places'][place]['where'])
+    array.append(data['default']['where'])
+    return array
 
 
 def when(data, entities):
+    array = []
     if entities:
-        place = entities[0]['entity'].lower()
+        place = entities[0]['resolution']['values'][0].lower()
         log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
-        return data['places'][place]['when']
+        array.append(data['places'][place]['when'])
+        log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
     else:
-        return data['default']['when']
+        array.append(data['default']['when'])
+    return array
+
+def helpplace(data,entities):
+    return data['help']
