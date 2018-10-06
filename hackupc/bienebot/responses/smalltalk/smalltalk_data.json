@@ -1,70 +1,76 @@
 {
     "Hello": [
-      "Hi there! :wave:",
-      "Hi! :raised_hands:",
-      "Hey there! :upside_down_face:",
-      "Hey :smile:",
-      "Good day! :sunny:",
-      "Hello :bee:",
-      "Greetings :grin:",
-      "Hello mate :sunglasses:"
+        "Hi there! :wave:",
+        "Hi! :raised_hands:",
+        "Hey there! :upside_down_face:",
+        "Hey :smile:",
+        "Good day! :sunny:",
+        "Hello :bee:",
+        "Greetings :grin:",
+        "Hello mate :sunglasses:"
     ],
     "HowAreYou": [
-      "Good!",
-      "Doing fine.",
-      "Fine, thanks.",
-      "All good mate.",
-      "So good."
+        "Good!",
+        "Doing fine.",
+        "Fine, thanks.",
+        "All good mate.",
+        "So good."
     ],
     "Thanks": [
-      "Anytime. That's what I'm here for.",
-      "It's my pleasure to help.",
-      "You're welcome, my friend",
-      "No worries mate :call_me_hand:"
+        "Anytime. That's what I'm here for.",
+        "It's my pleasure to help.",
+        "You're welcome, my friend",
+        "No worries mate :call_me_hand:"
     ],
     "Goodbye": [
-      "Hasta la vista, baby :sunglasses:",
-      "Adiós :wave:",
-      "Goodbye :wave:",
-      "See you soon :smile:",
-      "I will miss you :kissing_heart:"
+        "Hasta la vista, baby :sunglasses:",
+        "Adiós :wave:",
+        "Goodbye :wave:",
+        "See you soon :smile:",
+        "I will miss you :kissing_heart:"
     ],
     "Help": [
-      "Sure. I'd be happy to. I can talk about: Sponsors, Places and  Project information"
+        "Sure. I'd be happy to. I can talk about: Sponsors, Places and  Project information"
     ],
     "Test": [
-      "Hope I'm doing well. You're welcome to test me as often as you want.",
-      "I hope to pass your tests. Feel free to test me often.",
-      "When you test me that helps my developers improve my performance.",
-      "I like being tested. It helps keep me sharp."
+        "Hope I'm doing well. You're welcome to test me as often as you want.",
+        "I hope to pass your tests. Feel free to test me often.",
+        "When you test me that helps my developers improve my performance.",
+        "I like being tested. It helps keep me sharp."
     ],
     "Joke": [
-      "Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.",
-      "Anton, do you think I’m a bad mother? My name is Paul.",
-      "My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.",
-      "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
-      "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
-      "Why do we tell actors to 'break a leg?' Because every play has a cast.",
-      "Helvetica and Times New Roman walk into a bar. 'Get out of here!' shouts the bartender. 'We don’t serve your type.'",
-      "There were two peanuts walking down a dark alley, one was assaulted.",
-      "What did the 0 say to the 8? Nice belt!",
-      "Why did the orange stop? Because, it ran outta juice.",
-      "What’s brown and sounds like a bell? Dung!",
-      "Knock knock. Who’s there? Interrupting Cow. Interrupting Cow who- MOOOOOOO!",
-      "Why did the storm trooper buy an iphone? He couldn’t find the Droid he was looking for.",
-      "Why is six afraid of seven? Because seven ate nine.",
-      "What do you get when you cross an elephant and a rhino? Elephino!"
+        "Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.",
+        "Anton, do you think I’m a bad mother? My name is Paul.",
+        "My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.",
+        "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
+        "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+        "Why do we tell actors to 'break a leg?' Because every play has a cast.",
+        "Helvetica and Times New Roman walk into a bar. 'Get out of here!' shouts the bartender. 'We don’t serve your type.'",
+        "There were two peanuts walking down a dark alley, one was assaulted.",
+        "What did the 0 say to the 8? Nice belt!",
+        "Why did the orange stop? Because, it ran outta juice.",
+        "What’s brown and sounds like a bell? Dung!",
+        "Knock knock. Who’s there? Interrupting Cow. Interrupting Cow who- MOOOOOOO!",
+        "Why did the storm trooper buy an iphone? He couldn’t find the Droid he was looking for.",
+        "Why is six afraid of seven? Because seven ate nine.",
+        "What do you get when you cross an elephant and a rhino? Elephino!"
     ],
     "Biene": [
-      "BIENE"
+        "BIENE"
+    ],
+    "ProjectIdea": [
+        "TODO"
+    ],
+    "Tip": [
+        "TODO"
     ],
     "Nice": [
-      "Agree!",
-      "For sure"
+        "Agree!",
+        "For sure"
     ],
     "DifLanguage":[
-      "Sorry, my creators give me the powers only to speak in English",
-      "Ups, I can't recognize this language. My memory has space only for one language",
-      "My school was completely in English, sorry"
+        "Sorry, my creators give me the powers only to speak in English",
+        "Ups, I can't recognize this language. My memory has space only for one language",
+        "My school was completely in English, sorry"
     ]
 }

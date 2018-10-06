@@ -1,11 +1,66 @@
 {
-    "where": [
-        "I don't know",
-        "please"
-    ],
-    "answer": [
-        "HI",
-        "Yupi",
-        "Hehe"
-    ]
+	"activities": {
+		"stickerexchange": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO"
+		},
+		"talk": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO"
+		},
+        "bsc tour": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "team building": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "rubik tournament": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "the game": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "nerfgun": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "slideshow": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "close ceremony": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+		},
+		"open ceremony": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO"
+		}
+	},
+	"default": {
+		"what": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+		"more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+	},
+	"help": [
+		"TODO"
+	],
+	"which": [
+		"TODO"
+	]
 }

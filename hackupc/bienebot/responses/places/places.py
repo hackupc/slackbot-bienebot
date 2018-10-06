@@ -4,7 +4,6 @@ from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
 
-# noinspection PyBroadException
 def get_message(response_type):
     """
     Return a message from a sponsor intent
@@ -45,6 +44,7 @@ def where(data, entities):
         array.append(data['default']['more'])
     else:
         array.append(data['default']['where'])
+        array.append(data['default']['more'])
     return array
 
 
@@ -54,9 +54,8 @@ def when(data, entities):
         place = entities[0]['resolution']['values'][0].lower()
         log.info('|RESPONSE|: About [{}] getting WHEN'.format(place))
         array.append(data['places'][place]['when'])
-        array.append(data['default']['more'])
     else:
-        array.append(data['default']['where'])
+        array.append(data['default']['when'])
     return array
 
 

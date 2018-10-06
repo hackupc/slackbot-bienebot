@@ -1,41 +1,70 @@
 {
-  "places": {
-    "vertex": {
-      "where": "*Vertex* building is walking up from A6 building. You can follow the arrows.",
-      "when": "Vertex will me accessible at *open and close ceremony*. :tada:"
+    "places": {
+        "vertex": {
+            "where": "*Vertex* building is walking up from A6 building. You can follow the arrows.",
+            "when": "Vertex will me accessible at *open and close ceremony*. :tada:"
+        },
+        "showers": {
+            "where": "Need a shower?:shower:\n You have to go to GYM building",
+            "when": "Saturday and Sunday morning will be open to be used"
+        },
+        "toilets": {
+            "where": "You will find in each floor of each building at the sides",
+            "when": "They will always be open when you need it"
+        },
+        "a3": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "a4": {
+            "where": "Is on the *blue* building.",
+            "when": "They will always be open when you need it"
+        },
+        "a5": {
+            "where": "Is on the *purple* building.",
+            "when": "They will always be open when you need it"
+        },
+        "a6": {
+            "where": "Is on the *green* building.",
+            "when": "They will always be open when you need it"
+        },
+        "marenostrum": {
+            "where": "Outside Campus Nord",
+            "when": "Schedules will be publish soon !!"
+        },
+        "photocall": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "infodesk": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "cafeteria": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "hacker rooms": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "baggage": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "gym": {
+            "where": "TODO",
+            "when": "TODO"
+        }
     },
-    "showers": {
-      "where": "Need a shower?:shower:\n You have to go to GYM building",
-      "when": "Saturday and Sunday morning will be open to be used"
+    "default": {
+        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
     },
-    "toilets": {
-      "where": "You will find in each floor of each building at the sides",
-      "when": "They will always be open when you need it"
-    },
-    "a4room": {
-      "where": "Is on the *blue* building.",
-      "when": "They will always be open when you need it"
-    },
-    "a5room": {
-      "where": "Is on the *purple* building.",
-      "when": "They will always be open when you need it"
-    },
-    "a6room": {
-      "where": "Is on the *green* building.",
-      "when": "They will always be open when you need it"
-    },
-    "marenostrum": {
-        "where": "Outside Campus Nord",
-        "when": "Schedules will be publish soon !!"
-    }
-  },
-  "default": {
-    "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-    "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
-  },
-  "help": [
-    "Want to know about HackUPC venue? You can ask me about:",
-    "- Where are some places: Bathrooms, hackers rooms, showers, ...",
-    "- Some places have openning hours. Ask me about they scheduled."
-  ]
+    "help": [
+        "Want to know about HackUPC venue? You can ask me about:",
+        "- Where are some places: Bathrooms, hackers rooms, showers, ...",
+        "- Some places have openning hours. Ask me about they scheduled."
+    ]
 }

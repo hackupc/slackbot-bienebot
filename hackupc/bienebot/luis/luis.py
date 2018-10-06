@@ -1,11 +1,15 @@
 from hackupc.bienebot import *
+from hackupc.bienebot.responses.activities import activities
 from hackupc.bienebot.responses.error import error
-from hackupc.bienebot.util import log, request
+from hackupc.bienebot.responses.hackupc import hackupc
+from hackupc.bienebot.responses.hardware_lab import hardware_lab
+from hackupc.bienebot.responses.logistics import logistics
 from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
 from hackupc.bienebot.responses.places import places
 from hackupc.bienebot.responses.projects import projects
 from hackupc.bienebot.responses.support import support
+from hackupc.bienebot.util import log, request
 
 
 def get_intent(query):
@@ -27,8 +31,7 @@ def get_intent(query):
     }
     try:
         url = 'https://{}/luis/v2.0/apps/{}'.format(LUIS_SERVER, LUIS_ID)
-        r = request.execute(method='GET', url=url, headers=headers, params=params)
-        response_data = r.json()
+        response_data = request.execute(method='GET', url=url, headers=headers, params=params)
         answers = analyze_response(response_data)
         for an in answers:
             log.info('|LUIS| After analyzing data, we got [{}]'.format(an.replace('\n', '')))
@@ -44,32 +47,46 @@ def analyze_response(response_data):
     :return: response analyzed
     """
     try:
+        # Retrieve intent
         intent = response_data['topScoringIntent']['intent']
         log.info('|LUIS| Intent that we got [{}]'.format(intent))
 
-        answer = []
+        # Initialize answer array
+        answer = list()
 
-        if intent.startswith('Sponsors'):
-            answer = sponsors.get_message(response_data)
+        # Select intent
+        if intent.startswith('Indication.Activity'):
+            answer.extend(activities.get_message(response_data))
+        elif intent.startswith('HackUPC'):
+            answer.extend(hackupc.get_message(response_data))
+        elif intent.startswith('HardwareLab'):
+            answer.extend(hardware_lab.get_message(response_data))
+        elif intent.startswith('Logistics'):
+            answer.extend(logistics.get_message(response_data))
         elif intent.startswith('Indication.Place'):
-            answer =  places.get_message(response_data)
-        elif intent.startswith('Smalltalk'):
-            answer =  smalltalk.get_message(response_data)
+            answer.extend(places.get_message(response_data))
         elif intent.startswith('Project'):
-            answer =  projects.get_message(response_data)
+            answer.extend(projects.get_message(response_data))
+        elif intent.startswith('Smalltalk'):
+            answer.extend(smalltalk.get_message(response_data))
+        elif intent.startswith('Sponsors'):
+            answer.extend(sponsors.get_message(response_data))
         elif intent.startswith('Support'):
-            answer =  support.get_message(response_data)
-        elif intent.startswith('Indication.Activity'):
-            answer =  support.get_message(response_data)
+            answer.extend(support.get_message(response_data))
         else:
-            answer =  error.get_message()
-        
-        inp = response_data['query']
-        if 'biene' in inp.lower() and not 'Smalltalk.Biene' in intent:
+            answer.extend(error.get_message())
+            return answer
+
+        # Check for biene manually
+        query_input = response_data['query']
+        if 'biene' in query_input.lower() and 'Smalltalk.Biene' not in intent:
             log.info('|LUIS| BIENE detected')
-            answer.append('BIENE')
-        return array
+            answer.extend(['BIENE'])
+
+        # Return array of answers
+        return answer
 
     except Exception as e:
+        # Log error and return default error message
         log.error(e)
         return error.get_message()

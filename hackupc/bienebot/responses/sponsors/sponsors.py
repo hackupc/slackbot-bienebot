@@ -25,10 +25,11 @@ def get_message(response_type):
         log.info(log_info)
 
         switcher = {
-            'Which': which,
+            'Which': which_sponsor,
+            'Help': help_sponsor,
+            'AllChallenges': all_challenges_sponsor,
             'Where': where,
             'Challenge': challenge,
-            'Help': help_sponsor,
             'Contact': contact
         }
         # Get the function from switcher dictionary
@@ -38,12 +39,22 @@ def get_message(response_type):
 
 
 # noinspection PyUnusedLocal
-def which(data, entities):
+def which_sponsor(data, entities):
     response = '{}\n'.format(data['default']['total'])
     for value in data['sponsors'].values():
         response += '- {}\n'.format(value['name'])
     array = [response]
     return array
+
+
+# noinspection PyUnusedLocal
+def help_sponsor(data, entities):
+    return data['Help']
+
+
+# noinspection PyUnusedLocal
+def all_challenges_sponsor(data, entities):
+    return data['AllChallenges']
 
 
 def where(data, entities):
@@ -66,11 +77,6 @@ def challenge(data, entities):
     else:
         array.append(data['default']['challenge'])
     return array
-
-
-# noinspection PyUnusedLocal
-def help_sponsor(data, entities):
-    return data['help']
 
 
 def contact(data, entities):

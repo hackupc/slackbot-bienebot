@@ -1,0 +1,25 @@
+{
+    "logistic": {
+        "sleeping": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "checkin": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "meals": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        }
+    },
+    "default": {
+        "how": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+    }
+}
