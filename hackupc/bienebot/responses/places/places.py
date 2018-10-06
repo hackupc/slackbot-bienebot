@@ -61,4 +61,4 @@ def when(data, entities):
 
 # noinspection PyUnusedLocal
 def help_place(data, entities):
-    return data['help']
+    return ['\n'.join(data['help'])]

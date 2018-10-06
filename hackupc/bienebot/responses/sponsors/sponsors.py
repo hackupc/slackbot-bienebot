@@ -49,12 +49,12 @@ def which_sponsor(data, entities):
 
 # noinspection PyUnusedLocal
 def help_sponsor(data, entities):
-    return data['Help']
+    return ['\n'.join(data['Help'])]
 
 
 # noinspection PyUnusedLocal
 def all_challenges_sponsor(data, entities):
-    return data['AllChallenges']
+    return ['\n'.join(data['AllChallenges'])]
 
 
 def where(data, entities):

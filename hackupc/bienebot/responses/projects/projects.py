@@ -27,4 +27,4 @@ def get_message(response_type):
 
 
 def help_project(data):
-    return data['Help']
+    return ['\n'.join(data['Help'])]
