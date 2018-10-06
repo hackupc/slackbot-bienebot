@@ -30,7 +30,7 @@
             "challenge": "Opentrends challenge will be publish soon",
             "contact": "TODO:For contact contact@hackupc.com"
         },
-        "Soprasteria": {
+        "soprasteria": {
             "name": "Opentrends",
             "where": "Opentrends has not yet assigned place :pepe:",
             "challenge": "Opentrends challenge will be publish soon",
@@ -42,7 +42,7 @@
             "challenge": "Opentrends challenge will be publish soon",
             "contact": "TODO:For contact contact@hackupc.com"
         },
-        "Wolfram": {
+        "wolfram": {
             "name": "Opentrends",
             "where": "Opentrends has not yet assigned place :pepe:",
             "challenge": "Opentrends challenge will be publish soon",
@@ -84,19 +84,19 @@
             "challenge": "Opentrends challenge will be publish soon",
             "contact": "TODO:For contact contact@hackupc.com"
         },
-        "Everis": {
+        "everis": {
             "name": "Opentrends",
             "where": "Opentrends has not yet assigned place :pepe:",
             "challenge": "Opentrends challenge will be publish soon",
             "contact": "TODO:For contact contact@hackupc.com"
         },
-        "Thoughtworks": {
+        "thoughtworks": {
             "name": "Opentrends",
             "where": "Opentrends has not yet assigned place :pepe:",
             "challenge": "Opentrends challenge will be publish soon",
             "contact": "TODO:For contact contact@hackupc.com"
         },
-        "Infojobs": {
+        "infojobs": {
             "name": "Opentrends",
             "where": "Opentrends has not yet assigned place :pepe:",
             "challenge": "Opentrends challenge will be publish soon",
@@ -110,9 +110,6 @@
         "- How contact with a sponsor"
     ],
     "AllChallenges": [
-        "TODO"
-    ],
-    "Which": [
         "TODO"
     ],
     "default": {

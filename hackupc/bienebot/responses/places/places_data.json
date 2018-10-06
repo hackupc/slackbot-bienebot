@@ -12,24 +12,53 @@
             "where": "You will find in each floor of each building at the sides",
             "when": "They will always be open when you need it"
         },
-        "a4room": {
+        "a3": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "a4": {
             "where": "Is on the *blue* building.",
             "when": "They will always be open when you need it"
         },
-        "a5room": {
+        "a5": {
             "where": "Is on the *purple* building.",
             "when": "They will always be open when you need it"
         },
-        "a6room": {
+        "a6": {
             "where": "Is on the *green* building.",
             "when": "They will always be open when you need it"
         },
         "marenostrum": {
             "where": "Outside Campus Nord",
             "when": "Schedules will be publish soon !!"
+        },
+        "photocall": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "infodesk": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "cafeteria": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "hacker rooms": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "baggage": {
+            "where": "TODO",
+            "when": "TODO"
+        },
+        "gym": {
+            "where": "TODO",
+            "when": "TODO"
         }
     },
     "default": {
+        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
         "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
         "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
     },

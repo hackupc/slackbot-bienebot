@@ -1,11 +1,14 @@
 from hackupc.bienebot import *
 from hackupc.bienebot.responses.error import error
-from hackupc.bienebot.util import log, request
+from hackupc.bienebot.responses.hackupc import hackupc
+from hackupc.bienebot.responses.hardware_lab import hardware_lab
+from hackupc.bienebot.responses.logistics import logistics
 from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
 from hackupc.bienebot.responses.places import places
 from hackupc.bienebot.responses.projects import projects
 from hackupc.bienebot.responses.support import support
+from hackupc.bienebot.util import log, request
 
 
 def get_intent(query):
@@ -44,23 +47,31 @@ def analyze_response(response_data):
     :return: response analyzed
     """
     try:
+        # Retrieve intent
         intent = response_data['topScoringIntent']['intent']
         log.info('|LUIS| Intent that we got [{}]'.format(intent))
 
         # Initialize answer array
         answer = list()
 
-        if intent.startswith('Sponsors'):
-            answer.append(sponsors.get_message(response_data))
+        # Select intent
+        if intent.startswith('Indication.Activity'):
+            answer.append(support.get_message(response_data))
+        elif intent.startswith('HackUPC'):
+            answer.append(hackupc.get_message(response_data))
+        elif intent.startswith('HardwareLab'):
+            answer.append(hardware_lab.get_message(response_data))
+        elif intent.startswith('Logistics'):
+            answer.append(logistics.get_message(response_data))
         elif intent.startswith('Indication.Place'):
             answer.append(places.get_message(response_data))
-        elif intent.startswith('Smalltalk'):
-            answer.append(smalltalk.get_message(response_data))
         elif intent.startswith('Project'):
             answer.append(projects.get_message(response_data))
+        elif intent.startswith('Smalltalk'):
+            answer.append(smalltalk.get_message(response_data))
+        elif intent.startswith('Sponsors'):
+            answer.append(sponsors.get_message(response_data))
         elif intent.startswith('Support'):
-            answer.append(support.get_message(response_data))
-        elif intent.startswith('Indication.Activity'):
             answer.append(support.get_message(response_data))
         else:
             answer.append(error.get_message())
@@ -76,5 +87,6 @@ def analyze_response(response_data):
         return answer
 
     except Exception as e:
+        # Log error and return default error message
         log.error(e)
         return error.get_message()

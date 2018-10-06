@@ -16,7 +16,7 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         # Log stuff
-        log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
+        log.info('|RESPONSE| Looking for [{}] from JSON element'.format(list_intent[1]))
 
         if list_intent[1] == 'Help':
             array = help_project(data)

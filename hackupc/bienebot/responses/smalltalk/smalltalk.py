@@ -9,7 +9,6 @@ def get_message(response_type):
     Return a message from a smalltalk intent
     :param response_type luis response
     """
-
     with open('hackupc/bienebot/responses/smalltalk/smalltalk_data.json') as json_data:
         data = json.load(json_data)
 
@@ -17,7 +16,7 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         # Log stuff
-        log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
+        log.info('|RESPONSE| Looking for [{}] from JSON element'.format(list_intent[1]))
 
         array = [random.choice(data[list_intent[1]])]
         return array

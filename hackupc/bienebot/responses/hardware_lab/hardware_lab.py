@@ -6,7 +6,7 @@ from hackupc.bienebot.util import log
 
 def get_message(response_type):
     """
-    Return a message from a projects intent
+    Return a message from a Hardware Lab intent
     :param response_type luis response
     """
     with open('hackupc/bienebot/responses/hardware_lab/hardware_lab_data.json') as json_data:
@@ -16,7 +16,7 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         # Log stuff
-        log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
+        log.info('|RESPONSE| Looking for [{}] from JSON element'.format(list_intent[1]))
 
-        array = [random.choice(data[list_intent[2]])]
+        array = [random.choice(data[list_intent[1]])]
         return array

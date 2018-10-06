@@ -1,12 +1,12 @@
 import json
-import random
 
+from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
 
 def get_message(response_type):
     """
-    Return a message from a projects intent
+    Return a message from a activities intent
     :param response_type luis response
     """
     with open('hackupc/bienebot/responses/activities/activities_data.json') as json_data:
@@ -15,8 +15,68 @@ def get_message(response_type):
         intent = response_type['topScoringIntent']['intent']
         list_intent = intent.split('.')
 
-        # Log stuff
-        log.info('|RESPONSES| Looking for [{}] from JSON element'.format(list_intent[1]))
+        entities = response_type['entities']
 
-        array = [random.choice(data[list_intent[2]])]
-        return array
+        # Log stuff
+        if entities:
+            log_info = '|RESPONSE| About [{}] getting [{}]'.format(entities[0]['entity'], list_intent[1])
+        else:
+            log_info = '|RESPONSE| No entities about activities'
+        log.info(log_info)
+
+        switcher = {
+            'What': what,
+            'When': when,
+            'Where': where,
+            'Which': which_activity,
+            'Help': help_activity
+        }
+        # Get the function from switcher dictionary
+        func = switcher.get(list_intent[2], lambda: error.get_message())
+        # Execute the function
+        return func(data, entities)
+
+
+def what(data, entities):
+    array = []
+    if entities:
+        activity = entities[0]['resolution']['values'][0].lower()
+        log.info('|RESPONSE|: About [{}] getting WHAT'.format(activity))
+        array.append(data['activities'][activity]['what'])
+    else:
+        array.append(data['default']['what'])
+    return array
+
+
+def when(data, entities):
+    array = []
+    if entities:
+        activity = entities[0]['resolution']['values'][0].lower()
+        log.info('|RESPONSE|: About [{}] getting WHEN'.format(activity))
+        array.append(data['activities'][activity]['when'])
+    else:
+        array.append(data['default']['when'])
+    return array
+
+
+def where(data, entities):
+    array = []
+    if entities:
+        activity = entities[0]['resolution']['values'][0].lower()
+        log.info('|RESPONSE|: About [{}] getting WHERE'.format(activity))
+        array.append(data['activities'][activity]['where'])
+        array.append(data['default']['more'])
+    else:
+        array.append(data['default']['where'])
+        array.append(data['default']['more'])
+    return array
+
+
+# noinspection PyUnusedLocal
+def which_activity(data, entities):
+    return data['which']
+
+
+# noinspection PyUnusedLocal
+def help_activity(data, entities):
+    return data['help']
