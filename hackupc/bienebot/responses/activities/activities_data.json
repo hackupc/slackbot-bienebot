@@ -43,19 +43,19 @@
         "close ceremony": {
 			"what": "On Close ceremony there will be the final judging phase and winners will be announces. :see_no_evil:",
 			"when": "Close ceremony will be on *Sunday from 14:30h to 16:30h*. :watch:",
-			"where": "Close ceremony will be at Vertex building. You can find it on maps.hackupc.com"
+			"where": "Close ceremony will be at Vertex building."
 		},
 		"open ceremony": {
 			"what": "Open ceremony will start the hackathon :star-stuck:. It is the ceremony where will be explained all you need to have a nice weekend.",
 			"when": "Open ceremony will start on *Friday at 21.00h* :watch:",
-			"where": "You can see the Open Ceremony at Vertex building or floor zero rooms by streaming. Find it on maps.hackupc.com"
+			"where": "You can see the Open Ceremony at Vertex building or floor zero rooms by streaming."
 		}
 	},
 	"default": {
 		"what": "Sorry, I don't know what activity do you mean. But you can check all the activities on hackupc.com/live.",
         "when": "Sorry, I don't know what activity do you mean. But you can check all the activities on hackupc.com/live.",
-        "where": "Sorry, I don't know what activity do you mean. But you can check maps.hackupc.com and you will find all possible activities.",
-		"more": "For visual indications you can take a look this wonderful web:smile::\n maps.hackupc.com"
+        "where": "Sorry, I don't know what activity do you mean.",
+		"more": "For visual indications you can take a look this wonderful web :smile: maps.hackupc.com"
 	},
 	"help": [
 		"I know about lot of activities :smirk: Ask me about what/when/where is Sticker Exchange, Talks, BSC Tour, Team Building, Rubik Tournament, The Game, Nerfgun Battle, SlideShare Karaoke and Open and Closing ceremony :blush:"
