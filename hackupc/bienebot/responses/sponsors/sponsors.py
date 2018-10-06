@@ -40,6 +40,12 @@ def get_message(response_type):
 
 # noinspection PyUnusedLocal
 def which_sponsor(data, entities):
+    """
+    Retrieve response for `which` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     response = '{}\n'.format(data['default']['total'])
     for value in data['sponsors'].values():
         response += '- {}\n'.format(value['name'])
@@ -49,15 +55,33 @@ def which_sponsor(data, entities):
 
 # noinspection PyUnusedLocal
 def help_sponsor(data, entities):
+    """
+    Retrieve response for `help` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     return ['\n'.join(data['Help'])]
 
 
 # noinspection PyUnusedLocal
 def all_challenges_sponsor(data, entities):
+    """
+    Retrieve response for `all_challenges` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     return ['\n'.join(data['AllChallenges'])]
 
 
 def where(data, entities):
+    """
+    Retrieve response for `where` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
@@ -69,6 +93,12 @@ def where(data, entities):
 
 
 def challenge(data, entities):
+    """
+    Retrieve response for `challenge` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
@@ -80,6 +110,12 @@ def challenge(data, entities):
 
 
 def contact(data, entities):
+    """
+    Retrieve response for `contact` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
