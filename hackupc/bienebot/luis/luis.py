@@ -36,7 +36,7 @@ def get_intent(query):
         answers = analyze_response(response_data)
         for an in answers:
             log.info('|LUIS| After analyzing data, we got [{}]'.format(an.replace('\n', '')))
-        return answers, response_data['topScoringIntent']['intent']
+        return answers, response_data['topScoringIntent']['intent'], response_data['topScoringIntent']['score']
     except Exception as e:
         log.error(e)
 
