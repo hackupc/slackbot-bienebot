@@ -74,7 +74,7 @@ def where(data, entities):
 
 # noinspection PyUnusedLocal
 def which_activity(data, entities):
-    return data['which']
+    return ['\n'.join(data['which'])]
 
 
 # noinspection PyUnusedLocal

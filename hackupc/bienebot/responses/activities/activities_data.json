@@ -1,14 +1,14 @@
 {
 	"activities": {
 		"stickerexchange": {
-			"what": "TODO",
+			"what": "You give stickers, you receive stickers. Ez pz :ok_hand:",
 			"when": "Sticker Exchange will be Sunday at 00.00h. Don't forget your stickers :hackupc:",
 			"where": "Oh, my database is empty for answer this question.\n You can question this to some of my human collegues or look it for on hackupc.com/live :smile:"
 		},
 		"talk": {
-			"what": "This edition we have a lot of talks for you. From tech topics to know more about hackathons. Here you have all talks we have:\n - Intro to Git\n - *InfoJobs Talk*: Kotlin, a modern language for modern times\n - *iThinkUPC Talk*: Challenge\n - *Itequia Talk:* Let's make some music with Javascript\n - *Everis Talk*: Intro to Virtual Assistants\n - *Opentrends Talk*: Chat bot with Google Assitant\n - *Skyscanner Talk*: Intro to Skyscanner API\n - *Vueling Talk*: Digital transformation, more cooperation and less hierarchy\n - *ServiZurich Talk*: In memory processing pipelines running in the cloud\n - *Soprasteria Talk*: Getting started with Natural Language Processing (NLP)\n - Organize your hackathon ",
-			"when": "Talks will be on Friday and Saturday, you can check the schedule on our website hackupc.com/live :raised_hands:",
-			"where": "Talks will be placed in differents rooms from floor zero. To know exactly the room you can watch it on our website hackupc.com/live. Hope see you there :happy:"
+			"what": "This edition we have a lot of talks for you. From tech topics to know more about hackathons. Here you have all talks we have:\n - Intro to Git\n - *InfoJobs Talk*: Kotlin, a modern language for modern times\n - *iThinkUPC Talk*: Challenge\n - *Itequia Talk:* Let's make some music with Javascript\n - *Everis Talk*: Intro to Virtual Assistants\n - *Opentrends Talk*: Chat bot with Google Assitant\n - *AWSEducate Talk*: ???\n - *Typeform Talk*: API 101\n - *Skyscanner Talk*: Intro to Skyscanner API\n - *Vueling Talk*: Digital transformation, more cooperation and less hierarchy\n - *ServiZurich Talk*: In memory processing pipelines running in the cloud\n - *Soprasteria Talk*: Getting started with Natural Language Processing (NLP)\n - Organize your hackathon ",
+			"when": "Talks will be on Friday night and Saturday morning, you can check the schedule on our website hackupc.com/live :raised_hands:",
+			"where": "Talks will be placed in different rooms from floor zero, in A5 Building. To know exactly the room you can watch it on our website hackupc.com/live. Hope see you there :happy:"
 		},
         "bsc tour": {
             "what": "Want to see Barcelona's supercomputer? We have a tour for you organized by BSC:tada:\n Stay tunned, there will be several Evenwrite badges for attending on this tour. ",
@@ -16,12 +16,12 @@
             "where": "If you were previous registered, organizers and volunteers will be waiting you in front of check-in door."
         },
         "team building": {
-            "what": "TODO",
+            "what": "Want a team? Let's build it in this team formation session! :muscle:",
             "when": "Team building will be on *Friday at 23:30h* :watch:",
             "where": "Team building will be placed in *A400X*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
         "rubik tournament": {
-            "what": "TODO",
+            "what": "Do you think you're fast solving a Rubik's cube? Let's check it in this tournament!",
             "when": "Rubik tournament will be on *Saturday at 20:00h* :watch:",
             "where": "Rubik tournament will be placed in *A500X || A4102*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"     
         },
@@ -31,12 +31,12 @@
             "where": "Do you ask for that? game.hackupc.com:parrot:\n Good luck :crossed_fingers:"
         },
         "nerfgun": {
-            "what": "TODO",
+            "what": "Be ready for the BATTLE!!! :muscle: :crossed_swords: :smirk:",
             "when": "Nerf Guns Battle will be on *Sunday at 01:00h* :watch:",
             "where": "Nerf Guns Battle be placed in *A4101 & A4102*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
         "slideshow": {
-            "what": "TODO",
+            "what": "You *MUST* be there! From last edition, the best activity in the whole weekend. Laughter assured! :joy:",
             "when": "Slide Show Karaoke will be on *Saturday at 22:00h* :watch: and don't forget your voice :microphone:",
             "where": "Nerf Guns Battle be placed in *A5001*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
@@ -52,15 +52,25 @@
 		}
 	},
 	"default": {
-		"what": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-		"more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+		"what": "Sorry, I don't know what activity do you mean. But you can check all the activities on hackupc.com/live.",
+        "when": "Sorry, I don't know what activity do you mean. But you can check all the activities on hackupc.com/live.",
+        "where": "Sorry, I don't know what activity do you mean. But you can check maps.hackupc.com and you will find all possible activities.",
+		"more": "For visual indications you can take a look this wonderful web:smile::\n maps.hackupc.com"
 	},
 	"help": [
-		"TODO"
+		"I know about lot of activities :smirk: Ask me about what/when/where is Sticker Exchange, Talks, BSC Tour, Team Building, Rubik Tournament, The Game, Nerfgun Battle, SlideShare Karaoke and Open and Closing ceremony :blush:"
 	],
 	"which": [
-		"TODO"
+		"HackUPC isn't just programming. There are the following activities :arrow_down:",
+        "Sticker Exchange",
+        "Talks",
+        "BSC Tour",
+        "Team Building",
+        "Rubik Tournament",
+        "The Game",
+        "Nerfgun Battle",
+        "SlideShare Karaoke",
+        "Open ceremony",
+        "Closing ceremony"
 	]
 }
