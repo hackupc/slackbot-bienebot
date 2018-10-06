@@ -1,4 +1,5 @@
 from hackupc.bienebot import *
+from hackupc.bienebot.responses.activities import activities
 from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.responses.hackupc import hackupc
 from hackupc.bienebot.responses.hardware_lab import hardware_lab
@@ -30,8 +31,7 @@ def get_intent(query):
     }
     try:
         url = 'https://{}/luis/v2.0/apps/{}'.format(LUIS_SERVER, LUIS_ID)
-        r = request.execute(method='GET', url=url, headers=headers, params=params)
-        response_data = r.json()
+        response_data = request.execute(method='GET', url=url, headers=headers, params=params)
         answers = analyze_response(response_data)
         for an in answers:
             log.info('|LUIS| After analyzing data, we got [{}]'.format(an.replace('\n', '')))
@@ -56,32 +56,32 @@ def analyze_response(response_data):
 
         # Select intent
         if intent.startswith('Indication.Activity'):
-            answer.append(support.get_message(response_data))
+            answer.extend(activities.get_message(response_data))
         elif intent.startswith('HackUPC'):
-            answer.append(hackupc.get_message(response_data))
+            answer.extend(hackupc.get_message(response_data))
         elif intent.startswith('HardwareLab'):
-            answer.append(hardware_lab.get_message(response_data))
+            answer.extend(hardware_lab.get_message(response_data))
         elif intent.startswith('Logistics'):
-            answer.append(logistics.get_message(response_data))
+            answer.extend(logistics.get_message(response_data))
         elif intent.startswith('Indication.Place'):
-            answer.append(places.get_message(response_data))
+            answer.extend(places.get_message(response_data))
         elif intent.startswith('Project'):
-            answer.append(projects.get_message(response_data))
+            answer.extend(projects.get_message(response_data))
         elif intent.startswith('Smalltalk'):
-            answer.append(smalltalk.get_message(response_data))
+            answer.extend(smalltalk.get_message(response_data))
         elif intent.startswith('Sponsors'):
-            answer.append(sponsors.get_message(response_data))
+            answer.extend(sponsors.get_message(response_data))
         elif intent.startswith('Support'):
-            answer.append(support.get_message(response_data))
+            answer.extend(support.get_message(response_data))
         else:
-            answer.append(error.get_message())
+            answer.extend(error.get_message())
             return answer
 
         # Check for biene manually
         query_input = response_data['query']
         if 'biene' in query_input.lower() and 'Smalltalk.Biene' not in intent:
             log.info('|LUIS| BIENE detected')
-            answer.append('BIENE')
+            answer.extend(['BIENE'])
 
         # Return array of answers
         return answer
