@@ -4,6 +4,7 @@ from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.responses.hackupc import hackupc
 from hackupc.bienebot.responses.hardware_lab import hardware_lab
 from hackupc.bienebot.responses.logistics import logistics
+from hackupc.bienebot.responses.mentor import mentor
 from hackupc.bienebot.responses.sponsors import sponsors
 from hackupc.bienebot.responses.smalltalk import smalltalk
 from hackupc.bienebot.responses.places import places
@@ -63,6 +64,8 @@ def analyze_response(response_data):
             answer.extend(hardware_lab.get_message(response_data))
         elif intent.startswith('Logistics'):
             answer.extend(logistics.get_message(response_data))
+        elif intent.startswith('Mentor'):
+            answer.extend(mentor.get_message(response_data))
         elif intent.startswith('Indication.Place'):
             answer.extend(places.get_message(response_data))
         elif intent.startswith('Project'):
