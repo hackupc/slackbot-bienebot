@@ -9,7 +9,7 @@ def get_message(response_type):
     Return a message from a projects intent
     :param response_type luis response
     """
-    with open('hackupc/bienebot/responses/activities/activities_data.json') as json_data:
+    with open('hackupc/bienebot/responses/hardware_lab/hardware_lab_data.json') as json_data:
         data = json.load(json_data)
 
         intent = response_type['topScoringIntent']['intent']

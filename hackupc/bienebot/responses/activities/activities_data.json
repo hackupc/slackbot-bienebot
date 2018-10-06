@@ -1,11 +1,71 @@
 {
-    "where": [
-        "I don't know",
-        "please"
-    ],
-    "answer": [
-        "HI",
-        "Yupi",
-        "Hehe"
-    ]
+	"places": {
+		"stickerexchange": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO",
+			"which": "TODO"
+		},
+		"talk": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO",
+			"which": "TODO"
+		},
+        "bsc tour": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "team building": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "Rubik tournament": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "the game": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "nerfgun": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "slideshow": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+            "which": "TODO"
+        },
+        "close ceremony": {
+            "what": "TODO",
+            "when": "TODO",
+            "where": "TODO",
+			"which": "TODO"
+		},
+		"open ceremony": {
+			"what": "TODO",
+			"when": "TODO",
+			"where": "TODO",
+			"which": "TODO"
+		}
+	},
+	"default": {
+		"where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+		"more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+	},
+	"help": [
+		"TODO"
+	]
 }

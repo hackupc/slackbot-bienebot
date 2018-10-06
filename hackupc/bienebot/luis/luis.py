@@ -47,28 +47,33 @@ def analyze_response(response_data):
         intent = response_data['topScoringIntent']['intent']
         log.info('|LUIS| Intent that we got [{}]'.format(intent))
 
-        answer = []
+        # Initialize answer array
+        answer = list()
 
         if intent.startswith('Sponsors'):
-            answer = sponsors.get_message(response_data)
+            answer.append(sponsors.get_message(response_data))
         elif intent.startswith('Indication.Place'):
-            answer =  places.get_message(response_data)
+            answer.append(places.get_message(response_data))
         elif intent.startswith('Smalltalk'):
-            answer =  smalltalk.get_message(response_data)
+            answer.append(smalltalk.get_message(response_data))
         elif intent.startswith('Project'):
-            answer =  projects.get_message(response_data)
+            answer.append(projects.get_message(response_data))
         elif intent.startswith('Support'):
-            answer =  support.get_message(response_data)
+            answer.append(support.get_message(response_data))
         elif intent.startswith('Indication.Activity'):
-            answer =  support.get_message(response_data)
+            answer.append(support.get_message(response_data))
         else:
-            answer =  error.get_message()
-        
-        inp = response_data['query']
-        if 'biene' in inp.lower() and not 'Smalltalk.Biene' in intent:
+            answer.append(error.get_message())
+            return answer
+
+        # Check for biene manually
+        query_input = response_data['query']
+        if 'biene' in query_input.lower() and 'Smalltalk.Biene' not in intent:
             log.info('|LUIS| BIENE detected')
             answer.append('BIENE')
-        return array
+
+        # Return array of answers
+        return answer
 
     except Exception as e:
         log.error(e)

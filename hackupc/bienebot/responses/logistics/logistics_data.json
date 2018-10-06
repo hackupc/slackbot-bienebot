@@ -1,0 +1,23 @@
+{
+    "places": {
+        "sleeping": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "Checkin": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        },
+        "Meals": {
+            "how": "TODO",
+            "when": "TODO",
+            "where": "TODO"
+        }
+    },
+    "default": {
+        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
+    }
+}

@@ -56,7 +56,7 @@ def when(data, entities):
         array.append(data['places'][place]['when'])
         array.append(data['default']['more'])
     else:
-        array.append(data['default']['where'])
+        array.append(data['default']['when'])
     return array
 
 

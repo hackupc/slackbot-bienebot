@@ -1,64 +1,124 @@
 {
-  "sponsors": {
-    "itequia": {
-      "name": "Itequia",
-      "where": "Itequia has not yet assigned place :pepe:",
-      "challenge": "Itequia challenge will be publish soon",
-      "contact": "TODO:For contact contact@hackupc.com"
+    "sponsors": {
+        "opentrends": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "tech": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "vueling": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "itequia": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "servizurich": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "Soprasteria": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "ithinkupc": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "Wolfram": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "skyscanner": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "github": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "bsc": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "typeform": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "bloomberg": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "aws": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "Everis": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "Thoughtworks": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        },
+        "Infojobs": {
+            "name": "Opentrends",
+            "where": "Opentrends has not yet assigned place :pepe:",
+            "challenge": "Opentrends challenge will be publish soon",
+            "contact": "TODO:For contact contact@hackupc.com"
+        }
     },
-    "soprasteria": {
-      "name": "SopraSteria",
-      "where": "SopraSteria has not yet assigned place :pepe:",
-      "challenge": "SopraSteria challenge will be publish soon",
-      "contact": "TODO:For contact contact@hackupc.com"
-    },
-    "infojobs": {
-      "name": "Infojobs",
-      "where": "Infojobs has not yet assigned place :pepe:",
-      "challenge": "Infojobs challenge will be publish soon",
-      "contact": "For contact contact@hackupc.com"
-    },
-    "everis": {
-      "name": "Everis",
-      "where": "Everis has not yet assigned place :pepe:",
-      "challenge": "Everis challenge will be publish soon",
-      "contact": "TODO:For contact contact@hackupc.com"
-    },
-    "opentrends": {
-      "name": "Opentrends",
-      "where": "Opentrends has not yet assigned place :pepe:",
-      "challenge": "Opentrends challenge will be publish soon",
-      "contact": "TODO:For contact contact@hackupc.com"
-    },
-    "wolfram": {
-      "name": "Wolfram",
-      "where": "Wolfram it is not in HackUPC in person",
-      "challenge": "Wolfram challenge will be publish soon",
-      "contact": "TODO:For contact contact@hackupc.com"
-    },
-    "thoughworks": {
-      "name": "ThoughWorks",
-      "where": "ThoughWorks has not yet assigned place :pepe:",
-      "challenge": "ThoughWorks doesn't have any assigned challenge",
-      "contact": "TODO:For contact contact@hackupc.com"
-    },
-    "bsc": {
-      "name": "BSC",
-      "where": "BSC don't has an assigned place but they have staff around the venue. You can contact with them in case you need it :tada: ",
-      "challenge": "BSC doesn't have any assigned challenge",
-      "contact": "TODO:For contact contact@hackupc.com"
+    "Help": [
+        "If you want to know more about sponsors you can ask me about:",
+        "- Where are each sponsor",
+        "- Which challenges there are",
+        "- How contact with a sponsor"
+    ],
+    "AllChallenges": [
+        "TODO"
+    ],
+    "Which": [
+        "TODO"
+    ],
+    "default": {
+        "total": "HackUPC is possible thanks to:",
+        "where": "TODO: Tell no place detected, find it in maps",
+        "challenge": "TODO: Explain all challenges",
+        "contact": "TODO: Send contact for sponsor purposes"
     }
-  },
-  "help": [
-    "If you want to know more about sponsors you can ask me about:",
-    "- Where are each sponsor",
-    "- Which challenges there are",
-    "- How contact with a sponsor"
-  ],
-  "default": {
-    "total": "HackUPC is possible thanks to:",
-    "where": "TODO: Tell no place detected, find it in maps",
-    "challenge": "TODO: Explain all challenges",
-    "contact": "TODO: Send contat for sponsor purposes"
-  }
 }
