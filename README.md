@@ -22,14 +22,7 @@ To run the server, please execute the following from the root directory:
 
 1. Setup virtual environment
 ```bash
-python3 -venv env
-source env/bin/activate
-```
-or
-
-```bash
-virtualenv env --python=pythonX.X
-source env/bin/activate
+mkvirtualenv -p python3 biene-bot
 ```
 
 2. Install dependencies
