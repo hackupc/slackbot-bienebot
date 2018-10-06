@@ -2,53 +2,53 @@
 	"activities": {
 		"stickerexchange": {
 			"what": "TODO",
-			"when": "TODO",
-			"where": "TODO"
+			"when": "Sticker Exchange will be Sunday at 00.00h. Don't forget your stickers :hackupc:",
+			"where": "Oh, my database is empty for answer this question.\n You can question this to some of my human collegues or look it for on hackupc.com/live :smile:"
 		},
 		"talk": {
-			"what": "TODO",
-			"when": "TODO",
-			"where": "TODO"
+			"what": "This edition we have a lot of talks for you. From tech topics to know more about hackathons. Here you have all talks we have:\n - Intro to Git\n - *InfoJobs Talk*: Kotlin, a modern language for modern times\n - *iThinkUPC Talk*: Challenge\n - *Itequia Talk:* Let's make some music with Javascript\n - *Everis Talk*: Intro to Virtual Assistants\n - *Opentrends Talk*: Chat bot with Google Assitant\n - *Skyscanner Talk*: Intro to Skyscanner API\n - *Vueling Talk*: Digital transformation, more cooperation and less hierarchy\n - *ServiZurich Talk*: In memory processing pipelines running in the cloud\n - *Soprasteria Talk*: Getting started with Natural Language Processing (NLP)\n - Organize your hackathon ",
+			"when": "Talks will be on Friday and Saturday, you can check the schedule on our website hackupc.com/live :raised_hands:",
+			"where": "Talks will be placed in differents rooms from floor zero. To know exactly the room you can watch it on our website hackupc.com/live. Hope see you there :happy:"
 		},
         "bsc tour": {
-            "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "what": "Want to see Barcelona's supercomputer? We have a tour for you organized by BSC:tada:\n Stay tunned, there will be several Evenwrite badges for attending on this tour. ",
+            "when": "BSC Tour will be on Friday from 16:15h to 18:00h. Hope see you there :parrot:",
+            "where": "If you were previous registered, organizers and volunteers will be waiting you in front of check-in door."
         },
         "team building": {
             "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "when": "Team building will be on *Friday at 23:30h* :watch:",
+            "where": "Team building will be placed in *A400X*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
         "rubik tournament": {
             "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "when": "Rubik tournament will be on *Saturday at 20:00h* :watch:",
+            "where": "Rubik tournament will be placed in *A500X || A4102*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"     
         },
         "the game": {
-            "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "what": "The Game? What? :parrot:\n Oh, got it. You lost.",
+            "when": "The Game will start at :pi: hour, don't fall sleep. :sleeping:",
+            "where": "Do you ask for that? game.hackupc.com:parrot:\n Good luck :crossed_fingers:"
         },
         "nerfgun": {
             "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "when": "Nerf Guns Battle will be on *Sunday at 01:00h* :watch:",
+            "where": "Nerf Guns Battle be placed in *A4101 & A4102*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
         "slideshow": {
             "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "when": "Slide Show Karaoke will be on *Saturday at 22:00h* :watch: and don't forget your voice :microphone:",
+            "where": "Nerf Guns Battle be placed in *A5001*.\n For visual indications you can check it in our webpage hackupc.com/maps :world_map:"
         },
         "close ceremony": {
-            "what": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+			"what": "On Close ceremony there will be the final judging phase and winners will be announces. :see_no_evil:",
+			"when": "Close ceremony will be on *Sunday from 14:30h to 16:30h*. :watch:",
+			"where": "Close ceremony will be at Vertex building. You can find it on maps.hackupc.com"
 		},
 		"open ceremony": {
-			"what": "TODO",
-			"when": "TODO",
-			"where": "TODO"
+			"what": "Open ceremony will start the hackathon :star-stuck:. It is the ceremony where will be explained all you need to have a nice weekend.",
+			"when": "Open ceremony will start on *Friday at 21.00h* :watch:",
+			"where": "You can see the Open Ceremony at Vertex building or floor zero rooms by streaming. Find it on maps.hackupc.com"
 		}
 	},
 	"default": {
