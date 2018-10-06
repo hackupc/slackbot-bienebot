@@ -13,8 +13,8 @@
             "when": "They will always be open when you need it"
         },
         "a3": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "Is on the *yellow* building.",
+            "when": "They will always be open when you need it"
         },
         "a4": {
             "where": "Is on the *blue* building.",
@@ -30,31 +30,31 @@
         },
         "marenostrum": {
             "where": "Outside Campus Nord",
-            "when": "Schedules will be publish soon !!"
+            "when": "Tours to Marenostrum will be on Friday afternoon. For more information, ask me about `BSC tour` :smile:"
         },
         "photocall": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "Oh, my database is empty for answer this question.\n You can question this to some of my human collegues or look it for on hackupc.com/live :smile:",
+            "when": "Oh, my database is empty for answer this question.\n You can question this to some of my human collegues or look it for on hackupc.com/live :smile:"
         },
         "infodesk": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "InfoDesk is located in the intermediate level of A5 building (floor E)",
+            "when": "InfoDesk will be available during the whole weekend."
         },
         "cafeteria": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "Cafeteria is at room A6106 :coffee:",
+            "when": "Cafeteria will be available during the whole weekend."
         },
         "hacker rooms": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "First and second floors of A5 and A6 buildings. A4 First floor is open for hacking as well.",
+            "when": "All hacker rooms will be available during the whole weekend."
         },
         "baggage": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "Baggage check-in is located in the intermediate level of A5 building (floor E)",
+            "when": "Baggage check-in will be available during the whole weekend."
         },
         "gym": {
-            "where": "TODO",
-            "when": "TODO"
+            "where": "Gym is outside buildings.",
+            "when": "Gym will be available only for Showers needs on Saturday and Sunday morning"
         }
     },
     "default": {
@@ -63,8 +63,8 @@
         "more": "For visual indications you can take a look this wonderful web :smile: maps.hackupc.com"
     },
     "help": [
-        "Want to know about HackUPC venue? You can ask me about:",
-        "- Where are some places: Bathrooms, hackers rooms, showers, ...",
-        "- Some places have openning hours. Ask me about they scheduled."
+        "Want to know about HackUPC venue? You can ask me about :arrow_down:",
+        "- Where are some places: Bathrooms, hackers rooms, showers...",
+        "- Some places have opening hours. Ask me about they scheduled."
     ]
 }
