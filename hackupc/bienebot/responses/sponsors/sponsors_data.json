@@ -2,120 +2,127 @@
     "sponsors": {
         "opentrends": {
             "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "where": "Opentrends is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Really interesting challenge from Opentrends called `IoT & Chatbot for eHealth`. IoT-based healthcare services are expected to reduce costs, increase the quality of life, and enrich the user’s experience. IoT-based healthcare systems can be applied to a diverse array of fields, including care for pediatric and elderly patients, the supervision of chronic diseases, and the management of private health and fitness, among others.",
+            "contact": "For more information about Opentrends, see #opentrends"
         },
         "tech": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": ".tech domains",
+            "where": ".tech domains has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "Best project hosted on .tech domains",
+            "contact": "For more information about .tech domains, see #tech-domains"
         },
         "vueling": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Vueling",
+            "where": "Vueling is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Vueling has no challenge in this edition of HackUPC.",
+            "contact": "For more information about Vueling, see #vueling"
         },
         "itequia": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Itequia",
+            "where": "Itequia is located in Floor 1, A5 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #itequia",
+            "contact": "For more information about Itequia, see #itequia"
         },
         "servizurich": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "ServiZurich",
+            "where": "ServiZurich is located in Floor 2, A6 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #servizurich",
+            "contact": "For more information about ServiZurich, see #servizurich"
         },
         "soprasteria": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Sopra Steria",
+            "where": "Sopra Steria is located in Floor 1, A6 building :pushpin:",
+            "challenge": "Cool challenge from Sopra Steria called `Find solutions to fight against fake news`",
+            "contact": "For more information about Sopra Steria, see #soprasteria"
         },
         "ithinkupc": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "iThinkUPC",
+            "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #ithinkupc",
+            "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
         "wolfram": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Wolfram Language",
+            "where": "Wolfram has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "Wolfram Language has no challenge in this edition of HackUPC, but you can use their awesome API!",
+            "contact": "For more information about Wolfram Language, see #wolfram"
         },
         "skyscanner": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Skyscanner",
+            "where": "Skyscanner is located in Floor 1, A6 building :pushpin:",
+            "challenge": "Sweet challenge from Skyscanner called `Most creative use of Skyscanner's API`",
+            "contact": "For more information about Skyscanner, see #skyscanner"
         },
         "github": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "GitHub",
+            "where": "GitHub has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "GitHub has no challenge in this edition of HackUPC, but you draw a beautiful custom Mona :github:",
+            "contact": "For more information about GitHub, see #github"
         },
         "bsc": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "BSC",
+            "where": "BSC has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "BSC has no challenge in this edition of HackUPC.",
+            "contact": "For more information about BSC, see #bsc"
         },
         "typeform": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Typeform",
+            "where": "Typeform has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "Great challenge from Typeform called `Best use of Typeform's API`",
+            "contact": "For more information about Typeform, see #typeform"
         },
         "bloomberg": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Bloomberg",
+            "where": "Bloomberg is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #bloomberg",
+            "contact": "For more information about Bloomberg, see #bloomberg"
         },
         "aws": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "AWSEducate",
+            "where": "AWSEducate is located in Floor 1, A5 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #awseducate",
+            "contact": "For more information about AWSEducate, see #awseducate"
         },
         "everis": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Everis",
+            "where": "Everis is located in Floor 2, A6 building :pushpin:",
+            "challenge": "Trendy challenge from Everis called `Virtual assistants application for social purposes`",
+            "contact": "For more information about Everis, see #everis"
         },
         "thoughtworks": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "Thoughtworks",
+            "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Oh, my database is empty for answer this question. You can ask this to #thoughtworks",
+            "contact": "For more information about ThoughtWorks, see #thoughtworks"
         },
         "infojobs": {
-            "name": "Opentrends",
-            "where": "Opentrends has not yet assigned place :pepe:",
-            "challenge": "Opentrends challenge will be publish soon",
-            "contact": "TODO:For contact contact@hackupc.com"
+            "name": "InfoJobs",
+            "where": "InfoJobs is located in Floor 1, A5 building :pushpin:",
+            "challenge": "Excellent challenge from InfoJobs called `Build your dreamed tech-InfoJobs`. Build your perfect job seeker. We encourage you to propose any change or improvement in our registration process, CV, job search... In other words, everything related to have a more suitable InfoJobs for you and your needs.",
+            "contact": "For more information about InfoJobs, see #infojobs"
         }
     },
     "Help": [
         "If you want to know more about sponsors you can ask me about:",
-        "- Where are each sponsor",
+        "- Where is each sponsor",
         "- Which challenges there are",
         "- How contact with a sponsor"
     ],
     "AllChallenges": [
-        "TODO"
+        "Don't know what to hack in HakUPC? No worries, our sponsors have a long list of challenges for you :arrow_down:",
+        "`Find solutions to fight against fake news` from Sopra Steria",
+        "`Build your dreamed tech-InfoJobs` from InfoJobs",
+        "`Virtual assistants application for social purposes` from Everis",
+        "`IoT & Chatbot for eHealth` from Opentrends",
+        "`Most creative use of Skyscanner's API` from Skyscanner",
+        "`Best use of Typeform's API` from Typeform",
+        "`Best project hosted on .tech domains` from .tech domains"
     ],
     "default": {
         "total": "HackUPC is possible thanks to:",
-        "where": "TODO: Tell no place detected, find it in maps",
-        "challenge": "TODO: Explain all challenges",
-        "contact": "TODO: Send contact for sponsor purposes"
+        "where": "Sorry, I can't find this sponsor on the list :cry:",
+        "challenge": "Sorry, I can't find this sponsor on the list :cry:",
+        "contact": "Sorry, I can't find this sponsor on the list :cry:"
     }
 }
