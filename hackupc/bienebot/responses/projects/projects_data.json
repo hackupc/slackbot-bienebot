@@ -6,30 +6,30 @@
         "After submitting your project, you will know when and where you should present your project. We are eager to know what you'd do! After all this demo process, we'll select the best six or eight projects, which will be presented in the Closing ceremony."
     ],
     "Deploy": [
-        "You have to submit your project to *Devpost*, see link here: hackupc2018.devpost.com Please do it before deadline!"
+        "You have to submit your project to *Devpost*, see link here: hackupc2018.devpost.com Please do it before *deadline!* :heart:"
     ],
     "Prizes": [
-        "Prizes will not be revealed until the closing ceremony. However, we can already tell you that we will award a first, second and third place prize, and our sponsors will propose different challenges which will have a prize each, too. Our winners will be selected amongst the projects by a panel of judges from the sector while each sponsor will judge according to their own criteria."
+        "Prizes will not be revealed until the _closing ceremony_.\n However, we can already tell you that we will award a first, second and third place prize, and our sponsors will propose different challenges which will have a prize each, too. Our winners will be selected amongst the projects by a panel of judges from the sector while each sponsor will judge according to their own criteria."
     ],
     "Requisites": [
-        "There is no project topic in HackUPC. You can hack your own idea or be inspired by our sponsors which will present some challenges for you."
+        "There is no project topic in HackUPC.\n You can hack your own idea or be inspired by our sponsors which will present some challenges for you."
     ],
     "Team": [
-        "Teams of up to four are welcome. You can also hack solo if you want!"
+        "Teams of up to *four* are welcome. You can also hack solo if you want!"
     ],
     "NoTeam" : [
-        "No need to worry! Part of the fun of a hackathon is meeting new people. We will have time at the beginning of the event for everyone to meet and form teams. "
+        "No need to worry!\n Part of the fun of a hackathon is meeting new people.\n We will have time at the beginning of the event for everyone to meet and form teams. :raised_hands: "
     ],
     "Five": [
-        "Sorry, the maximum team size allowed is 4 people. I recommend you to split you in two teams and be less people on the team, or meet others hackers!"
+        "Sorry, the maximum team size allowed is *4 people*. I recommend you to split you in two teams and be less people on the team, or meet others hackers!"
     ],
     "Help": [
         "What do you need? I can answer you about",
-        "- What do you have to build",
-        "- Team size",
-        "- No team",
-        "- Prizes",
-        "- How to deploy your project",
-        "- How the demo works"
+        "- What do you have to build :hammer_and_wrench:",
+        "- Team size :female-technologist::male-technologist:",
+        "- No team :man-shrugging:",
+        "- Prizes :trophy:",
+        "- How to deploy your project :up:",
+        "- How the demo works :female-teacher:"
     ]
 }

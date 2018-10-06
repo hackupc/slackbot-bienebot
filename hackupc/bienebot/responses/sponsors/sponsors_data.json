@@ -1,103 +1,103 @@
 {
     "sponsors": {
         "opentrends": {
-            "name": "Opentrends",
+            "name": "Opentrends :opentrends:",
             "where": "Opentrends is located in Floor 0, A5 building :pushpin:",
             "challenge": "Really interesting challenge from Opentrends called `IoT & Chatbot for eHealth`. IoT-based healthcare services are expected to reduce costs, increase the quality of life, and enrich the user’s experience. IoT-based healthcare systems can be applied to a diverse array of fields, including care for pediatric and elderly patients, the supervision of chronic diseases, and the management of private health and fitness, among others.",
             "contact": "For more information about Opentrends, see #opentrends"
         },
         "tech": {
-            "name": ".tech domains",
+            "name": ".tech domains :dottech:",
             "where": ".tech domains has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "Best project hosted on .tech domains",
             "contact": "For more information about .tech domains, see #tech-domains"
         },
         "vueling": {
-            "name": "Vueling",
+            "name": "Vueling :vueling:",
             "where": "Vueling is located in Floor 0, A5 building :pushpin:",
             "challenge": "Vueling has no challenge in this edition of HackUPC.",
             "contact": "For more information about Vueling, see #vueling"
         },
         "itequia": {
-            "name": "Itequia",
+            "name": "Itequia :itequia:",
             "where": "Itequia is located in Floor 1, A5 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #itequia",
             "contact": "For more information about Itequia, see #itequia"
         },
         "servizurich": {
-            "name": "ServiZurich",
+            "name": "ServiZurich :servizurich:",
             "where": "ServiZurich is located in Floor 2, A6 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #servizurich",
             "contact": "For more information about ServiZurich, see #servizurich"
         },
         "soprasteria": {
-            "name": "Sopra Steria",
+            "name": "Sopra Steria :soprasteria:",
             "where": "Sopra Steria is located in Floor 1, A6 building :pushpin:",
             "challenge": "Cool challenge from Sopra Steria called `Find solutions to fight against fake news`",
             "contact": "For more information about Sopra Steria, see #soprasteria"
         },
         "ithinkupc": {
-            "name": "iThinkUPC",
+            "name": "iThinkUPC :ithinkupc:",
             "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #ithinkupc",
             "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
         "wolfram": {
-            "name": "Wolfram Language",
+            "name": "Wolfram Language :wolfram:",
             "where": "Wolfram has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "Wolfram Language has no challenge in this edition of HackUPC, but you can use their awesome API!",
             "contact": "For more information about Wolfram Language, see #wolfram"
         },
         "skyscanner": {
-            "name": "Skyscanner",
+            "name": "Skyscanner :skyscanner:",
             "where": "Skyscanner is located in Floor 1, A6 building :pushpin:",
             "challenge": "Sweet challenge from Skyscanner called `Most creative use of Skyscanner's API`",
             "contact": "For more information about Skyscanner, see #skyscanner"
         },
         "github": {
-            "name": "GitHub",
+            "name": "GitHub :github:",
             "where": "GitHub has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "GitHub has no challenge in this edition of HackUPC, but you draw a beautiful custom Mona :github:",
             "contact": "For more information about GitHub, see #github"
         },
         "bsc": {
-            "name": "BSC",
+            "name": "BSC :bsc:",
             "where": "BSC has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "BSC has no challenge in this edition of HackUPC.",
             "contact": "For more information about BSC, see #bsc"
         },
         "typeform": {
-            "name": "Typeform",
+            "name": "Typeform :typeform:",
             "where": "Typeform has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "Great challenge from Typeform called `Best use of Typeform's API`",
             "contact": "For more information about Typeform, see #typeform"
         },
         "bloomberg": {
-            "name": "Bloomberg",
+            "name": "Bloomberg :bloomberg:",
             "where": "Bloomberg is located in Floor 0, A5 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #bloomberg",
             "contact": "For more information about Bloomberg, see #bloomberg"
         },
         "aws": {
-            "name": "AWSEducate",
+            "name": "AWSEducate :aws:",
             "where": "AWSEducate is located in Floor 1, A5 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #awseducate",
             "contact": "For more information about AWSEducate, see #awseducate"
         },
         "everis": {
-            "name": "Everis",
+            "name": "Everis :everis:",
             "where": "Everis is located in Floor 2, A6 building :pushpin:",
             "challenge": "Trendy challenge from Everis called `Virtual assistants application for social purposes`",
             "contact": "For more information about Everis, see #everis"
         },
         "thoughtworks": {
-            "name": "Thoughtworks",
+            "name": "Thougthworks :thougthworks:",
             "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
             "challenge": "Oh, my database is empty for answer this question. You can ask this to #thoughtworks",
             "contact": "For more information about ThoughtWorks, see #thoughtworks"
         },
         "infojobs": {
-            "name": "InfoJobs",
+            "name": "InfoJobs :infojobs:",
             "where": "InfoJobs is located in Floor 1, A5 building :pushpin:",
             "challenge": "Excellent challenge from InfoJobs called `Build your dreamed tech-InfoJobs`. Build your perfect job seeker. We encourage you to propose any change or improvement in our registration process, CV, job search... In other words, everything related to have a more suitable InfoJobs for you and your needs.",
             "contact": "For more information about InfoJobs, see #infojobs"
