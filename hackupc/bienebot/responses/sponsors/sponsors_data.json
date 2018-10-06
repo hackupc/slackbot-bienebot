@@ -111,13 +111,13 @@
     ],
     "AllChallenges": [
         "Don't know what to hack in HakUPC? No worries, our sponsors have a long list of challenges for you :arrow_down:",
-        "`Find solutions to fight against fake news` from Sopra Steria",
-        "`Build your dreamed tech-InfoJobs` from InfoJobs",
-        "`Virtual assistants application for social purposes` from Everis",
-        "`IoT & Chatbot for eHealth` from Opentrends",
-        "`Most creative use of Skyscanner's API` from Skyscanner",
-        "`Best use of Typeform's API` from Typeform",
-        "`Best project hosted on .tech domains` from .tech domains"
+        "- `Find solutions to fight against fake news` from Sopra Steria",
+        "- `Build your dreamed tech-InfoJobs` from InfoJobs",
+        "- `Virtual assistants application for social purposes` from Everis",
+        "- `IoT & Chatbot for eHealth` from Opentrends",
+        "- `Most creative use of Skyscanner's API` from Skyscanner",
+        "- `Best use of Typeform's API` from Typeform",
+        "- `Best project hosted on .tech domains` from .tech domains"
     ],
     "default": {
         "total": "HackUPC is possible thanks to:",
