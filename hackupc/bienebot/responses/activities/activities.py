@@ -38,6 +38,12 @@ def get_message(response_type):
 
 
 def what(data, entities):
+    """
+    Retrieve response for `what` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
@@ -49,6 +55,12 @@ def what(data, entities):
 
 
 def when(data, entities):
+    """
+    Retrieve response for `when` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
@@ -60,6 +72,12 @@ def when(data, entities):
 
 
 def where(data, entities):
+    """
+    Retrieve response for `where` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
@@ -74,9 +92,21 @@ def where(data, entities):
 
 # noinspection PyUnusedLocal
 def which_activity(data, entities):
+    """
+    Retrieve response for `which` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     return ['\n'.join(data['which'])]
 
 
 # noinspection PyUnusedLocal
 def help_activity(data, entities):
+    """
+    Retrieve response for `help` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     return data['help']

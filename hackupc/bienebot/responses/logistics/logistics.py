@@ -36,6 +36,12 @@ def get_message(response_type):
 
 
 def how(data, entities):
+    """
+    Retrieve response for `how` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()
@@ -47,6 +53,12 @@ def how(data, entities):
 
 
 def when(data, entities):
+    """
+    Retrieve response for `when` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()
@@ -58,6 +70,12 @@ def when(data, entities):
 
 
 def where(data, entities):
+    """
+    Retrieve response for `where` question given a list of entities
+    :param data: data
+    :param entities: entities
+    :return: array of responses
+    """
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()

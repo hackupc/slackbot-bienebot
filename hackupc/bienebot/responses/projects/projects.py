@@ -27,4 +27,9 @@ def get_message(response_type):
 
 
 def help_project(data):
+    """
+    Retrieve response for `help` question
+    :param data: data
+    :return: array of responses
+    """
     return ['\n'.join(data['Help'])]
