@@ -13,7 +13,7 @@ def execute(method, url, headers=None, params=None, data=None, allowed_statuses=
 
     for it in range(1, 6):
         try:
-            response = requests.request(method=method, url=url, headers=headers, params=params, data=data, timeout=5)
+            response = requests.request(method=method, url=url, headers=headers, params=params, data=data, timeout=15)
             if response is not None and (response.ok or response.status_code in allowed_statuses):
                 return response.json()
             else:
