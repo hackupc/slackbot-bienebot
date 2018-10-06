@@ -57,7 +57,7 @@ def analyze_response(response_data):
         answer = list()
 
         # Check score
-        if score < 0.5:
+        if score < SCORE_THRESHOLD:
             answer.extend(error.get_message())
             return answer
 
