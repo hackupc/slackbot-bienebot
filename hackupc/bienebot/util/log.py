@@ -51,12 +51,13 @@ def exception(msg):
     __logger_stdout.exception(msg)
 
 
-def save_activity(user, channel, intent, message, response):
+def save_activity(user, channel, intent, score, message, response):
     """
     Save activity in csv files
     :param user: user which is interacting with the bot
     :param channel: channel between user and bot
     :param intent: luis intent
+    :param score: luis score
     :param message: user message
     :param response: bot message
     :return: new row was added in a csv file
@@ -65,13 +66,14 @@ def save_activity(user, channel, intent, message, response):
     exists = os.path.isfile(file_name)
     with open(file_name, 'a') as file:
         if not exists:
-            file.write('"{}","{}","{}","{}","{}","{}"\n'
-                       .format('DATE', 'USER', 'CHANNEL', 'INTENT', 'MESSAGE', 'RESPONSE'))
-        row = '"{}","{}","{}","{}","{}","{}"\n'.format(
+            file.write('"{}","{}","{}","{}","{}","{}","{}"\n'
+                       .format('DATE', 'USER', 'CHANNEL', 'INTENT', 'SCORE', 'MESSAGE', 'RESPONSE'))
+        row = '"{}","{}","{}","{}","{}","{}","{}"\n'.format(
             datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             user,
             channel,
             intent,
+            score,
             message.replace('\n', ''),
             response.replace('\n', '')
         )
