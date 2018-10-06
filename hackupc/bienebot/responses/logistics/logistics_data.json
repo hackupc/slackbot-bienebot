@@ -1,25 +1,25 @@
 {
     "logistic": {
         "sleeping": {
-            "how": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "how": "Want to sleep? Come to the Sleeping Zone and we'll give you an air mattress for resting all you need :zzz:",
+            "when": "You can rest in the Sleeping Zone whenever you need, but you can only get an air mattress until 2AM.",
+            "where": "Sleeping Zone will be located in the whole A3 building and second floor of A4 building."
         },
         "checkin": {
-            "how": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "how": "Come to the Check-in Zone bringing your ID and we'll give you your accreditation for joining HackUPC 2018! :parrot:",
+            "when": "The check-in will be open from 3PM to 6:30PM on Friday 19th. If you are late no worries, there will be a Late Check-in after Open Ceremony in the InfoDesk.",
+            "where": "Check-in is located between A5 and A6 buildings :building_construction:"
         },
         "meals": {
-            "how": "TODO",
-            "when": "TODO",
-            "where": "TODO"
+            "how": "We don't want hungry hackers in HackUPC! We'll serve breakfast, lunch, dinner and a midnight snack during the whole weekend. :shallow_pan_of_food:",
+            "when": "For checking when the meals will be served, we'd recommend to take a look to hackupc.com/live :yum:",
+            "where": "All the meals will be served outside A5 and A6 buildings."
         }
     },
     "default": {
-        "how": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-        "when": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
-        "where": "Sorry, I don't know what place do you mean. But you can check maps.hackupc.com and you will find all possible places.",
+        "how": "Sorry, I don't know what do you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live for checking all the activities.",
+        "when": "Sorry, I don't know what do you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live for checking all the activities.",
+        "where": "Sorry, I don't know what do you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live for checking all the activities.",
         "more": "For visual indications you can take a look this wonderful web:smile::  \n maps.hackupc.com"
     }
 }
