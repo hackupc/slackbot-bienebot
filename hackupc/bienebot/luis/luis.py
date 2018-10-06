@@ -50,10 +50,16 @@ def analyze_response(response_data):
     try:
         # Retrieve intent
         intent = response_data['topScoringIntent']['intent']
+        score = response_data['topScoringIntent']['score']
         log.info('|LUIS| Intent that we got [{}]'.format(intent))
 
         # Initialize answer array
         answer = list()
+
+        # Check score
+        if score < SCORE_THRESHOLD:
+            answer.extend(error.get_message())
+            return answer
 
         # Select intent
         if intent.startswith('Indication.Activity'):

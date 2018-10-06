@@ -14,6 +14,7 @@ LUIS_ID = ''
 
 # Bot stuff
 RTM_READ_DELAY = 1  # 1 second delay between reading from RTM
+SCORE_THRESHOLD = 0.5  # for avoiding wrong answers
 
 __all__ = [
     'SLACK_API_TOKEN',
@@ -22,5 +23,6 @@ __all__ = [
     'LUIS_SUBSCRIPTION_KEY',
     'LUIS_SERVER',
     'LUIS_ID',
-    'RTM_READ_DELAY'
+    'RTM_READ_DELAY',
+    'SCORE_THRESHOLD'
 ]
