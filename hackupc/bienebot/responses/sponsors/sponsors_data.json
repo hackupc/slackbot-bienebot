@@ -105,9 +105,10 @@
     },
     "Help": [
         "If you want to know more about sponsors you can ask me about:",
-        "- Where is each sponsor",
-        "- Which challenges there are",
-        "- How contact with a sponsor"
+        "- List sponsors :scroll:",
+        "- Where is each sponsor :round_pushpin:",
+        "- Which challenges there are :bulb:",
+        "- How contact with a sponsor :mag_right:"
     ],
     "AllChallenges": [
         "Don't know what to hack in HakUPC? No worries, our sponsors have a long list of challenges for you :arrow_down:",
