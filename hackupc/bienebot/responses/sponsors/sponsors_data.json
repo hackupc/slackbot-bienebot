@@ -3,7 +3,7 @@
         "opentrends": {
             "name": "Opentrends :opentrends:",
             "where": "Opentrends is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Really interesting challenge from Opentrends called `IoT & Chatbot for eHealth`. IoT-based healthcare services are expected to reduce costs, increase the quality of life, and enrich the user’s experience. IoT-based healthcare systems can be applied to a diverse array of fields, including care for pediatric and elderly patients, the supervision of chronic diseases, and the management of private health and fitness, among others.",
+            "challenge": "A really interesting challenge from Opentrends called `IoT & Chatbot for eHealth`. IoT-based healthcare services are expected to reduce costs, increase the quality of life, and enrich the user’s experience. IoT-based healthcare systems can be applied to a diverse array of fields, including care for pediatric and elderly patients, the supervision of chronic diseases, and the management of private health and fitness, among others.",
             "contact": "For more information about Opentrends, see #opentrends"
         },
         "tech": {
@@ -21,13 +21,13 @@
         "itequia": {
             "name": "Itequia :itequia:",
             "where": "Itequia is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #itequia",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #itequia",
             "contact": "For more information about Itequia, see #itequia"
         },
         "servizurich": {
             "name": "ServiZurich :servizurich:",
             "where": "ServiZurich is located in Floor 2, A6 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #servizurich",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #servizurich",
             "contact": "For more information about ServiZurich, see #servizurich"
         },
         "soprasteria": {
@@ -39,7 +39,7 @@
         "ithinkupc": {
             "name": "iThinkUPC :ithinkupc:",
             "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #ithinkupc",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #ithinkupc",
             "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
         "wolfram": {
@@ -75,13 +75,13 @@
         "bloomberg": {
             "name": "Bloomberg :bloomberg:",
             "where": "Bloomberg is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #bloomberg",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #bloomberg",
             "contact": "For more information about Bloomberg, see #bloomberg"
         },
         "aws": {
             "name": "AWSEducate :aws:",
             "where": "AWSEducate is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #awseducate",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #awseducate",
             "contact": "For more information about AWSEducate, see #awseducate"
         },
         "everis": {
@@ -93,7 +93,7 @@
         "thoughtworks": {
             "name": "Thougthworks :thougthworks:",
             "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty for answer this question. You can ask this to #thoughtworks",
+            "challenge": "Oh, my database is empty to answer this question. You can ask this to #thoughtworks",
             "contact": "For more information about ThoughtWorks, see #thoughtworks"
         },
         "infojobs": {
