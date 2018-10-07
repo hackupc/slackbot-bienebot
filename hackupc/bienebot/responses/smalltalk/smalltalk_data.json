@@ -36,7 +36,7 @@
         "Hope I'm doing well. You're welcome to test me as often as you want.",
         "I hope to pass your tests. Feel free to test me often.",
         "When you test me that helps my developers improve my performance.",
-        "I like being tested. It helps keep me sharp."
+        "I like being tested. It helps in keeping me sharp."
     ],
     "Joke": [
         "Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.",
@@ -51,7 +51,7 @@
         "Why did the orange stop? Because, it ran outta juice.",
         "What’s brown and sounds like a bell? Dung!",
         "Knock knock. Who’s there? Interrupting Cow. Interrupting Cow who- MOOOOOOO!",
-        "Why did the storm trooper buy an iphone? He couldn’t find the Droid he was looking for.",
+        "Why did the storm trooper buy an iPhone? He couldn’t find the Droid he was looking for.",
         "Why is six afraid of seven? Because seven ate nine.",
         "What do you get when you cross an elephant and a rhino? Elephino!"
     ],
@@ -89,8 +89,8 @@
         "For sure"
     ],
     "DifLanguage":[
-        "Sorry, my creators give me the powers only to speak in English",
-        "Ups, I can't recognize this language. My memory has space only for one language",
+        "Sorry, my creators gave me the powers only to speak in English",
+        "Oops, I can't recognize this language. My memory has space only for one language",
         "My school was completely in English, sorry"
     ]
 }
