@@ -44,6 +44,12 @@ via docker-compose
 docker-compose up -d --build
 ```
 
+## Restart
+
+```bash
+sh restart.sh
+```
+
 ## Log
 
 Run logs from docker-compose once it's up and running
