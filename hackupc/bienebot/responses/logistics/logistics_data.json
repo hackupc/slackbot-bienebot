@@ -1,7 +1,7 @@
 {
     "logistic": {
         "sleeping": {
-            "how": "Do you want to sleep? Come to the Sleeping Zone and we'll give you an air mattress to rest all the time you need to :zzz:",
+            "how": "Do you want to sleep? Come to the Sleeping Zone and we'll give you an air mattress to rest all the time you need :zzz:",
             "when": "You can rest in the Sleeping Zone whenever you need, but you can only get an air mattress until 2AM.",
             "where": "The Sleeping Zone will be located in the A3 building (both floors) and the second floor of the A4 building."
         },
@@ -20,6 +20,6 @@
         "how": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
         "when": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
         "where": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
-        "more": "For visual indications you can take a look this wonderful web :smile: maps.hackupc.com"
+        "more": "For visual indications you can take a look at this wonderful web :smile: maps.hackupc.com"
     }
 }
