@@ -18,7 +18,7 @@ HackUPC Slack helper bot implemented in Python and using LUIS by Microsoft for m
 Usage of [virtualenv](https://realpython.com/blog/python/python-virtual-environments-a-primer/) is recommended for package library / runtime isolation.
 
 ## Usage
-To run the server, please execute the following from the root directory:
+To run the server locally, please execute the following from the root directory:
 
 1. Setup virtual environment
 ```bash
@@ -37,14 +37,14 @@ pip3 install -r requirements.txt
 python3 -m hackupc.bienebot
 ```
 
-## Deploy
+## Deploy locally
 
 via docker-compose
 ```bash
 docker-compose up -d --build
 ```
 
-## Restart
+## Restart locally
 
 ```bash
 sh restart.sh
@@ -56,6 +56,36 @@ Run logs from docker-compose once it's up and running
 ```bash
 docker-compose logs -f --timestamps bienebot
 ```
+
+## Production
+
+Inspired on this [tutorial](https://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/) to understand and set it up as in our server.
+
+Needs: Systemd.
+
+- Edit this file `/lib/systemd/system/biene-bot.service`
+- Add this content
+
+    ```
+    [Unit]
+    Description=Biene bot
+    After=multi-user.target
+    
+    [Service]
+    Type=idle
+    WorkingDirectory=/home/user/project_folder
+    ExecStart=/home/user/project_folder/env/bin/python -m hackupc.bienebot
+    
+    [Install]
+    WantedBy=multi-user.target
+    ```
+
+- Replace `project_folder` by the name of the folder where the project is located
+- Create and enable service:
+
+    ```bash
+    sudo systemctl start biene-bot && sudo systemctl enable biene-bot
+    ```
 
 ## Documentation
 
