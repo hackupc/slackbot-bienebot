@@ -21,13 +21,13 @@
         "itequia": {
             "name": "Itequia :itequia:",
             "where": "Itequia is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #itequia",
+            "challenge": "A sweet challenge from Itequia called `Create an app that allow us to share and draw in a whiteboard in real time with a group of users`. Here at Itequia we always carry out our meetings next to a whiteboard. We think that having a visual feedback in a meeting helps a lot with transmitting ideas to clients and coworkers. But often we need to have online meetings with team members that are not in the office. That's why we would love to have a way to create and share a whiteboard in real time with a group of users.",
             "contact": "For more information about Itequia, see #itequia"
         },
         "servizurich": {
             "name": "ServiZurich :servizurich:",
             "where": "ServiZurich is located in Floor 2, A6 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #servizurich",
+            "challenge": "A cool challenge from ServiZurich called `Millenials on the move`. They challenge you to find out 1) how millennials really drive 2) how we can help improve and protect the lives of millennials on the move.",
             "contact": "For more information about ServiZurich, see #servizurich"
         },
         "soprasteria": {
@@ -39,7 +39,7 @@
         "ithinkupc": {
             "name": "iThinkUPC :ithinkupc:",
             "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #ithinkupc",
+            "challenge": "An awesome challenge from IThinkUPC called `Bring the university life to your smartphone`. We want to improve UPC student's digital experience by designing a whole new set of apps and resources that help us make a difference in the relationship between university services and students needs and preferences. We encourage you to design and build an app that includes your preferred feature and help our university to become digital!",
             "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
         "wolfram": {
@@ -75,13 +75,13 @@
         "bloomberg": {
             "name": "Bloomberg :bloomberg:",
             "where": "Bloomberg is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #bloomberg",
+            "challenge": "Great challenge from Typeform called `Best Tech hack`",
             "contact": "For more information about Bloomberg, see #bloomberg"
         },
         "aws": {
             "name": "AWSEducate :aws:",
             "where": "AWSEducate is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #awseducate",
+            "challenge": "A interesting challenge from AWSEducate called `The AWS City of a Cloud Serverless Hackathon`. Put your skills to the test and apply the AWS Serverless portfolio to build solutions for cities: City planning, Sanitation, Parks, Street maintenance, Voting and Public Safety.",
             "contact": "For more information about AWSEducate, see #awseducate"
         },
         "everis": {
@@ -93,7 +93,7 @@
         "thoughtworks": {
             "name": "Thougthworks :thougthworks:",
             "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Oh, my database is empty to answer this question. You can ask this to #thoughtworks",
+            "challenge": "Great challenge from ThoughtWorks called `Code what matters`. This is your moment to have a social impact on your city or community... Use the power of technology to make a positive change or to solve an issue that is close to your heart!",
             "contact": "For more information about ThoughtWorks, see #thoughtworks"
         },
         "infojobs": {
@@ -114,9 +114,15 @@
         "Don't know what to hack in HakUPC? No worries, our sponsors have a long list of challenges for you :arrow_down:",
         "- `Find solutions to fight against fake news` from Sopra Steria",
         "- `Build your dreamed tech-InfoJobs` from InfoJobs",
+        "- `The AWS City of a Cloud Serverless Hackathon` from AWSEducate",
         "- `Virtual assistants application for social purposes` from Everis",
+        "- `Create an app that allow us to share and draw in a whiteboard in real time with a group of users` from Itequia",
         "- `IoT & Chatbot for eHealth` from Opentrends",
         "- `Most creative use of Skyscanner's API` from Skyscanner",
+        "- `Bring the university life to your smartphone` from IThinkUPC",
+        "- `Millenials on the move` from ServiZurich",
+        "- `Code what matters` from ThoughtWorks",
+        "- `Best Tech hack` from Bloomberg",
         "- `Best use of Typeform's API` from Typeform",
         "- `Best project hosted on .tech domains` from .tech domains"
     ],

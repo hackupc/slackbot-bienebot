@@ -3,16 +3,16 @@
 		"stickerexchange": {
 			"what": "You give stickers, you receive stickers. Ez pz :ok_hand:",
 			"when": "Sticker Exchange will be held on Sunday at 00.00h. Don't forget your stickers :hackupc:",
-			"where": "Oh, my database is empty to answer this question.\n You can ask this to some of my human colleagues or look for it on hackupc.com/live :smile:"
+			"where": "Sticker Exchange will be celebrated in the Cafeteria (A6106) :coffee:"
 		},
 		"talk": {
-			"what": "This edition we have a lot of talks for you. From tech topics to knowing more about hackathons. Here you have all talks we have:\n - Intro to Git\n - *InfoJobs Talk*: Kotlin, a modern language for modern times\n - *iThinkUPC Talk*: Challenge\n - *Itequia Talk:* Let's make some music with Javascript\n - *Everis Talk*: Intro to Virtual Assistants\n - *Opentrends Talk*: Chat bot with Google Assitant\n - *AWSEducate Talk*: ???\n - *Typeform Talk*: API 101\n - *Skyscanner Talk*: Intro to Skyscanner API\n - *Vueling Talk*: Getting fast responses from a massive database\n - *ServiZurich Talk*: In memory processing pipelines running in the cloud\n - *Soprasteria Talk*: Getting started with Natural Language Processing (NLP)\n - Organize your hackathon ",
+			"what": "This edition we have a lot of talks for you. From tech topics to knowing more about hackathons. Here you have all talks we have:\n - Intro to Git\n - *InfoJobs Talk*: Kotlin, a modern language for modern times\n - *IThinkUPC Talk*: Getting started with IThinkUPC Challenge\n - *Itequia Talk:* Let's make some music with Javascript\n - *Everis Talk*: Intro to Virtual Assistants\n - *Opentrends Talk*: Chat bot with Google Assitant\n - *AWSEducate Talk*: Getting started with Serverless Architectures\n - *Typeform Talk*: API 101\n - *Skyscanner Talk*: Intro to Skyscanner API\n - *Vueling Talk*: Getting fast responses from a massive database\n - *ServiZurich Talk*: In memory processing pipelines running in the cloud\n - *Soprasteria Talk*: Getting started with Natural Language Processing (NLP)\n - Organize your hackathon ",
 			"when": "Talks will be given on Friday night and Saturday morning. You can check the schedule on our website hackupc.com/live :raised_hands:",
 			"where": "Talks will take place in different rooms on A5 Building, floor 0. To know exactly the room you can look for it on our website hackupc.com/live. Hope to see you there :happy:"
 		},
         "bsc tour": {
             "what": "Want to see Barcelona's supercomputer? We have a tour for you organized by BSC:tada:\n Stay tuned, there will be several Eventbrite badges to attend this tour. ",
-            "when": "BSC Tours will be given on Friday from 16:15h to 18:00h. Hope to see you there :parrot:",
+            "when": "BSC Tours will be given on Friday from 16:00h to 18:00h. Hope to see you there :parrot:",
             "where": "If you registered previously, organizers and volunteers will be waiting you in front of check-in door."
         },
         "team building": {
@@ -23,7 +23,7 @@
         "rubik tournament": {
             "what": "Do you think you're fast solving a Rubik's cube? Let's check it out in this tournament!",
             "when": "The Rubik tournament will be held on *Saturday at 20:00h* :watch:",
-            "where": "The Rubik tournament will take place in *A500X || A4102*.\n For visual indications you can check our webpage hackupc.com/maps :world_map:"
+            "where": "The Rubik tournament will take place in *A5002*.\n For visual indications you can check our webpage hackupc.com/maps :world_map:"
         },
         "the game": {
             "what": "The Game? What? :parrot:\n Oh, got it. You lost.",
@@ -38,7 +38,7 @@
         "slideshow": {
             "what": "You *MUST* be there! Give a presentation on some slides you have never seen before. The best activity in the whole weekend. Laughs assured! :joy:",
             "when": "The SlideShare Karaoke will be held on *Saturday at 22:00h* :watch: and don't forget your voice :microphone:",
-            "where": "The SlideShare Karaoke will take place in *AX00X*.\n For visual indications you can check our webpage hackupc.com/maps :world_map:"
+            "where": "The SlideShare Karaoke will take place in *A5001*.\n For visual indications you can check our webpage hackupc.com/maps :world_map:"
         },
         "close ceremony": {
 			"what": "Closing ceremony with the final judging phase. Winners will be announced here. :see_no_evil:",
