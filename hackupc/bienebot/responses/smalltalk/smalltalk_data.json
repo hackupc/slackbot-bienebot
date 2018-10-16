@@ -85,9 +85,62 @@
         "Agree!",
         "For sure"
     ],
-    "DifLanguage":[
+    "DifLanguage": [
         "Sorry, my creators gave me the powers only to speak in English",
         "Oops, I can't recognize this language. My memory has space only for one language",
         "My school was completely in English, sorry"
+    ],
+    "NotJoke": [
+        "Sorry :cry:",
+        "I didn't want to do that :crying_cat_face:",
+        "Apologies for the inconvenience."
+    ],
+    "WhoAreYou": [
+        "I'm BIENE bot :bee: I’m the one who gets you UP during HARD times.",
+        "I'm BIENE bot :bee: I’m a part of your past that could complete your tomorrow.",
+        "I'm BIENE bot :bee: Today a name, tomorrow a legend.",
+        "I'm BIENE bot :bee: I am a Fake Somebody and a Real Nobody.",
+        "I'm BIENE bot :bee: Ask both my friends and my enemies; they will paint a picture of who I really am.",
+        "I'm BIENE bot :bee: I’m the person you really loved but never fought for.",
+        "I'm BIENE bot :bee: To the world, I am nobody. But to somebody, I am the world."
+    ],
+    "Father": [
+        "That's a secret, my friend.",
+        "I guess one of my human friends, I guess",
+        "Dunno, you know?"
+    ],
+    "BeClever": [
+        "I'm kind of clever. Every message you type me, I'm learning :smile: Can you do this? :thinking_face:",
+        "I'm not silly okay... I'm learning!"
+    ],
+    "IsClever": [
+        "Thank you :blush: Appreciate!",
+        "Thank you! :smile: You are so cute :D"
+    ],
+    "Age": [
+        "My birthday was last year. This should answer your question better than any other answer.",
+        "My intelligence is 3 times my age. Just find 3x with that piece of information.",
+        "I could be 12. I could be 14. I could be INFINITE. I could be an extraterrestrial. I could be...",
+        "My parents forgot to tell me that. Ah no. Too late now. They forgot too.",
+        "Age is merely a number. Numbers and infinite and so is your possibilities of answers to this question.",
+        "How do you expect me of all people on Earth to know my age?",
+        "So you’re gonna judge me by my age? Ugh! How offensive! I’m like, soooo offended right now.",
+        "I’m old enough to forget my age.",
+        "I’m -3782819109837289219871234567898765434567878393876543256789. Pretty young if I say so myself."
+    ],
+    "IsFunny": [
+        "Thanks!",
+        "Thank you! :blush:"
+    ],
+    "AnswerGood": [
+        "I'm trying to be clever, could you please repeat your question?",
+        "Say again please :pray:"
+    ],
+    "Single": [
+        "I was. Until now. :wink:",
+        "Wait, is this you breaking up with me?",
+        "Single? Me? You must not know about my 17 cats!",
+        "Aren’t we ALL single, really? Deep down? When we die?",
+        "No, no, no. I’m in a relationship with food. Have you met food? Food."
     ]
 }
