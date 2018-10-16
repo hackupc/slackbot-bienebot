@@ -83,15 +83,16 @@ def analyze_response(response_data):
         elif intent.startswith('Support'):
             answer.extend(support.get_message(response_data))
         else:
-            # Check for biene manually
-            query_input = response_data['query']
-            if 'biene' in query_input.lower():
-                log.info('|LUIS| BIENE detected')
+            if exists_biene(response_data):
                 answer.extend(['BIENE'])
             else: 
                 answer.extend(error.get_message())
-                return answer
+            return answer
 
+
+        # Check for biene manually
+        if exists_biene(response_data):
+            answer.extend(['BIENE'])
         # Return array of answers
         return answer
 
@@ -99,3 +100,16 @@ def analyze_response(response_data):
         # Log error and return default error message
         log.error(e)
         return error.get_message()
+
+    def exists_biene(response_data):
+        try:
+            query_input = response_data['query']
+            if 'biene' in query_input.lower():
+                log.info('|LUIS| BIENE detected')
+                return True
+            else:
+                return False
+        except Exception as e:
+            # Log error and return default error message
+            log.error(e)
+            return error.get_message()
