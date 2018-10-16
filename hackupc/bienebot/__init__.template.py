@@ -6,6 +6,7 @@ Global vars for bienebot module
 SLACK_API_TOKEN = ''  # token for bienebot
 SLACK_API_METHOD = 'chat.postMessage'
 SLACK_API_CHANNEL = ''
+SLACK_API_RANDOM = ''
 
 # Luis stuff
 LUIS_SUBSCRIPTION_KEY = ''
@@ -20,6 +21,7 @@ __all__ = [
     'SLACK_API_TOKEN',
     'SLACK_API_METHOD',
     'SLACK_API_CHANNEL',
+    'SLACK_API_RANDOM',
     'LUIS_SUBSCRIPTION_KEY',
     'LUIS_SERVER',
     'LUIS_ID',
