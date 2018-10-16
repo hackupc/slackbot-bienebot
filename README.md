@@ -187,7 +187,6 @@ Topic related to project information.
 Topic related to random stuff.
 
 #### Sub-intents
-- Biene: Just biene.
 - DifLanguage: Tell to talk in English.
 - Goodbye: Just say bye.
 - Hello: Just say hi.
