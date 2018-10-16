@@ -197,6 +197,15 @@ Topic related to random stuff.
 - ProjectIdea: Random and maybe useful project ideas.
 - Thanks: Biene bot is a gentle woman
 - Tip: Tips are always useful.
+- NotJoke: Not joking answers.
+- WhoAreYou: Just asking who are you.
+- Father: Who knows he is her father.
+- BeClever: Clever answers.
+- IsClever: For sure she's clever.
+- Age: Good question, her age.
+- IsFunny: Because she's funny.
+- AnswerGood: When she hits the correct answer.
+- Single: Do want to date with her?
 
 ### Sponsors
 
