@@ -22,7 +22,7 @@ class Slack:
         :return: text and channel message
         """
         for event in self.client.rtm_read():
-            if event['type'] == 'message' and 'subtype' not in event:
+            if event['type'] == 'message' and 'subtype' not in event and 'thread_ts' not in event:
                 text = event['text']
                 channel = event['channel']
                 user = event['user']
