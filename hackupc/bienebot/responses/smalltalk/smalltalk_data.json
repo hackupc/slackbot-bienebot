@@ -55,9 +55,6 @@
         "Why is six afraid of seven? Because seven ate nine.",
         "What do you get when you cross an elephant and a rhino? Elephino!"
     ],
-    "Biene": [
-        "BIENE"
-    ],
     "ProjectIdea": [
         "**FTP Client** ```(suggested implementation: web, desktop or CLI app)```.\n Build a simple FTP client. As a bonus challenge, support secure file transfer.",
         "**HTTP Server** ```(suggested implementation: any programming language you want to master)```.\n To understand HTTP deeply, build an HTTP server. There are a number of tutorials available to guide you through the process.",

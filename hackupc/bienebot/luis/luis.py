@@ -83,14 +83,14 @@ def analyze_response(response_data):
         elif intent.startswith('Support'):
             answer.extend(support.get_message(response_data))
         else:
-            answer.extend(error.get_message())
-            return answer
-
-        # Check for biene manually
-        query_input = response_data['query']
-        if 'biene' in query_input.lower() and 'Smalltalk.Biene' not in intent:
-            log.info('|LUIS| BIENE detected')
-            answer.extend(['BIENE'])
+            # Check for biene manually
+            query_input = response_data['query']
+            if 'biene' in query_input.lower():
+                log.info('|LUIS| BIENE detected')
+                answer.extend(['BIENE'])
+            else: 
+                answer.extend(error.get_message())
+                return answer
 
         # Return array of answers
         return answer
