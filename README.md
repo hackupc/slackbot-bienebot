@@ -119,6 +119,8 @@ Topic related to general questions about the event.
 #### Sub-intents
 - When: Dates of the hackathon.
 - Where: Hackathon location.
+- Schedule: Full agenda of the event.
+- Next: Get the following event in HackUPC.
 
 ### Hardware Lab
 
