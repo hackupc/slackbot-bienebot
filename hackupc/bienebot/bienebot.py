@@ -1,4 +1,4 @@
-import time
+import multiprocessing as mp
 
 from hackupc.bienebot import *
 from hackupc.bienebot.luis import luis
@@ -19,17 +19,9 @@ def run_bienebot():
             while True:
                 message, channel, user = slack.retrieve_message()
                 if message:
-                    # Biene in Random
-                    if channel == SLACK_API_RANDOM:
-                        if 'biene' in message.lower():
-                            slack.send_message('BIENE', channel)
-                    # Luis interaction
-                    else:
-                        response, intent, score = luis.get_intent(message)
-                        for mess in response:
-                            slack.send_message(mess, channel)
-                            log.save_activity(user, channel, intent, score, message, mess)
-                time.sleep(RTM_READ_DELAY)
+                    process = mp.Process(target=worker, args=(message, channel, user, slack,))
+                    process.daemon = True
+                    process.start()
         else:
             log.error('Connection failed. Exception traceback printed above.')
     except Exception as e:
@@ -38,3 +30,24 @@ def run_bienebot():
         log.info('|BIENE| Biene Bot stopped!')
         slack.notify(':bee: Biene Bot stopped!')
         return
+
+
+def worker(message, channel, user, slack):
+    """
+    Worker for interpreting the message from Slack
+    :param message: message
+    :param channel: channel
+    :param user: user
+    :param slack: slack instance
+    :return: response sent
+    """
+    # Biene in Random
+    if channel == SLACK_API_RANDOM:
+        if 'biene' in message.lower():
+            slack.send_message('BIENE', channel)
+    # Luis interaction
+    else:
+        response, intent, score = luis.get_intent(message)
+        for mess in response:
+            slack.send_message(mess, channel)
+            log.save_activity(user, channel, intent, score, message, mess)
