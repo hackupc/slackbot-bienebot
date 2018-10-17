@@ -145,6 +145,21 @@ Topic related to all Logistics matters.
 - When: Time schedule of a given logistics item.
 - Where: Location of a given logistics item.
 
+### Meals
+
+> Intent: `Meals`
+
+Topic related to all meals.
+
+#### Sub-intents
+- Coffee: Coffee information.
+- Help: Tell what can you ask to the bot.
+- Schedule: Full meals schedule.
+- Snacks: Snacks information.
+- Special: Special meals for vegan/vegetarian, intolerant...
+- Where: Meals location.
+- Which: Detail information about meals.
+
 ### Mentor
 
 > Intent: `Mentor`
