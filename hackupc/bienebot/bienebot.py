@@ -1,3 +1,4 @@
+import time
 import multiprocessing as mp
 
 from hackupc.bienebot import *
@@ -22,6 +23,7 @@ def run_bienebot():
                     process = mp.Process(target=worker, args=(message, channel, user, slack,))
                     process.daemon = True
                     process.start()
+                time.sleep(RTM_READ_DELAY)
         else:
             log.error('Connection failed. Exception traceback printed above.')
     except Exception as e:

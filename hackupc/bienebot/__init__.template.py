@@ -14,7 +14,7 @@ LUIS_SERVER = ''
 LUIS_ID = ''
 
 # Bot stuff
-RTM_READ_DELAY = 1  # 1 second delay between reading from RTM
+RTM_READ_DELAY = 0.5  # 0.5 second delay between reading from RTM
 SCORE_THRESHOLD = 0.5  # for avoiding wrong answers
 
 __all__ = [
