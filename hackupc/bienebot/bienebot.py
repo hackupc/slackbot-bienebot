@@ -25,9 +25,9 @@ def run_bienebot():
                     process.start()
                 time.sleep(RTM_READ_DELAY)
         else:
-            log.error('Connection failed. Exception traceback printed above.')
+            log.error('Connection failed. Exception traceback printed above.', slack)
     except Exception as e:
-        log.error(e)
+        log.error(e, slack)
     finally:
         log.info('|BIENE| Biene Bot stopped!')
         slack.notify(':bee: Biene Bot stopped!')

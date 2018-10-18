@@ -37,11 +37,15 @@ def warn(msg):
     __logger_stdout.warning(msg)
 
 
-def error(msg):
+def error(msg, slack=None):
     """
     Log [ERROR] level log messages
     """
     __logger_stdout.error(msg)
+
+    # Debug on Slack
+    if slack is not None:
+        slack.notify(':warning: ERROR: {}'.format(msg))
 
 
 def exception(msg):
