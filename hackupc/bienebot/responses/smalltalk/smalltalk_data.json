@@ -14,7 +14,8 @@
         "Doing fine.",
         "Fine, thanks.",
         "All good mate.",
-        "So good."
+        "So good.",
+        "I'm good thanks."
     ],
     "Thanks": [
         "Anytime. That's what I'm here for.",
@@ -27,7 +28,8 @@
         "Adiós :wave:",
         "Goodbye :wave:",
         "See you soon :smile:",
-        "I will miss you :kissing_heart:"
+        "I will miss you :kissing_heart:",
+        "Take care! :kiss:"
     ],
     "Help": [
         "Sure. I'd be happy to. I can talk about:\n - Activities :joystick:\n - HackUPC general information :hackupc:\n - Hardware Lab :computer:\n - Meals information :shallow_pan_of_food:\n - Mentors :female-teacher:\n - Venue locations :round_pushpin:\n - Project information :information_source:\n - Sponsors :man-raising-hand:"
@@ -83,7 +85,8 @@
     ],
     "Nice": [
         "Agree!",
-        "For sure"
+        "For sure",
+        "No worries :)"
     ],
     "DifLanguage": [
         "Sorry, my creators gave me the powers only to speak in English",
