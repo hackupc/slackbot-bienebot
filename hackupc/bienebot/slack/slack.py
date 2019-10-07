@@ -57,12 +57,12 @@ def answer(**payload):
     :return: Thread run.
     """
     if 'data' in payload:
-        if all(x in payload['data'] for x in ['text', 'channel', 'user']):
+        if all(x in payload['data'] for x in ['text', 'channel', 'user']) and 'thread_ts' not in payload['data']:
             text = payload['data']['text']
             channel = payload['data']['channel']
             user = payload['data']['user']
             web_client = payload['web_client']
-            log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
+            log.debug('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
                 user, channel, text.replace('\n', ''))
             )
             thread = threading.Thread(target=worker, args=(text, channel, user, web_client))
