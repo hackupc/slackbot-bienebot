@@ -23,7 +23,7 @@ def get_message(response_type):
             log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
         else:
             log_info = '|RESPONSE| No entities about places'
-        log.info(log_info)
+        log.debug(log_info)
 
         switcher = {
             'When': when,
@@ -46,7 +46,7 @@ def where(data, entities):
     array = []
     if entities:
         place = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{place}] getting WHERE')
+        log.debug(f'|RESPONSE|: About [{place}] getting WHERE')
         array.append(data['places'][place]['where'])
         array.append(data['default']['more'])
     else:
@@ -65,7 +65,7 @@ def when(data, entities):
     array = []
     if entities:
         place = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{place}] getting WHEN')
+        log.debug(f'|RESPONSE|: About [{place}] getting WHEN')
         array.append(data['places'][place]['when'])
     else:
         array.append(data['default']['when'])

@@ -23,7 +23,7 @@ def get_message(response_type):
             log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
         else:
             log_info = f'|RESPONSE| Getting [{list_intent[1]}] about all sponsors'
-        log.info(log_info)
+        log.debug(log_info)
 
         switcher = {
             'Which': which_sponsor,
@@ -86,7 +86,7 @@ def where(data, entities):
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
-        log.info(f'|RESPONSE|: About [{sponsor}] getting WHERE')
+        log.debug(f'|RESPONSE|: About [{sponsor}] getting WHERE')
         array.append(data['sponsors'][sponsor]['where'])
     else:
         array.append(data['default']['where'])
@@ -103,7 +103,7 @@ def challenge(data, entities):
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
-        log.info(f'|RESPONSE|: About [{sponsor}] getting CHALLENGE')
+        log.debug(f'|RESPONSE|: About [{sponsor}] getting CHALLENGE')
         array.append(data['sponsors'][sponsor]['challenge'])
     else:
         array.append(data['default']['challenge'])
@@ -120,7 +120,7 @@ def contact(data, entities):
     array = []
     if entities:
         sponsor = entities[0]['entity'].lower()
-        log.info(f'|RESPONSE|: About [{sponsor}] getting CONTACT')
+        log.debug(f'|RESPONSE|: About [{sponsor}] getting CONTACT')
         array.append(data['sponsors'][sponsor]['contact'])
     else:
         array.append(data['default']['contact'])

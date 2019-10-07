@@ -23,7 +23,7 @@ def get_message(response_type):
             log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
         else:
             log_info = '|RESPONSE| No entities about logistics'
-        log.info(log_info)
+        log.debug(log_info)
 
         switcher = {
             'How': how,
@@ -46,7 +46,7 @@ def how(data, entities):
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{logistic}] getting HOW')
+        log.debug(f'|RESPONSE|: About [{logistic}] getting HOW')
         array.append(data['logistic'][logistic]['how'])
     else:
         array.append(data['default']['how'])
@@ -63,7 +63,7 @@ def when(data, entities):
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{logistic}] getting WHEN')
+        log.debug(f'|RESPONSE|: About [{logistic}] getting WHEN')
         array.append(data['logistic'][logistic]['when'])
     else:
         array.append(data['default']['when'])
@@ -80,7 +80,7 @@ def where(data, entities):
     array = []
     if entities:
         logistic = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{logistic}] getting WHERE')
+        log.debug(f'|RESPONSE|: About [{logistic}] getting WHERE')
         array.append(data['logistic'][logistic]['where'])
         array.append(data['default']['more'])
     else:

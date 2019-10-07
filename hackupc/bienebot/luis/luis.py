@@ -20,7 +20,7 @@ def get_intent(query):
     :param query: Query to process.
     :return: LUIS answer.
     """
-    log.info(f'|LUIS| Get intent with query [{query}]')
+    log.debug(f'|LUIS| Get intent with query [{query}]')
     headers = {'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY}
     params = {
         'q': query,
@@ -35,7 +35,7 @@ def get_intent(query):
         answers = analyze_response(response_data)
         for an in answers:
             an = an.replace('\n', '')
-            log.info(f'|LUIS| After analyzing data, we got [{an}]')
+            log.debug(f'|LUIS| After analyzing data, we got [{an}]')
         return answers, response_data['topScoringIntent']['intent'], response_data['topScoringIntent']['score']
     except Exception as e:
         log.exception(e)
@@ -51,7 +51,7 @@ def analyze_response(response_data):
         # Retrieve intent
         intent = response_data['topScoringIntent']['intent']
         score = response_data['topScoringIntent']['score']
-        log.info(f'|LUIS| Intent that we got [{intent}]')
+        log.debug(f'|LUIS| Intent that we got [{intent}]')
 
         # Initialize answer array
         answer = list()
@@ -112,7 +112,7 @@ def exists_biene(response_data):
     try:
         query_input = response_data['query']
         if 'biene' in query_input.lower():
-            log.info('|LUIS| BIENE detected')
+            log.debug('|LUIS| BIENE detected')
             return True
         else:
             return False

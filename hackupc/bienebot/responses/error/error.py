@@ -13,7 +13,7 @@ def get_message():
         data = json.load(json_data)
 
         # Log stuff
-        log.info('|RESPONSE| Looking for [error] from JSON element')
+        log.debug('|RESPONSE| Looking for [error] from JSON element')
 
         array = [random.choice(data['No response'])]
         return array

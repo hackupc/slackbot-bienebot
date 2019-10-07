@@ -19,7 +19,7 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         # Log stuff
-        log.info(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
 
         if list_intent[1] == 'Next':
             array = next_hackupc()

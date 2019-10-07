@@ -1,6 +1,7 @@
 import datetime
 import logging
 import os
+import sys
 
 from hackupc.bienebot.slack import slack
 
@@ -12,6 +13,9 @@ __logger_stdout = logging.getLogger('hackupc_bienebot')
 __formatter = logging.Formatter('{%(name)s} - <%(asctime)s> - [%(levelname)-7s] - %(message)s')
 
 # Setup stdout stream handler
+__handler_stdout = logging.StreamHandler(sys.stdout)
+__handler_stdout.setFormatter(__formatter)
+__logger_stdout.addHandler(__handler_stdout)
 __logger_stdout.setLevel(logging.INFO)
 
 

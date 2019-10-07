@@ -23,7 +23,7 @@ def get_message(response_type):
             log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
         else:
             log_info = '|RESPONSE| No entities about activities'
-        log.info(log_info)
+        log.debug(log_info)
 
         switcher = {
             'What': what,
@@ -48,7 +48,7 @@ def what(data, entities):
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{activity}] getting WHAT')
+        log.debug(f'|RESPONSE|: About [{activity}] getting WHAT')
         array.append(data['activities'][activity]['what'])
     else:
         array.append(data['default']['what'])
@@ -65,7 +65,7 @@ def when(data, entities):
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{activity}] getting WHEN')
+        log.debug(f'|RESPONSE|: About [{activity}] getting WHEN')
         array.append(data['activities'][activity]['when'])
     else:
         array.append(data['default']['when'])
@@ -82,7 +82,7 @@ def where(data, entities):
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info(f'|RESPONSE|: About [{activity}] getting WHERE')
+        log.debug(f'|RESPONSE|: About [{activity}] getting WHERE')
         array.append(data['activities'][activity]['where'])
         array.append(data['default']['more'])
     else:

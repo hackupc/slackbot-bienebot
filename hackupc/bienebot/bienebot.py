@@ -13,7 +13,7 @@ def run():
         rtm_client.start()
     except Exception as e:
         log.exception(e)
-        log.error(e, notify=True)
+        log.error(f'General error: {e}', notify=True)
     finally:
         log.info('|BIENE| Biene Bot stopped!')
         slack.send_message(':bee: Biene Bot stopped!')
