@@ -1,6 +1,6 @@
 # noinspection PyPackageRequirements
 import slack
-import multiprocessing as mp
+import threading
 
 from hackupc.bienebot import *
 from hackupc.bienebot.luis import luis
@@ -65,7 +65,6 @@ def answer(**payload):
             log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
                 user, channel, text.replace('\n', ''))
             )
-            # process = mp.Process(target=worker, args=(text, channel, user, web_client))
-            # process.daemon = True
-            # process.start()
-            worker(text, channel, user, web_client)
+            thread = threading.Thread(target=worker, args=(text, channel, user, web_client))
+            thread.daemon = True
+            thread.start()
