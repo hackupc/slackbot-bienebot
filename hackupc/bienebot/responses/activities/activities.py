@@ -6,8 +6,8 @@ from hackupc.bienebot.util import log
 
 def get_message(response_type):
     """
-    Return a message from a activities intent
-    :param response_type luis response
+    Return a message from a activities intent.
+    :param response_type LUIS response.
     """
     with open('hackupc/bienebot/responses/activities/activities_data.json') as json_data:
         data = json.load(json_data)
@@ -19,7 +19,8 @@ def get_message(response_type):
 
         # Log stuff
         if entities:
-            log_info = '|RESPONSE| About [{}] getting [{}]'.format(entities[0]['entity'], list_intent[1])
+            entity = entities[0]['entity']
+            log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
         else:
             log_info = '|RESPONSE| No entities about activities'
         log.info(log_info)
@@ -39,15 +40,15 @@ def get_message(response_type):
 
 def what(data, entities):
     """
-    Retrieve response for `what` question given a list of entities
-    :param data: data
-    :param entities: entities
-    :return: array of responses
+    Retrieve response for `what` question given a list of entities.
+    :param data: Data.
+    :param entities: Entities.
+    :return: Array of responses.
     """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info('|RESPONSE|: About [{}] getting WHAT'.format(activity))
+        log.info(f'|RESPONSE|: About [{activity}] getting WHAT')
         array.append(data['activities'][activity]['what'])
     else:
         array.append(data['default']['what'])
@@ -56,15 +57,15 @@ def what(data, entities):
 
 def when(data, entities):
     """
-    Retrieve response for `when` question given a list of entities
-    :param data: data
-    :param entities: entities
-    :return: array of responses
+    Retrieve response for `when` question given a list of entities.
+    :param data: Data.
+    :param entities: Entities.
+    :return: Array of responses.
     """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info('|RESPONSE|: About [{}] getting WHEN'.format(activity))
+        log.info(f'|RESPONSE|: About [{activity}] getting WHEN')
         array.append(data['activities'][activity]['when'])
     else:
         array.append(data['default']['when'])
@@ -73,15 +74,15 @@ def when(data, entities):
 
 def where(data, entities):
     """
-    Retrieve response for `where` question given a list of entities
-    :param data: data
-    :param entities: entities
-    :return: array of responses
+    Retrieve response for `where` question given a list of entities.
+    :param data: Data.
+    :param entities: Entities.
+    :return: Array of responses.
     """
     array = []
     if entities:
         activity = entities[0]['resolution']['values'][0].lower()
-        log.info('|RESPONSE|: About [{}] getting WHERE'.format(activity))
+        log.info(f'|RESPONSE|: About [{activity}] getting WHERE')
         array.append(data['activities'][activity]['where'])
         array.append(data['default']['more'])
     else:
@@ -93,10 +94,10 @@ def where(data, entities):
 # noinspection PyUnusedLocal
 def which_activity(data, entities):
     """
-    Retrieve response for `which` question given a list of entities
-    :param data: data
-    :param entities: entities
-    :return: array of responses
+    Retrieve response for `which` question given a list of entities.
+    :param data: Data.
+    :param entities: Entities.
+    :return: Array of responses,
     """
     return ['\n'.join(data['which'])]
 
@@ -104,9 +105,9 @@ def which_activity(data, entities):
 # noinspection PyUnusedLocal
 def help_activity(data, entities):
     """
-    Retrieve response for `help` question given a list of entities
-    :param data: data
-    :param entities: entities
-    :return: array of responses
+    Retrieve response for `help` question given a list of entities.
+    :param data: Data.
+    :param entities: Entities.
+    :return: Array of responses,
     """
     return data['help']

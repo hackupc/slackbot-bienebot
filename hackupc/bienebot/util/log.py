@@ -1,23 +1,23 @@
-"""
-Logging utility for more robust logging
-"""
 import datetime
 import logging
 import os
 
-# setup main loggers
+
+# Setup main loggers
 __logger_stdout = logging.getLogger('hackupc_bienebot')
 
-# setup formatter
+# Setup formatter
 __formatter = logging.Formatter('{%(name)s} - <%(asctime)s> - [%(levelname)-7s] - %(message)s')
 
-# setup stdout stream handler
+# Setup stdout stream handler
 __logger_stdout.setLevel(logging.INFO)
 
 
 def debug(msg):
     """
-    Optimized debugging log call which wraps with debug check to prevent unnecessary string creation
+    Optimized debugging log call which wraps with debug check to prevent unnecessary string creation.
+    :param msg: Message to debug.
+    :return: Message debugged.
     """
     if __logger_stdout.isEnabledFor(logging.DEBUG):
         __logger_stdout.debug(msg)
@@ -25,55 +25,64 @@ def debug(msg):
 
 def info(msg):
     """
-    Log [INFO] level log messages
+    Log [INFO] level log messages.
+    :param msg: Message to log.
+    :return: Message logged.
     """
     __logger_stdout.info(msg)
 
 
 def warn(msg):
     """
-    Log [WARNING] level log messages
+    Log [WARNING] level log messages.
+    :param msg: Message to log.
+    :return: Message logged.
     """
     __logger_stdout.warning(msg)
 
 
 def error(msg, slack=None):
     """
-    Log [ERROR] level log messages
+    Log [ERROR] level log messages.
+    :param msg: Message to log.
+    :param slack: Slack object for notifying the error.
+    :return: Message logged.
     """
     __logger_stdout.error(msg)
-
-    # Debug on Slack
     if slack is not None:
-        slack.notify(':warning: ERROR: {}'.format(msg))
+        slack.notify(f':warning: ERROR: {msg}')
 
 
 def exception(msg):
     """
-    Log [ERROR] level log messages
+    Log [EXCEPTION] level log messages.
+    :param msg: Message to log.
+    :return: Message logged.
     """
     __logger_stdout.exception(msg)
 
 
 def save_activity(user, channel, intent, score, message, response):
     """
-    Save activity in csv files
-    :param user: user which is interacting with the bot
-    :param channel: channel between user and bot
-    :param intent: luis intent
-    :param score: luis score
-    :param message: user message
-    :param response: bot message
-    :return: new row was added in a csv file
+    Save activity in CSV files.
+    :param user: User which is interacting with the bot.
+    :param channel: Channel between user and bot.
+    :param intent: LUIS intent.
+    :param score: LUIS score.
+    :param message: User message.
+    :param response: Bot message.
+    :return: New row was added in a CSV file.
     """
-    file_name = 'logs/log_biene_bot_{date}.csv'.format(date=datetime.datetime.now().strftime("%Y-%m-%d"))
+    string_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    file_name = f'logs/log_biene_bot_{string_date}.csv'
     exists = os.path.isfile(file_name)
     with open(file_name, 'a') as file:
         if not exists:
-            file.write('"{}","{}","{}","{}","{}","{}","{}"\n'
-                       .format('DATE', 'USER', 'CHANNEL', 'INTENT', 'SCORE', 'MESSAGE', 'RESPONSE'))
+            file.write('"{}","{}","{}","{}","{}","{}","{}"\n'.format(
+                'DATE', 'USER', 'CHANNEL', 'INTENT', 'SCORE', 'MESSAGE', 'RESPONSE'
+            ))
         row = '"{}","{}","{}","{}","{}","{}","{}"\n'.format(
-            datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             user,
             channel,
             intent,

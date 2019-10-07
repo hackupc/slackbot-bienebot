@@ -7,10 +7,10 @@ from hackupc.bienebot.slack.slack import Slack
 from hackupc.bienebot.util import log
 
 
-def run_bienebot():
+def run():
     """
-    Run Biene Bot
-    :return: biene bot ran
+    Run Biene Bot.
+    :return: Biene bot ran
     """
     slack = Slack()
     try:

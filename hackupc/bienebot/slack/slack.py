@@ -1,4 +1,4 @@
-from slackclient import SlackClient
+from slack import WebClient
 
 from hackupc.bienebot import *
 from hackupc.bienebot.util import log
@@ -7,7 +7,7 @@ from hackupc.bienebot.util import log
 class Slack:
 
     def __init__(self):
-        self.client = SlackClient(SLACK_API_TOKEN)
+        self.client = WebClient(SLACK_API_TOKEN)
 
     def rtm_connect(self):
         """
@@ -26,8 +26,9 @@ class Slack:
                 text = event['text']
                 channel = event['channel']
                 user = event['user']
-                log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'
-                         .format(user, channel, text.replace('\n', '')))
+                log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
+                    user, channel, text.replace('\n', ''))
+                )
                 return text, channel, user
         return None, None, None
 
@@ -38,8 +39,7 @@ class Slack:
         :param channel: channel where send
         :return: message sent
         """
-        log.info('|Slack| Sent the following message in channel [{}]: [{}]'
-                 .format(channel, message.replace('\n', '')))
+        log.info('|Slack| Sent the following message in channel [{}]: [{}]'.format(channel, message.replace('\n', '')))
         return self.client.api_call(
             SLACK_API_METHOD,
             channel=channel,

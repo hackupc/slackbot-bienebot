@@ -1,16 +1,16 @@
 import json
 import random
-import requests
 
 from datetime import datetime, timedelta
 
-from hackupc.bienebot.util import log
+from hackupc.bienebot import SCHEDULE_JSON_URL
+from hackupc.bienebot.util import log, request
 
 
 def get_message(response_type):
     """
-    Return a message from a hackUPC intent
-    :param response_type luis response
+    Return a message from a hackUPC intent.
+    :param response_type LUIS response.
     """
     with open('hackupc/bienebot/responses/hackupc/hackupc_data.json') as json_data:
         data = json.load(json_data)
@@ -19,7 +19,7 @@ def get_message(response_type):
         list_intent = intent.split('.')
 
         # Log stuff
-        log.info('|RESPONSE| Looking for [{}] from JSON element'.format(list_intent[1]))
+        log.info(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
 
         if list_intent[1] == 'Next':
             array = next_hackupc()
@@ -33,14 +33,12 @@ def get_message(response_type):
 
 def next_hackupc():
     """
-    Get next event calling Live json
-    :return: response
+    Get next event calling live JSON.
+    :return: Next event message.
     """
     now = datetime.utcnow() + timedelta(hours=2)
-    params = {
-        'date': now.time()
-    }
-    response = requests.get(url='https://hackupc.com/assets/data/schedule.json', params=params, timeout=5)
+    params = {'date': now.time()}
+    response = request.execute('GET', SCHEDULE_JSON_URL, params=params)
     response_dict = response.json()
 
     # Per each day
@@ -50,14 +48,16 @@ def next_hackupc():
             for event in day['events']:
                 event_date = datetime.strptime('{} {}'.format(day['date'], event['startHour']), '%d/%m/%Y %H:%M')
                 if now <= event_date:
-                    return ['The following event is called `{}` located at `{}`. {}. It starts at `{}` and ends at `{}`.'
-                            .format(
-                                    event['title'],
-                                    event['locationName'],
-                                    event['description'],
-                                    event['startHour'],
-                                    event['endHour']
-                            )]
+                    return [
+                        'The following event is called `{}` located at `{}`. {}. It starts at `{}` and ends at `{}`.'
+                        .format(
+                            event['title'],
+                            event['locationName'],
+                            event['description'],
+                            event['startHour'],
+                            event['endHour']
+                        )
+                    ]
 
     # No more activities response
     return ['There are not more activities in this edition of HackUPC :hackupc: So excited to see you again next year!']
