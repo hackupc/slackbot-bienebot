@@ -1,60 +1,67 @@
-from slack import WebClient
+# noinspection PyPackageRequirements
+import slack
+import multiprocessing.dummy as mp
 
 from hackupc.bienebot import *
+from hackupc.bienebot.luis import luis
 from hackupc.bienebot.util import log
 
 
 class Slack:
 
     def __init__(self):
-        self.client = WebClient(SLACK_API_TOKEN)
+        self.web_client = slack.WebClient(token=SLACK_API_CHANNEL, timeout=30)
+        self.rtm_client = slack.RTMClient(token=SLACK_API_TOKEN, timeout=30)
 
-    def rtm_connect(self):
+    def rtm_start(self):
         """
-        Connects to the RTM web socket
-        :return: true if it's connected successfully, false otherwise
+        Connects to the RTM web socket.
+        :return: True if it's connected successfully, False otherwise.
         """
-        return self.client.rtm_connect(with_team_state=False)
+        return self.rtm_client.start()
 
-    def retrieve_message(self):
+    def worker(self, message, channel, user):
         """
-        Retrieve messages
-        :return: text and channel message
+        Worker for interpreting the message from Slack.
+        :param message: Message.
+        :param channel: Channel.
+        :param user: User.
+        :return: Response sent.
         """
-        for event in self.client.rtm_read():
-            if event['type'] == 'message' and 'subtype' not in event and 'thread_ts' not in event:
-                text = event['text']
-                channel = event['channel']
-                user = event['user']
-                log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
-                    user, channel, text.replace('\n', ''))
-                )
-                return text, channel, user
-        return None, None, None
+        # Biene in Random
+        if channel == SLACK_API_RANDOM:
+            if 'biene' in message.lower():
+                self.send_message('BIENE', channel)
+        # Luis interaction
+        else:
+            response, intent, score = luis.get_intent(message)
+            for mess in response:
+                self.send_message(mess, channel)
+                log.save_activity(user, channel, intent, score, message, mess)
 
-    def send_message(self, message, channel):
+    def send_message(self, message, channel=SLACK_API_CHANNEL):
         """
-        Send message
-        :param message: text to send
-        :param channel: channel where send
-        :return: message sent
+        Send message.
+        :param message: Text to send.
+        :param channel: Channel where send.
+        :return: Message sent.
         """
         log.info('|Slack| Sent the following message in channel [{}]: [{}]'.format(channel, message.replace('\n', '')))
-        return self.client.api_call(
-            SLACK_API_METHOD,
-            channel=channel,
-            text=message
-        )
+        return self.web_client.chat_postMessage(channel=channel, text=message)
 
-    def notify(self, message, channel=SLACK_API_CHANNEL):
+    @slack.RTMClient.run_on(event='message')
+    def answer(self, **payload):
         """
-        Notify a message to an specific channel
-        :param message: message
-        :param channel: channel
-        :return: message notified
+        Retrieve messages.
+        :return: Thread run.
         """
-        return self.client.api_call(
-            SLACK_API_METHOD,
-            channel=channel,
-            text=message
-        )
+        if 'ts' not in payload:
+            text = payload['text']
+            channel = payload['channel']
+            user = payload['user']
+            log.info('|Slack| Retrieved the following message from user [{}] in channel [{}]: [{}]'.format(
+                user, channel, text.replace('\n', ''))
+            )
+            process = mp.Process(target=self.worker, args=(text, channel, user))
+            process.daemon = True
+            process.start()

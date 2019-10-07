@@ -50,7 +50,7 @@ def error(msg, slack=None):
     """
     __logger_stdout.error(msg)
     if slack is not None:
-        slack.notify(f':warning: ERROR: {msg}')
+        slack.send_message(f':warning: ERROR: {msg}')
 
 
 def exception(msg):
