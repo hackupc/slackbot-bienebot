@@ -39,10 +39,9 @@ def next_hackupc():
     now = datetime.utcnow() + timedelta(hours=2)
     params = {'date': now.time()}
     response = request.execute('GET', SCHEDULE_JSON_URL, params=params)
-    response_dict = response.json()
 
     # Per each day
-    for day in response_dict['days']:
+    for day in response['days']:
         day_date = datetime.strptime(day['date'], '%d/%m/%Y')
         if now.date() <= day_date.date():
             for event in day['events']:

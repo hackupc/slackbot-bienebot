@@ -38,7 +38,7 @@ def get_intent(query):
             log.info(f'|LUIS| After analyzing data, we got [{an}]')
         return answers, response_data['topScoringIntent']['intent'], response_data['topScoringIntent']['score']
     except Exception as e:
-        log.error(e)
+        log.exception(e)
 
 
 def analyze_response(response_data):
@@ -99,7 +99,7 @@ def analyze_response(response_data):
         return answer
 
     except Exception as e:
-        log.error(e)
+        log.exception(e)
         return error.get_message()
 
 
@@ -117,5 +117,5 @@ def exists_biene(response_data):
         else:
             return False
     except Exception as e:
-        log.error(e)
+        log.exception(e)
         return False

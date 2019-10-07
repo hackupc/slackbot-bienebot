@@ -2,6 +2,8 @@ import datetime
 import logging
 import os
 
+from hackupc.bienebot.slack import slack
+
 
 # Setup main loggers
 __logger_stdout = logging.getLogger('hackupc_bienebot')
@@ -41,15 +43,15 @@ def warn(msg):
     __logger_stdout.warning(msg)
 
 
-def error(msg, slack=None):
+def error(msg, notify=False):
     """
     Log [ERROR] level log messages.
     :param msg: Message to log.
-    :param slack: Slack object for notifying the error.
+    :param notify: True if the message has to be notified through Slack, False otherwise.
     :return: Message logged.
     """
     __logger_stdout.error(msg)
-    if slack is not None:
+    if notify:
         slack.send_message(f':warning: ERROR: {msg}')
 
 
