@@ -8,43 +8,43 @@
         },
         "vueling": {
             "name": "Vueling :vueling:",
-            "where": "Vueling is located in Floor 0, A5 building :pushpin:",
+            "where": "Vueling is located in Floor 2, A6 building :pushpin:",
             "challenge": "A cool challenge from Vueling called `Boarding queue entertaining system`. Develop an interactive experience (or a game) for our customers who are waiting in line before the boarding gate. It should make them have a good time and interact with one another. So here are a few requirements: It has to be multiplayer, cooperative, accessible for everyone, and without the need for chat (it should be as least language dependent as possible to allow interaction of people from different nationalities).",
             "contact": "For more information about Vueling, see #vueling"
         },
         "itequia": {
             "name": "Itequia :itequia:",
-            "where": "Itequia is located in Floor 1, A5 building :pushpin:",
+            "where": "Itequia is located in Floor 0, A5 building :pushpin:",
             "challenge": "A sweet challenge from Itequia called `We want you to build a solution that solves real problems using Artificial Intelligence`. We at Itequia care about technology but we also care about people and for some time now, as a society, we are facing many problems that we are not able to fix: climate change, natural disasters, manmade disasters, poverty.",
             "contact": "For more information about Itequia, see #itequia"
         },
         "mckinsey": {
             "name": "McKinsey & Company :mckinsey:",
-            "where": "McKinsey & Company is located in Floor 2, A6 building :pushpin:",
+            "where": "McKinsey & Company is located in Floor 1, A5 building :pushpin:",
             "challenge": "A cool challenge from McKinsey & Company called `Hack the crash`. Help us predict damage inflicted in traffic accidents.",
             "contact": "For more information about McKinsey & Company, see #mckinsey"
         },
         "soprasteria": {
             "name": "Sopra Steria :soprasteria:",
-            "where": "Sopra Steria is located in Floor 1, A6 building :pushpin:",
+            "where": "Sopra Steria is located in Floor 2, A5 building :pushpin:",
             "challenge": "Cool challenge from Sopra Steria called `EX_MACHINA: ¿can you fool a human?`. Sopra Steria will introduce a challenge in which the participants will aim to design and implement a solution that must pass a variation of the Turing test. Participants should satisfy a series of evaluation criteria, such as interface design (app, voice, conversational agent , console, ...), character and empathy, context and memory, complexity of the conversation and, of course, the technical solution and its architecture.",
             "contact": "For more information about Sopra Steria, see #soprasteria"
         },
         "ithinkupc": {
             "name": "iThinkUPC :ithinkupc:",
-            "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
+            "where": "iThinkUPC is located in Floor 1, A6 building :pushpin:",
             "challenge": "An awesome challenge from IThinkUPC called `Build the app everybody will love at your university`. We want to improve UPC student's digital experience by designing a whole new set of apps and resources that help us make a difference in the relationship between university services and students needs and preferences. We're talking about all kinds of features, not just the boring, academic stuff (just joking) but also any other feature that might be useful for students during their studies: information on public transport services, emergency services, restaurants and gyms, news; booking of labs and technical resources; social interaction; work offers; and any other interesting service you can think of. We encourage you to design and build an app that includes your preferred feature and help our university to become digital!",
             "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
         "facebook": {
             "name": "Facebook :fb:",
-            "where": "Facebook is located in Floor 1, A5 building :pushpin:",
+            "where": "Facebook is located in Floor 1, A6 building :pushpin:",
             "challenge": "An incredible challenge was presented by Facebook and it's called `Bring Communities Closer Together`. In Facebook our mission is to bring the world closer together. We build products and applications that build community and would love to see you create something that does the same! It does not need to be a social platform, but just any product that you believe would help bridge people together. Whether it is within your study group, your family, your hometown or the wider world around us, show us something that creates opportunities for people to help and support one another.",
             "contact": "For more information about Facebook, see #facebook"
         },
         "skyscanner": {
             "name": "Skyscanner :skyscanner:",
-            "where": "Skyscanner is located in Floor 1, A6 building :pushpin:",
+            "where": "Skyscanner is located in Floor 0, A5 building :pushpin:",
             "challenge": "Sweet challenge from Skyscanner called `Innovation with travel`. The most visionary use of our APIs and/or OpenSource tech.",
             "contact": "For more information about Skyscanner, see #skyscanner"
         },
@@ -56,31 +56,31 @@
         },
         "hp": {
             "name": "HP :hp:",
-            "where": "HP is located in Floor 1, A6 building :pushpin:",
+            "where": "HP is located in Floor 1, A5 building :pushpin:",
             "challenge": "An awesome challenge from HP called `Talk to 3D Print!`. Are you able to create a 3D geometry that we can print by voice commands? Your creativity is welcomed, unleash your imagination to test your skills! Come to our booth A5 1st floor our through Slack.",
             "contact": "For more information about HP, see #hp"
         },
         "typeform": {
             "name": "Typeform :typeform:",
-            "where": "Typeform has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "where": "Typeform is located in Floor 2, A6 building :pushpin:",
             "challenge": "Great challenge from Typeform called `Typeform or VideoAsk APIs`. Most innovative use of Typeform or VideoAsk APIs.",
             "contact": "For more information about Typeform, see #typeform"
         },
         "restbai": {
             "name": "Restb.ai :restbai:",
-            "where": "Restb.ai is located in Floor 0, A5 building :pushpin:",
+            "where": "Restb.ai is located in Floor 2, A5 building :pushpin:",
             "challenge": "Great challenge from Restb.ai called `Most disruptive use of Restb.ai API`. Build your project using one (or more) of our available AI Computer Vision APIs. From Real Estate CV classification solutions to a broad collection of object and features detection models and even Image Similarity Search. Our API is waiting for you! For more details, please check our docs page or come visit us at our booth; we promise we are really friendly and would love to chat with you about anything that comes to your mind!",
             "contact": "For more information about Restb.ai, see #restbai"
         },
         "ey": {
             "name": "EY :ey:",
-            "where": "EY is located in Floor 1, A5 building :pushpin:",
+            "where": "EY is located in Floor 2, A6 building :pushpin:",
             "challenge": "A interesting challenge from EY called `Hospitality Experience Guests/Employees`. Improve the guest or employee experience thorough the use of new technologies while interacting in hotels/resorts/amusement parks : Communicate, Share, Interact, Plan, Coordinate & Execute.",
             "contact": "For more information about EY, see #ey"
         },
         "everis": {
             "name": "Everis :everis:",
-            "where": "Everis is located in Floor 2, A6 building :pushpin:",
+            "where": "Everis is located in Floor 0, A5 building :pushpin:",
             "challenge": "Trendy challenge from Everis called `From data to citizens. Make cities inclusive, safe, resilient and sustainable`. With the number of people living within cities projected to rise to 5 billion people by 2030, it’s important that efficient urban planning and management practices are in place to deal with the urbanization. Congestion, lack of funds to provide basic services, a shortage of adequate housing, declining infrastructure, safe removal and management of solid waste and rising air pollution, can be overcome in ways that allow them to continue to thrive and grow, while improving resource use and reducing pollution and poverty. Are you ready to hack for good? Take the datasets and build a great technological solution that makes cities inclusive, safe, resilient and sustainable. Make something innovative that brings positive change to the world, even something that solves a small problem. It's that simple #everisHack4good",
             "contact": "For more information about Everis, see #everis"
         },
@@ -92,7 +92,7 @@
         },
         "haufe": {
             "name": "Haufe Group :haufe:",
-            "where": "Haufe Group is located in Floor 1, A5 building :pushpin:",
+            "where": "Haufe Group has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
             "challenge": "Haufe Group has no challenge in this edition of HackUPC.",
             "contact": "For more information about Haufe Group, see #haufe"
         }
