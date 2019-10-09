@@ -6,4 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - './logs:/srv/biene-bot/logs'
     restart: always
