@@ -1,4 +1,4 @@
-from hackupc.bienebot.bienebot import run_bienebot
+from hackupc.bienebot import bienebot
 
 if __name__ == '__main__':
-    run_bienebot()  # Run bienebot
+    bienebot.run()

@@ -28,20 +28,16 @@
             "where": "The A6 building is the *green* building.",
             "when": "It will always be open when you need it."
         },
-        "marenostrum": {
-            "where": "The Marenostrum supercomputer is located outside Campus Nord",
-            "when": "Tours to Marenostrum will take place on Friday afternoon. For more information, ask me about `BSC tour` :smile:"
-        },
         "photocall": {
-            "where": "Oh, my database is empty to answer this question.\n You can ask this to some of my human colleagues or look for it on hackupc.com/live :smile:",
-            "when": "Oh, my database is empty to answer this question.\n You can ask this to some of my human colleagues or look for it on hackupc.com/live :smile:"
+            "where": "The photocall is located at the ground floor of building A5, just next to the talk rooms :camera_with_flash:",
+            "when": "You can take photos of yourself and your folks during the whole weekend :selfie:"
         },
         "infodesk": {
             "where": "The InfoDesk is located in the intermediate level of the A5 building (floor E).",
             "when": "The InfoDesk will be available during the whole weekend."
         },
         "cafeteria": {
-            "where": "The Cafeteria is in the room A6106 :coffee:",
+            "where": "The Cafeteria is in the room A5103 :coffee:",
             "when": "The Cafeteria will be available during the whole weekend."
         },
         "hacker rooms": {
@@ -58,9 +54,9 @@
         }
     },
     "default": {
-        "when": "Sorry, I don't know which place you mean. But you can check maps.hackupc.com and you will find all the possible places.",
-        "where": "Sorry, I don't know which place you mean. But you can check maps.hackupc.com and you will find all the possible places.",
-        "more": "For visual indications you can take a look at this wonderful web :smile: maps.hackupc.com"
+        "when": "Sorry, I don't know which place you mean. But you can check hackupc.com/live#/map and you will find all the possible places.",
+        "where": "Sorry, I don't know which place you mean. But you can check hackupc.com/live#/map and you will find all the possible places.",
+        "more": "For visual indications you can take a look at this wonderful web :smile: hackupc.com/live#/map"
     },
     "help": [
         "Do you want to know about the HackUPC venue? You can ask me about :arrow_down:",

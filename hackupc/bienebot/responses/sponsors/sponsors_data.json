@@ -3,104 +3,98 @@
         "opentrends": {
             "name": "Opentrends :opentrends:",
             "where": "Opentrends is located in Floor 0, A5 building :pushpin:",
-            "challenge": "A really interesting challenge from Opentrends called `IoT & Chatbot for eHealth`. IoT-based healthcare services are expected to reduce costs, increase the quality of life, and enrich the user’s experience. IoT-based healthcare systems can be applied to a diverse array of fields, including care for pediatric and elderly patients, the supervision of chronic diseases, and the management of private health and fitness, among others.",
+            "challenge": "A really interesting challenge from Opentrends called `Climate Crisis in your hands. Show your tech skills and save the planet`. How do you imagine living in 2050? Predictions are the worst for our planet in the next years. It's not just melting poles or plastic in the ocean, it is way more: irreversible effects are about to happen. There's not another planet to move so it is time to do something urgent.",
             "contact": "For more information about Opentrends, see #opentrends"
-        },
-        "tech": {
-            "name": ".tech domains :dottech:",
-            "where": ".tech domains has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
-            "challenge": "Best project hosted on .tech domains",
-            "contact": "For more information about .tech domains, see #tech-domains"
         },
         "vueling": {
             "name": "Vueling :vueling:",
-            "where": "Vueling is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Vueling has no challenge in this edition of HackUPC.",
+            "where": "Vueling is located in Floor 2, A6 building :pushpin:",
+            "challenge": "A cool challenge from Vueling called `Boarding queue entertaining system`. Develop an interactive experience (or a game) for our customers who are waiting in line before the boarding gate. It should make them have a good time and interact with one another. So here are a few requirements: It has to be multiplayer, cooperative, accessible for everyone, and without the need for chat (it should be as least language dependent as possible to allow interaction of people from different nationalities).",
             "contact": "For more information about Vueling, see #vueling"
         },
         "itequia": {
             "name": "Itequia :itequia:",
-            "where": "Itequia is located in Floor 1, A5 building :pushpin:",
-            "challenge": "A sweet challenge from Itequia called `Create an app that allow us to share and draw in a whiteboard in real time with a group of users`. Here at Itequia we always carry out our meetings next to a whiteboard. We think that having a visual feedback in a meeting helps a lot with transmitting ideas to clients and coworkers. But often we need to have online meetings with team members that are not in the office. That's why we would love to have a way to create and share a whiteboard in real time with a group of users.",
+            "where": "Itequia is located in Floor 0, A5 building :pushpin:",
+            "challenge": "A sweet challenge from Itequia called `We want you to build a solution that solves real problems using Artificial Intelligence`. We at Itequia care about technology but we also care about people and for some time now, as a society, we are facing many problems that we are not able to fix: climate change, natural disasters, manmade disasters, poverty.",
             "contact": "For more information about Itequia, see #itequia"
         },
-        "servizurich": {
-            "name": "ServiZurich :servizurich:",
-            "where": "ServiZurich is located in Floor 2, A6 building :pushpin:",
-            "challenge": "A cool challenge from ServiZurich called `Millenials on the move`. They challenge you to find out 1) how millennials really drive 2) how we can help improve and protect the lives of millennials on the move.",
-            "contact": "For more information about ServiZurich, see #servizurich"
+        "mckinsey": {
+            "name": "McKinsey & Company :mckinsey:",
+            "where": "McKinsey & Company is located in Floor 1, A5 building :pushpin:",
+            "challenge": "A cool challenge from McKinsey & Company called `Hack the crash`. Help us predict damage inflicted in traffic accidents.",
+            "contact": "For more information about McKinsey & Company, see #mckinsey"
         },
         "soprasteria": {
             "name": "Sopra Steria :soprasteria:",
-            "where": "Sopra Steria is located in Floor 1, A6 building :pushpin:",
-            "challenge": "Cool challenge from Sopra Steria called `Find solutions to fight against fake news`",
+            "where": "Sopra Steria is located in Floor 2, A5 building :pushpin:",
+            "challenge": "Cool challenge from Sopra Steria called `EX_MACHINA: ¿can you fool a human?`. Sopra Steria will introduce a challenge in which the participants will aim to design and implement a solution that must pass a variation of the Turing test. Participants should satisfy a series of evaluation criteria, such as interface design (app, voice, conversational agent , console, ...), character and empathy, context and memory, complexity of the conversation and, of course, the technical solution and its architecture.",
             "contact": "For more information about Sopra Steria, see #soprasteria"
         },
         "ithinkupc": {
             "name": "iThinkUPC :ithinkupc:",
-            "where": "iThinkUPC is located in Floor 1, A5 building :pushpin:",
-            "challenge": "An awesome challenge from IThinkUPC called `Bring the university life to your smartphone`. We want to improve UPC student's digital experience by designing a whole new set of apps and resources that help us make a difference in the relationship between university services and students needs and preferences. We encourage you to design and build an app that includes your preferred feature and help our university to become digital!",
+            "where": "iThinkUPC is located in Floor 1, A6 building :pushpin:",
+            "challenge": "An awesome challenge from IThinkUPC called `Build the app everybody will love at your university`. We want to improve UPC student's digital experience by designing a whole new set of apps and resources that help us make a difference in the relationship between university services and students needs and preferences. We're talking about all kinds of features, not just the boring, academic stuff (just joking) but also any other feature that might be useful for students during their studies: information on public transport services, emergency services, restaurants and gyms, news; booking of labs and technical resources; social interaction; work offers; and any other interesting service you can think of. We encourage you to design and build an app that includes your preferred feature and help our university to become digital!",
             "contact": "For more information about iThinkUPC, see #ithinkupc"
         },
-        "wolfram": {
-            "name": "Wolfram Language :wolfram:",
-            "where": "Wolfram has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
-            "challenge": "Wolfram Language has no challenge in this edition of HackUPC, but you can use their awesome API!",
-            "contact": "For more information about Wolfram Language, see #wolfram"
+        "facebook": {
+            "name": "Facebook :fb:",
+            "where": "Facebook is located in Floor 1, A6 building :pushpin:",
+            "challenge": "An incredible challenge was presented by Facebook and it's called `Bring Communities Closer Together`. In Facebook our mission is to bring the world closer together. We build products and applications that build community and would love to see you create something that does the same! It does not need to be a social platform, but just any product that you believe would help bridge people together. Whether it is within your study group, your family, your hometown or the wider world around us, show us something that creates opportunities for people to help and support one another.",
+            "contact": "For more information about Facebook, see #facebook"
         },
         "skyscanner": {
             "name": "Skyscanner :skyscanner:",
-            "where": "Skyscanner is located in Floor 1, A6 building :pushpin:",
-            "challenge": "Sweet challenge from Skyscanner called `Most creative use of Skyscanner's API`",
+            "where": "Skyscanner is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Sweet challenge from Skyscanner called `Innovation with travel`. The most visionary use of our APIs and/or OpenSource tech.",
             "contact": "For more information about Skyscanner, see #skyscanner"
         },
         "github": {
             "name": "GitHub :github:",
             "where": "GitHub has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
-            "challenge": "GitHub has no challenge in this edition of HackUPC, but you draw a beautiful custom Mona :github:",
+            "challenge": "GitHub has no challenge in this edition of HackUPC, but you could draw a beautiful custom Mona :github:",
             "contact": "For more information about GitHub, see #github"
         },
-        "bsc": {
-            "name": "BSC :bsc:",
-            "where": "BSC has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
-            "challenge": "BSC has no challenge in this edition of HackUPC.",
-            "contact": "For more information about BSC, see #bsc"
+        "hp": {
+            "name": "HP :hp:",
+            "where": "HP is located in Floor 1, A5 building :pushpin:",
+            "challenge": "An awesome challenge from HP called `Talk to 3D Print!`. Are you able to create a 3D geometry that we can print by voice commands? Your creativity is welcomed, unleash your imagination to test your skills! Come to our booth A5 1st floor our through Slack.",
+            "contact": "For more information about HP, see #hp"
         },
         "typeform": {
             "name": "Typeform :typeform:",
-            "where": "Typeform has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
-            "challenge": "Great challenge from Typeform called `Best use of Typeform's API`",
+            "where": "Typeform is located in Floor 2, A6 building :pushpin:",
+            "challenge": "Great challenge from Typeform called `Typeform or VideoAsk APIs`. Most innovative use of Typeform or VideoAsk APIs.",
             "contact": "For more information about Typeform, see #typeform"
         },
-        "bloomberg": {
-            "name": "Bloomberg :bloomberg:",
-            "where": "Bloomberg is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Great challenge from Typeform called `Best Tech hack`",
-            "contact": "For more information about Bloomberg, see #bloomberg"
+        "restbai": {
+            "name": "Restb.ai :restbai:",
+            "where": "Restb.ai is located in Floor 2, A5 building :pushpin:",
+            "challenge": "Great challenge from Restb.ai called `Most disruptive use of Restb.ai API`. Build your project using one (or more) of our available AI Computer Vision APIs. From Real Estate CV classification solutions to a broad collection of object and features detection models and even Image Similarity Search. Our API is waiting for you! For more details, please check our docs page or come visit us at our booth; we promise we are really friendly and would love to chat with you about anything that comes to your mind!",
+            "contact": "For more information about Restb.ai, see #restbai"
         },
-        "aws": {
-            "name": "AWSEducate :aws:",
-            "where": "AWSEducate is located in Floor 1, A5 building :pushpin:",
-            "challenge": "A interesting challenge from AWSEducate called `The AWS City of a Cloud Serverless Hackathon`. Put your skills to the test and apply the AWS Serverless portfolio to build solutions for cities: City planning, Sanitation, Parks, Street maintenance, Voting and Public Safety.",
-            "contact": "For more information about AWSEducate, see #awseducate"
+        "ey": {
+            "name": "EY :ey:",
+            "where": "EY is located in Floor 2, A6 building :pushpin:",
+            "challenge": "A interesting challenge from EY called `Hospitality Experience Guests/Employees`. Improve the guest or employee experience thorough the use of new technologies while interacting in hotels/resorts/amusement parks : Communicate, Share, Interact, Plan, Coordinate & Execute.",
+            "contact": "For more information about EY, see #ey"
         },
         "everis": {
             "name": "Everis :everis:",
-            "where": "Everis is located in Floor 2, A6 building :pushpin:",
-            "challenge": "Trendy challenge from Everis called `Virtual assistants application for social purposes`",
+            "where": "Everis is located in Floor 0, A5 building :pushpin:",
+            "challenge": "Trendy challenge from Everis called `From data to citizens. Make cities inclusive, safe, resilient and sustainable`. With the number of people living within cities projected to rise to 5 billion people by 2030, it’s important that efficient urban planning and management practices are in place to deal with the urbanization. Congestion, lack of funds to provide basic services, a shortage of adequate housing, declining infrastructure, safe removal and management of solid waste and rising air pollution, can be overcome in ways that allow them to continue to thrive and grow, while improving resource use and reducing pollution and poverty. Are you ready to hack for good? Take the datasets and build a great technological solution that makes cities inclusive, safe, resilient and sustainable. Make something innovative that brings positive change to the world, even something that solves a small problem. It's that simple #everisHack4good",
             "contact": "For more information about Everis, see #everis"
         },
         "thoughtworks": {
             "name": "Thougthworks :thougthworks:",
             "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
-            "challenge": "Great challenge from ThoughtWorks called `Code what matters`. This is your moment to have a social impact on your city or community... Use the power of technology to make a positive change or to solve an issue that is close to your heart!",
+            "challenge": "Great challenge from ThoughtWorks called `We can’t code planet B`. CLIMATE JUSTICE (Solutions for the most vulnerable people that suffer the impact of climate change). REDUCE CARBON FOOTPRINT Cities generate ~70% of greenhouse gases. How can we measure our impact? How can we decrease our carbon footprint? RAISE AWARENESS Spread the word about the climate crisis. Help people understand the urgency of this matter.",
             "contact": "For more information about ThoughtWorks, see #thoughtworks"
         },
-        "infojobs": {
-            "name": "InfoJobs :infojobs:",
-            "where": "InfoJobs is located in Floor 1, A5 building :pushpin:",
-            "challenge": "Excellent challenge from InfoJobs called `Build your dreamed tech-InfoJobs`. Build your perfect job seeker. We encourage you to propose any change or improvement in our registration process, CV, job search... In other words, everything related to have a more suitable InfoJobs for you and your needs.",
-            "contact": "For more information about InfoJobs, see #infojobs"
+        "haufe": {
+            "name": "Haufe Group :haufe:",
+            "where": "Haufe Group has no stand in the HackUPC venue. However you can contact them through their Slack channel. :blush:",
+            "challenge": "Haufe Group has no challenge in this edition of HackUPC.",
+            "contact": "For more information about Haufe Group, see #haufe"
         }
     },
     "Help": [
@@ -112,19 +106,20 @@
     ],
     "AllChallenges": [
         "Don't know what to hack in HakUPC? No worries, our sponsors have a long list of challenges for you :arrow_down:",
-        "- `Find solutions to fight against fake news` from Sopra Steria",
-        "- `Build your dreamed tech-InfoJobs` from InfoJobs",
-        "- `The AWS City of a Cloud Serverless Hackathon` from AWSEducate",
-        "- `Virtual assistants application for social purposes` from Everis",
-        "- `Create an app that allow us to share and draw in a whiteboard in real time with a group of users` from Itequia",
-        "- `IoT & Chatbot for eHealth` from Opentrends",
-        "- `Most creative use of Skyscanner's API` from Skyscanner",
-        "- `Bring the university life to your smartphone` from IThinkUPC",
-        "- `Millenials on the move` from ServiZurich",
-        "- `Code what matters` from ThoughtWorks",
-        "- `Best Tech hack` from Bloomberg",
-        "- `Best use of Typeform's API` from Typeform",
-        "- `Best project hosted on .tech domains` from .tech domains"
+        "- `Hack the crash` from McKinsey&Company",
+        "- `Talk to 3D Print!` from HP",
+        "- `Bring Communities Closer Together` from Facebook",
+        "- `EX_MACHINA: ¿can you fool a human?` from SopraSteria",
+        "- `We want you to build a solution that solves real problems using Artificial Intelligence` from Itequia",
+        "- `Climate Crisis in your hands. Show your tech skills and save the planet` from Opentrends",
+        "- `From data to citizens. Make cities inclusive, safe, resilient and sustainable` from Everis",
+        "- `Build the app everybody will love at your university` from IThinkUPC",
+        "- `Boarding queue entertaining system` from Vueling",
+        "- `EY Challenge: Hospitality Experience Guests/Employees` from EY",
+        "- `Innovation with travel` from Skyscanner",
+        "- `Typeform or VideoAsk APIs` from Typeform",
+        "- `We can’t code planet B` from .tech Thoughtworks",
+        "- `Most disruptive use of Restb.ai API` from Restb.ai"
     ],
     "default": {
         "total": "HackUPC is possible thanks to:",

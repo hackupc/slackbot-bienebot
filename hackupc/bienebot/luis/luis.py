@@ -16,14 +16,12 @@ from hackupc.bienebot.util import log, request
 
 def get_intent(query):
     """
-    Get intent from LUIS
-    :param query: query
-    :return: LUIS answer
+    Get intent from LUIS.
+    :param query: Query to process.
+    :return: LUIS answer.
     """
-    log.info('|LUIS| Get intent with query [{}]'.format(query))
-    headers = {
-        'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY,
-    }
+    log.debug(f'|LUIS| Get intent with query [{query}]')
+    headers = {'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY}
     params = {
         'q': query,
         'timezoneOffset': '0',
@@ -32,27 +30,28 @@ def get_intent(query):
         'staging': 'false',
     }
     try:
-        url = 'https://{}/luis/v2.0/apps/{}'.format(LUIS_SERVER, LUIS_ID)
+        url = f'https://{LUIS_SERVER}/luis/v2.0/apps/{LUIS_ID}'
         response_data = request.execute(method='GET', url=url, headers=headers, params=params)
         answers = analyze_response(response_data)
         for an in answers:
-            log.info('|LUIS| After analyzing data, we got [{}]'.format(an.replace('\n', '')))
+            an = an.replace('\n', '')
+            log.debug(f'|LUIS| After analyzing data, we got [{an}]')
         return answers, response_data['topScoringIntent']['intent'], response_data['topScoringIntent']['score']
     except Exception as e:
-        log.error(e)
+        log.exception(e)
 
 
 def analyze_response(response_data):
     """
-    Analyze LUIS response
-    :param response_data: response data
-    :return: response analyzed
+    Analyze LUIS response.
+    :param response_data: Response data to analyze.
+    :return: Response analyzed.
     """
     try:
         # Retrieve intent
         intent = response_data['topScoringIntent']['intent']
         score = response_data['topScoringIntent']['score']
-        log.info('|LUIS| Intent that we got [{}]'.format(intent))
+        log.debug(f'|LUIS| Intent that we got [{intent}]')
 
         # Initialize answer array
         answer = list()
@@ -95,29 +94,28 @@ def analyze_response(response_data):
         # Check for biene manually
         if exists_biene(response_data):
             answer.extend(['BIENE'])
+
         # Return array of answers
         return answer
 
     except Exception as e:
-        # Log error and return default error message
-        log.error(e)
+        log.exception(e)
         return error.get_message()
 
 
 def exists_biene(response_data):
     """
-    Check if there's any biene in the response
-    :param response_data: response data
-    :return: true if there is, false otherwise
+    Check if there's any biene in the response.
+    :param response_data: Response data to check.
+    :return: True if there is, False otherwise.
     """
     try:
         query_input = response_data['query']
         if 'biene' in query_input.lower():
-            log.info('|LUIS| BIENE detected')
+            log.debug('|LUIS| BIENE detected')
             return True
         else:
             return False
     except Exception as e:
-        # Log error and return default error message
-        log.error(e)
+        log.exception(e)
         return False

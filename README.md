@@ -1,16 +1,16 @@
 <br>
 <p align="center">
-  <img alt="HackUPC" src="https://github.com/hackupc/frontend/raw/master/src/images/hackupc-ogimage@2x.png" width="620"/>
+  <img alt="HackUPC" src="https://raw.githubusercontent.com/hackupc/frontend/master/src/images/ogimage.png" width="620"/>
 </p>
 <br>
 
 # Biene bot
 
 ## Overview
-HackUPC Slack helper bot implemented in Python and using LUIS by Microsoft for making IA interaction easier.
+🤖 HackUPC Slack helper bot implemented in Python and using LUIS by Microsoft for making IA interaction easier.
 
 ## Requirements
-1. Python 3.5+
+1. Python 3.7+
 2. docker-ce (as provided by docker package repos)
 3. docker-compose (as provided by PyPI)
 
@@ -21,18 +21,21 @@ Usage of [virtualenv](https://realpython.com/blog/python/python-virtual-environm
 To run the server locally, please execute the following from the root directory:
 
 1. Setup virtual environment
+
 ```bash
-mkvirtualenv -p python3 biene-bot
+virtualenv -p /usr/local/bin/python3.7 env
 ```
 
 2. Install dependencies
+
 ```bash
-pip3 install -r requirements.txt
+pip3 install -r requirements.lock
 ```
 
 3. Copy `__init__.template.py` to `__init__.py` with correct values
 
 4. Run Startup server as python module
+
 ```bash
 python3 -m hackupc.bienebot
 ```

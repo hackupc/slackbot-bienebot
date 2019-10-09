@@ -6,14 +6,14 @@ from hackupc.bienebot.util import log
 
 def execute(method, url, headers=None, params=None, data=None, allowed_statuses=None):
     """
-    Execute request giving some parameters
-    :param method: method to request
-    :param url: url to request
-    :param headers: request headers
-    :param params: parameters
-    :param data: request body
-    :param allowed_statuses: allowed HTTP status response for avoiding retry
-    :return: json response
+    Execute request giving some parameters.
+    :param method: Method to request.
+    :param url: URL to request.
+    :param headers: Request headers.
+    :param params: Parameters.
+    :param data: Request body.
+    :param allowed_statuses: Allowed HTTP status response for avoiding retry.
+    :return: JSON response.
     """
     if allowed_statuses is None:
         allowed_statuses = {}
@@ -30,13 +30,11 @@ def execute(method, url, headers=None, params=None, data=None, allowed_statuses=
             if response is not None and (response.ok or response.status_code in allowed_statuses):
                 return response.json()
             else:
-                log.warn('Problem requesting URL [{url}] getting [{code}] status code. Number of tries: {i}'.format(
-                    url=url,
-                    code=None if response is None else response.status_code,
-                    i=it))
+                status_code = None if response is None else response.status_code,
+                log.warn(f'Problem requesting URL [{url}] getting [{status_code}] status code. Number of tries: {it}')
                 time.sleep(it)
         except Exception as e:
             log.exception(e)
-            log.error('Could not request URL [{}]. Number of tries: {}'.format(url, it))
+            log.error(f'Could not request URL [{url}]. Number of tries: {it}')
             time.sleep(it)
             continue

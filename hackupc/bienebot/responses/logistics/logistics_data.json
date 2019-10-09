@@ -6,15 +6,15 @@
             "where": "The Sleeping Zone will be located in the A3 building (both floors) and the second floor of the A4 building."
         },
         "checkin": {
-            "how": "Come to the Check-in Zone with your ID and we'll give you your accreditation to join HackUPC 2018! :parrot:",
-            "when": "The check-in will be open from 3PM to 6:30PM on Friday 19th.:watch:\n If you are late no worries, there will be a Late Check-in after the Opening ceremony in the InfoDesk.",
+            "how": "Come to the Check-in Zone with your ID and we'll give you your accreditation to join HackUPC 2019! :parrot:",
+            "when": "The check-in will be open from 4PM to 6:30PM on Friday 11th.:watch:\n If you are late no worries, there will be a Late Check-in after the Opening ceremony in the InfoDesk.",
             "where": "Check-in is located between A5 and A6 buildings :building_construction:"
         }
     },
     "default": {
-        "how": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
-        "when": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
-        "where": "Sorry, I don't know what you mean. But you can check maps.hackupc.com and you will find all possible places and hackupc.com/live to check all the activities.",
-        "more": "For visual indications you can take a look at this wonderful web :smile: maps.hackupc.com"
+        "how": "Sorry, I don't know what you mean. But you can check hackupc.com/live#/map and you will find all possible places and hackupc.com/live to check all the activities.",
+        "when": "Sorry, I don't know what you mean. But you can check hackupc.com/live#/map and you will find all possible places and hackupc.com/live to check all the activities.",
+        "where": "Sorry, I don't know what you mean. But you can check hackupc.com/live#/map and you will find all possible places and hackupc.com/live to check all the activities.",
+        "more": "For visual indications you can take a look at this wonderful web :smile: hackupc.com/live#/map"
     }
 }
