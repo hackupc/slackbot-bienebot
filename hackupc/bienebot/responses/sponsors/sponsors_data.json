@@ -25,7 +25,7 @@
             "contact": "For more information about McKinsey & Company, see #mckinsey"
         },
         "soprasteria": {
-            "name": "Sopra Steria :soprasteria:",
+            "name": "Sopra Steria :sopra-steria:",
             "where": "Sopra Steria is located in Floor 2, A5 building :pushpin:",
             "challenge": "Cool challenge from Sopra Steria called `EX_MACHINA: ¿can you fool a human?`. Sopra Steria will introduce a challenge in which the participants will aim to design and implement a solution that must pass a variation of the Turing test. Participants should satisfy a series of evaluation criteria, such as interface design (app, voice, conversational agent , console, ...), character and empathy, context and memory, complexity of the conversation and, of course, the technical solution and its architecture.",
             "contact": "For more information about Sopra Steria, see #soprasteria"
@@ -85,7 +85,7 @@
             "contact": "For more information about Everis, see #everis"
         },
         "thoughtworks": {
-            "name": "Thougthworks :thougthworks:",
+            "name": "Thougthworks :thoughtworks:",
             "where": "ThoughtWorks is located in Floor 0, A5 building :pushpin:",
             "challenge": "Great challenge from ThoughtWorks called `We can’t code planet B`. CLIMATE JUSTICE (Solutions for the most vulnerable people that suffer the impact of climate change). REDUCE CARBON FOOTPRINT Cities generate ~70% of greenhouse gases. How can we measure our impact? How can we decrease our carbon footprint? RAISE AWARENESS Spread the word about the climate crisis. Help people understand the urgency of this matter.",
             "contact": "For more information about ThoughtWorks, see #thoughtworks"
