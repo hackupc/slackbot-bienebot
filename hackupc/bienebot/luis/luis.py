@@ -1,3 +1,5 @@
+import re
+
 from hackupc.bienebot import *
 from hackupc.bienebot.responses.activities import activities
 from hackupc.bienebot.responses.error import error
@@ -20,6 +22,7 @@ def get_intent(query):
     :param query: Query to process.
     :return: LUIS answer.
     """
+    query = re.sub(r':([a-zA-Z]|_)+:', '', query).strip()
     log.debug(f'|LUIS| Get intent with query [{query}]')
     headers = {'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY}
     params = {
