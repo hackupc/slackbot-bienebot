@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <img alt="HackUPC" src="https://raw.githubusercontent.com/hackupc/frontend/master/src/images/ogimage.png" width="620"/>
+  <img alt="HackUPC" src="https://hackupc.com/ogimage.png" width="620"/>
 </p>
 <br>
 
