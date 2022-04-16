@@ -13,19 +13,19 @@
             "when": "They will always be open when you need it!"
         },
         "a3": {
-            "where": "The A3 building is the *yellow* building.",
+            "where": "The A3 building is the building where *yellow* appears in walls.",
             "when": "It will always be open when you need it."
         },
         "a4": {
-            "where": "The A4 building is the *blue* building.",
+            "where": "The A4 building is the building where *blue* appears in walls.",
             "when": "It will always be open when you need it."
         },
         "a5": {
-            "where": "The A5 building is the *purple* building.",
+            "where": "The A5 building is the building where *purple* appears in walls.",
             "when": "It will always be open when you need it."
         },
         "a6": {
-            "where": "The A6 building is the *green* building.",
+            "where": "The A6 building is the building where *green* appears in walls.",
             "when": "It will always be open when you need it."
         },
         "photocall": {
