@@ -7,23 +7,23 @@
 		},
 		"talk": {
 			"what": "This edition we have a lot of talks for you. From tech topics to knowing more about hackathons. Here you have all talks we have:\n - *GitHub Talk*: Git and GitHub\n - *opentrends Talk*: Initial Brainstorming\n - *Everis Talk*: Data for good cities\n - *Facebook Talk:* Crush your coding interview workshop\n - *HP Talk*: The future of 3D Printing\n - *Vueling Talk*: Are you Redis?\n - *Typeform Talk*: APIs for first timers\n - *Hackers@UPC Talk*: Programmatic art & Online multiplayer Gamedev 101\n - *Skyscanner Talk*: Microservices at Scale\n - *McKinsey & Company Talk*: Clean code for Analytics\n - *McKinsey & Company Talk*: Implementing R projects as libraries\n - *GitHub: Meetup*: Hacktoberfest\n - *Hackers@UPC talk*: How to organize your hackathon\n - *McKinsey & Company workshop*: Robot building",
-			"when": "Talks will be given on Friday night and Saturday morning. You can check the schedule on our website hackupc.com/live :raised_hands:",
-			"where": "Talks will take place in different rooms on A5 Building, floor 0. To know exactly the room you can look for it on our website hackupc.com/live. Hope to see you there :happy:"
+			"when": "Talks will be given on Friday night and Saturday morning. You can check the schedule on our website live.hackupc.com :raised_hands:",
+			"where": "Talks will take place in different rooms on A5 Building, floor 0. To know exactly the room you can look for it on our website live.hackupc.com. Hope to see you there :happy:"
 		},
         "team building": {
             "what": "Looking for a team? Let's build it in this team formation session! :muscle:",
             "when": "Team building will be held on *Friday at 22:30h* :watch:",
-            "where": "Team building will take place in *A4002*.\n For visual indications you can check our webpage hackupc.com/live#/map :world_map:"
+            "where": "Team building will take place in *A4002*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "rubik tournament": {
             "what": "Do you think you're fast solving a Rubik's cube? Let's check it out in this tournament!",
             "when": "The Rubik tournament by iThinkUPC will be held on *Saturday at 19:00h* :watch:",
-            "where": "The Rubik tournament by iThinkUPC will take place in *A5002*.\n For visual indications you can check our webpage hackupc.com/live#/map :world_map:"
+            "where": "The Rubik tournament by iThinkUPC will take place in *A5002*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "lego tournament": {
             "what": "Do you think you're a professional with Lego? Let's check it out in this competition!",
             "when": "The Lego tournament by Itequia will be held on *Saturday at 18:00h* :watch:",
-            "where": "The Lego tournament by Itequia will take place in *A5002*.\n For visual indications you can check our webpage hackupc.com/live#/map :world_map:"
+            "where": "The Lego tournament by Itequia will take place in *A5002*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "the game": {
             "what": "The Game? What? :parrot:\n Oh, got it. You lost.",
@@ -33,12 +33,12 @@
         "nerfgun": {
             "what": "Be ready for the BATTLE!!! :muscle: :crossed_swords: :smirk:",
             "when": "Nerf Gun Battles will be held on *Sunday at 01:00h* :watch:",
-            "where": "Nerf Gun Battles will take place in *A4101 & A4102*.\n For visual indications you can check our webpage hackupc.com/live#/map :world_map:"
+            "where": "Nerf Gun Battles will take place in *A4101 & A4102*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "slideshow": {
             "what": "You *MUST* be there! Give a presentation on some slides you have never seen before. The best activity in the whole weekend. Laughs assured! :joy:",
             "when": "The SlideShare Show will be held on *Saturday at 22:00h* :watch: and don't forget your voice :microphone:",
-            "where": "The SlideShare Show will take place in *A5001*.\n For visual indications you can check our webpage hackupc.com/live#/map :world_map:"
+            "where": "The SlideShare Show will take place in *A5001*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "close ceremony": {
 			"what": "Closing ceremony with the final judging phase. Winners will be announced here. :see_no_evil:",
@@ -48,14 +48,14 @@
 		"open ceremony": {
 			"what": "Opening ceremony to start the hackathon :star-struck:. It is the ceremony where everything you need to know to have a nice weekend will be explained.",
 			"when": "The Opening ceremony will start on *Friday at 19.00h* :watch:",
-			"where": "You can attend the Opening Ceremony at the *Vertex building* or on the floor zero rooms by streaming or at hackupc.com/live."
+			"where": "You can attend the Opening Ceremony at the *Vertex building* or on the floor zero rooms by streaming or at live.hackupc.com."
 		}
 	},
 	"default": {
-		"what": "Sorry, I don't know what activity are you asking for. But you can check all the activities on hackupc.com/live.",
-        "when": "Sorry, I don't know what activity are you asking for. But you can check all the activities on hackupc.com/live.",
+		"what": "Sorry, I don't know what activity are you asking for. But you can check all the activities on live.hackupc.com.",
+        "when": "Sorry, I don't know what activity are you asking for. But you can check all the activities on live.hackupc.com.",
         "where": "Sorry, I don't know what activity are you asking for.",
-		"more": "For visual indications you can take a look at this wonderful web :smile: hackupc.com/live#/map"
+		"more": "For visual indications you can take a look at this wonderful web :smile: live.hackupc.com"
 	},
 	"help": [
 		"I know about a lot of activities :smirk: Ask me about what/when/where is Sticker Exchange, Talks, Team Building, Rubik Tournament, The Game, Nerf Gun Battles, SlideShare Show or the Opening and Closing ceremony :blush:"

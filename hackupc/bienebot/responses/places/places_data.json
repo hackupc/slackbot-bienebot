@@ -29,11 +29,11 @@
             "when": "It will always be open when you need it."
         },
         "photocall": {
-            "where": "The photocall is located at the ground floor of building A5, just next to the talk rooms :camera_with_flash:",
+            "where": "The photocall is located on the ground floor of building A5, just next to the talk rooms :camera_with_flash:",
             "when": "You can take photos of yourself and your folks during the whole weekend :selfie:"
         },
         "infodesk": {
-            "where": "The InfoDesk is located in the intermediate level of the A5 building (floor E).",
+            "where": "The InfoDesk is located on the intermediate level of the A5 building (floor E).",
             "when": "The InfoDesk will be available during the whole weekend."
         },
         "cafeteria": {
@@ -54,9 +54,9 @@
         }
     },
     "default": {
-        "when": "Sorry, I don't know which place you mean. But you can check hackupc.com/live#/map and you will find all the possible places.",
-        "where": "Sorry, I don't know which place you mean. But you can check hackupc.com/live#/map and you will find all the possible places.",
-        "more": "For visual indications you can take a look at this wonderful web :smile: hackupc.com/live#/map"
+        "when": "Sorry, I don't know which place you mean. But you can check live.hackupc.com and you will find all the possible places.",
+        "where": "Sorry, I don't know which place you mean. But you can check live.hackupc.com and you will find all the possible places.",
+        "more": "For visual indications you can take a look at this wonderful web :smile: live.hackupc.com"
     },
     "help": [
         "Do you want to know about the HackUPC venue? You can ask me about :arrow_down:",
