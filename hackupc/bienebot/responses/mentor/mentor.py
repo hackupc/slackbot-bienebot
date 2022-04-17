@@ -11,11 +11,8 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/mentor/mentor_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
-
         # Log stuff
-        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [Help] from JSON element')
 
-        array = ['\n'.join(data[list_intent[1]])]
+        array = ['\n'.join(data['Help'])]
         return array

@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 from hackupc.bienebot import SCHEDULE_JSON_URL
 from hackupc.bienebot.util import log, request
 
+ACCEPTED_QUESTION_TYPES = ['Where', 'When']
+
 
 def get_message(response_type):
     """
@@ -15,22 +17,24 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/hackupc/hackupc_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
+
+        entities = prediction['entities']
+
+        question_type = entities['QuestionType'][0][0]
+
+        if question_type not in ACCEPTED_QUESTION_TYPES:
+            question_type = 'schedule'
 
         # Log stuff
-        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [{question_type}] from JSON element')
 
-        if list_intent[1] == 'Next':
-            array = next_hackupc()
-        elif list_intent[1] == 'Schedule':
-            array = ['\n'.join(data['Schedule'])]
-        else:
-            array = [random.choice(data[list_intent[1]])]
+        array = [random.choice(data[question_type])]
 
         return array
 
 
+# No use
 def next_hackupc():
     """
     Get next event calling live JSON.

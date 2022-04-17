@@ -12,18 +12,13 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/activities/activities_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
 
-        entities = response_type['entities']
+        entities = prediction['entities']
 
-        # Log stuff
-        if entities:
-            entity = entities[0]['entity']
-            log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
-        else:
-            log_info = '|RESPONSE| No entities about activities'
-        log.debug(log_info)
+        question_type = entities['QuestionType'][0][0]
+
+        activity = entities.get('Activity', [['']])[0][0]
 
         switcher = {
             'What': what,
@@ -33,21 +28,20 @@ def get_message(response_type):
             'Help': help_activity
         }
         # Get the function from switcher dictionary
-        func = switcher.get(list_intent[2], lambda: error.get_message())
+        func = switcher.get(question_type.title(), lambda: error.get_message())
         # Execute the function
-        return func(data, entities)
+        return func(data, activity)
 
 
-def what(data, entities):
+def what(data, activity):
     """
     Retrieve response for `what` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param activity: Activity.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        activity = entities[0]['resolution']['values'][0].lower()
+    if activity:
         log.debug(f'|RESPONSE|: About [{activity}] getting WHAT')
         array.append(data['activities'][activity]['what'])
     else:
@@ -55,16 +49,15 @@ def what(data, entities):
     return array
 
 
-def when(data, entities):
+def when(data, activity):
     """
     Retrieve response for `when` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param activity: Activity.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        activity = entities[0]['resolution']['values'][0].lower()
+    if activity:
         log.debug(f'|RESPONSE|: About [{activity}] getting WHEN')
         array.append(data['activities'][activity]['when'])
     else:
@@ -72,16 +65,15 @@ def when(data, entities):
     return array
 
 
-def where(data, entities):
+def where(data, activity):
     """
     Retrieve response for `where` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param activity: Activity.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        activity = entities[0]['resolution']['values'][0].lower()
+    if activity:
         log.debug(f'|RESPONSE|: About [{activity}] getting WHERE')
         array.append(data['activities'][activity]['where'])
         array.append(data['default']['more'])
@@ -92,22 +84,22 @@ def where(data, entities):
 
 
 # noinspection PyUnusedLocal
-def which_activity(data, entities):
+def which_activity(data, activity):
     """
     Retrieve response for `which` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param activity: Activity.
     :return: Array of responses,
     """
     return ['\n'.join(data['which'])]
 
 
 # noinspection PyUnusedLocal
-def help_activity(data, entities):
+def help_activity(data, activity):
     """
     Retrieve response for `help` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param activity: Activity.
     :return: Array of responses,
     """
     return data['help']

@@ -12,16 +12,19 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/projects/projects_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
+
+        entities = prediction['entities']
+
+        project_question = entities['ProjectQuestion'][0][0]
 
         # Log stuff
-        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [{project_question}] from JSON element')
 
-        if list_intent[1] == 'Help':
+        if project_question == 'Help':
             array = help_project(data)
         else:
-            array = [random.choice(data[list_intent[1]])]
+            array = [random.choice(data[project_question])]
 
         return array
 

@@ -12,11 +12,14 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/smalltalk/smalltalk_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
+
+        entities = prediction['entities']
+
+        smalltalk_type = entities['SmalltalkType'][0][0]
 
         # Log stuff
-        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [{smalltalk_type}] from JSON element')
 
-        array = [random.choice(data[list_intent[1]])]
+        array = [random.choice(data[smalltalk_type])]
         return array
