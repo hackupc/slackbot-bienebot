@@ -16,7 +16,7 @@ def get_message(response_type):
 
         entities = prediction['entities']
 
-        smalltalk_type = entities['SmalltalkType'][0][0]
+        smalltalk_type = entities.get('SmalltalkType', [['Other']])[0][0]
 
         # Log stuff
         log.debug(f'|RESPONSE| Looking for [{smalltalk_type}] from JSON element')

@@ -16,7 +16,7 @@ def get_message(response_type):
 
         entities = prediction['entities']
 
-        project_question = entities['ProjectQuestion'][0][0]
+        project_question = entities.get('ProjectQuestion', [['Help']])[0][0]
 
         # Log stuff
         log.debug(f'|RESPONSE| Looking for [{project_question}] from JSON element')

@@ -28,7 +28,7 @@ def get_message(response_type):
             'Help': help_activity
         }
         # Get the function from switcher dictionary
-        func = switcher.get(question_type.title(), lambda: error.get_message())
+        func = switcher.get(question_type, lambda: error.get_message())
         # Execute the function
         return func(data, activity)
 
