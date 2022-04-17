@@ -1,6 +1,6 @@
 {
     "Coffee": [
-        "You can find as much coffee as you need at the Cafeteria, located in A5105 :coffee:"
+        "You can find as much coffee as you need at the Cafeteria, located in A5106 :coffee:"
     ],
     "Help": [
         "Do you want to know about meals? You can ask me about :arrow_down:",
@@ -8,7 +8,7 @@
         "- All meals schedule :calendar:",
         "- Snacks :chocolate_bar:",
         "- Special meals :+1:",
-        "- Location of meals :world_map:",
+        "- Location of meals or other zones :world_map:",
         "- Detailed list of meals :pencil:"
     ],
     "Schedule": [
@@ -23,16 +23,16 @@
         "- Sunday | 13:00 - 14:00 -> Lunch"
     ],
     "Snacks": [
-        "Do you want some snacks? :thinking_face: Go to the Cafeteria (A5105) and grabbing some! There are two Midnight Snacks on Friday and Saturday night waiting for you :wink:"
+        "Do you want some snacks? :thinking_face: Go to the Cafeteria (A5106) and grabbing some! There are two Midnight Snacks on Friday and Saturday night waiting for you :wink:"
     ],
     "Special": [
         "Are you vegetarian or vegan? Are you intolerant? Any allergy? No worries, all meals are ready for all public. Every meal will be correctly tagged with a detailed description of what are you eating :blush:"
     ],
     "Where": [
-        "All meals will be served front of A5 and A6 buildings. Check HackUPC Maps for more information :blush: hackupc.com/live#/map"
+        "All meals will be served in front of A5 and A6 buildings. Check HackUPC Maps for more information :blush: live.hackupc.com"
     ],
     "Which": [
-        "For the first night, we will have a catering which will be serving salads, pasta, meat balls, chicken, escalivada, etc. A typical and awesome paella for Saturday lunch. For sure, don't forget the PIZZA time during Saturday dinner. And last but not least frankfurt and burgers in Sunday lunch. :blush:"
+        "For the first night, we will have a catering which will be serving salads, pasta, meatballs, chicken, escalivada, etc. A typical and awesome paella for Saturday lunch. For sure, don't forget the PIZZA time during Saturday dinner. And last but not least frankfurt and burgers in Sunday lunch. :blush:"
     ]
 
 }
