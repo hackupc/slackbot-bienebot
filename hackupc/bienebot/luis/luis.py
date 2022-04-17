@@ -28,6 +28,7 @@ def get_intent(query):
     headers = {}
     params = {
         'query': query,
+        'log': 'true',
         # 'timezoneOffset': '0',
         'verbose': 'false',
         # 'spellCheck': 'false',
