@@ -51,6 +51,10 @@
         "gym": {
             "where": "The Gym is in the campus away from the buildings, beyond the big square, down the stairs and to the right: https://g.page/diagonal_sports_fitness_club?share",
             "when": "The Gym will be available only for showers from 9:15AM to 11:00AM and from 5:00PM to 7:00PM on Saturday. Please don't forget to shower!"
+        },
+        "bins": {
+            "where": "Anywhere around the campus! Recycling is important!",
+            "when": "At any moment! If you find some bins full let some organizer know, thank you!"
         }
     },
     "default": {
