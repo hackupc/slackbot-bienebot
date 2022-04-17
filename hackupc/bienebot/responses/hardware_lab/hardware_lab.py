@@ -1,6 +1,7 @@
 import json
 import random
 
+from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
 
@@ -12,14 +13,19 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/hardware_lab/hardware_lab_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
+
+        entities = prediction['entities']
+
+        question_type = entities.get('QuestionType', [['Error']])[0][0]
 
         # Log stuff
-        log.debug(f'|RESPONSE| Looking for [{list_intent[1]}] from JSON element')
+        log.debug(f'|RESPONSE| Looking for [{question_type}] from JSON element')
 
-        if list_intent[1] == 'List':
+        if question_type == 'List':
             array = ['\n'.join(data['List'])]
+        elif question_type == 'error':
+            array = [error.get_message()]
         else:
-            array = [random.choice(data[list_intent[1]])]
+            array = [random.choice(data[question_type])]
         return array

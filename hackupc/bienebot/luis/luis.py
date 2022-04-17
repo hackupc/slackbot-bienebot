@@ -24,22 +24,30 @@ def get_intent(query):
     """
     query = re.sub(r':([a-zA-Z]|_)+:', '', query).strip()
     log.debug(f'|LUIS| Get intent with query [{query}]')
-    headers = {'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY}
+    # headers = {'Ocp-Apim-Subscription-Key': LUIS_SUBSCRIPTION_KEY}
+    headers = {}
     params = {
-        'q': query,
-        'timezoneOffset': '0',
+        'query': query,
+        # 'timezoneOffset': '0',
         'verbose': 'false',
-        'spellCheck': 'false',
-        'staging': 'false',
+        # 'spellCheck': 'false',
+        # 'staging': 'false',
+        'show-all-intents': 'true',
+        'subscription-key': LUIS_SUBSCRIPTION_KEY,
     }
     try:
-        url = f'https://{LUIS_SERVER}/luis/v2.0/apps/{LUIS_ID}'
+        url = f'https://{LUIS_SERVER}/luis/prediction/v3.0/apps/{LUIS_ID}/slots/production/predict'
         response_data = request.execute(method='GET', url=url, headers=headers, params=params)
         answers = analyze_response(response_data)
+
+        prediction = response_data['prediction']
+        intent = prediction['topIntent']
+        score = prediction['intents'][intent]['score']
+
         for an in answers:
             an = an.replace('\n', '')
             log.debug(f'|LUIS| After analyzing data, we got [{an}]')
-        return answers, response_data['topScoringIntent']['intent'], response_data['topScoringIntent']['score']
+        return answers, intent, score
     except Exception as e:
         log.exception(e)
 
@@ -52,8 +60,9 @@ def analyze_response(response_data):
     """
     try:
         # Retrieve intent
-        intent = response_data['topScoringIntent']['intent']
-        score = response_data['topScoringIntent']['score']
+        prediction = response_data['prediction']
+        intent = prediction['topIntent']
+        score = prediction['intents'][intent]['score']
         log.debug(f'|LUIS| Intent that we got [{intent}]')
 
         # Initialize answer array
@@ -65,27 +74,27 @@ def analyze_response(response_data):
             return answer
 
         # Select intent
-        if intent.startswith('Indication.Activity'):
+        if intent == 'Indication.Activity':
             answer.extend(activities.get_message(response_data))
-        elif intent.startswith('HackUPC'):
+        elif intent == 'HackUPC':
             answer.extend(hackupc.get_message(response_data))
-        elif intent.startswith('HardwareLab'):
+        elif intent == 'HardwareLab':
             answer.extend(hardware_lab.get_message(response_data))
-        elif intent.startswith('Logistics'):
+        elif intent == 'Logistics':
             answer.extend(logistics.get_message(response_data))
-        elif intent.startswith('Meals'):
+        elif intent == 'Meals':
             answer.extend(meals.get_message(response_data))
-        elif intent.startswith('Mentor'):
+        elif intent == 'Mentor':
             answer.extend(mentor.get_message(response_data))
-        elif intent.startswith('Indication.Place'):
+        elif intent == 'Indication.Place':
             answer.extend(places.get_message(response_data))
-        elif intent.startswith('Project'):
+        elif intent == 'Project':
             answer.extend(projects.get_message(response_data))
-        elif intent.startswith('Smalltalk'):
+        elif intent == 'Smalltalk':
             answer.extend(smalltalk.get_message(response_data))
         elif intent.startswith('Sponsors'):
             answer.extend(sponsors.get_message(response_data))
-        elif intent.startswith('Support'):
+        elif intent == 'Support':
             answer.extend(support.get_message(response_data))
         else:
             if exists_biene(response_data):

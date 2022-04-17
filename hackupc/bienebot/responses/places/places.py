@@ -12,18 +12,13 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/places/places_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
 
-        entities = response_type['entities']
+        entities = prediction['entities']
 
-        # Log stuff
-        if entities:
-            entity = entities[0]['entity']
-            log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
-        else:
-            log_info = '|RESPONSE| No entities about places'
-        log.debug(log_info)
+        question_type = entities['QuestionType'][0][0]
+
+        place = entities.get('Place', [['']])[0][0]
 
         switcher = {
             'When': when,
@@ -31,21 +26,20 @@ def get_message(response_type):
             'Help': help_place
         }
         # Get the function from switcher dictionary
-        func = switcher.get(list_intent[2], lambda: error.get_message())
+        func = switcher.get(question_type, lambda: error.get_message())
         # Execute the function
-        return func(data, entities)
+        return func(data, place)
 
 
-def where(data, entities):
+def where(data, place):
     """
     Retrieve response for `where` question given a list of entities
     :param data: Data.
-    :param entities: Entities.
+    :param place: place.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        place = entities[0]['resolution']['values'][0].lower()
+    if place:
         log.debug(f'|RESPONSE|: About [{place}] getting WHERE')
         array.append(data['places'][place]['where'])
         array.append(data['default']['more'])
@@ -55,16 +49,15 @@ def where(data, entities):
     return array
 
 
-def when(data, entities):
+def when(data, place):
     """
     Retrieve response for `when` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param place: place.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        place = entities[0]['resolution']['values'][0].lower()
+    if place:
         log.debug(f'|RESPONSE|: About [{place}] getting WHEN')
         array.append(data['places'][place]['when'])
     else:
@@ -73,11 +66,11 @@ def when(data, entities):
 
 
 # noinspection PyUnusedLocal
-def help_place(data, entities):
+def help_place(data, place):
     """
     Retrieve response for `help` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param place: place.
     :return: Array of responses.
     """
     return ['\n'.join(data['help'])]

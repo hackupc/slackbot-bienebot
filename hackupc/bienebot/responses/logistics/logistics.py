@@ -3,6 +3,8 @@ import json
 from hackupc.bienebot.responses.error import error
 from hackupc.bienebot.util import log
 
+ACCEPTED_QUESTION_TYPES = ['Where', 'When', 'How']
+
 
 def get_message(response_type):
     """
@@ -12,18 +14,13 @@ def get_message(response_type):
     with open('hackupc/bienebot/responses/logistics/logistics_data.json') as json_data:
         data = json.load(json_data)
 
-        intent = response_type['topScoringIntent']['intent']
-        list_intent = intent.split('.')
+        prediction = response_type['prediction']
 
-        entities = response_type['entities']
+        entities = prediction['entities']
 
-        # Log stuff
-        if entities:
-            entity = entities[0]['entity']
-            log_info = f'|RESPONSE| About [{entity}] getting [{list_intent[1]}]'
-        else:
-            log_info = '|RESPONSE| No entities about logistics'
-        log.debug(log_info)
+        question_type = entities.get('QuestionType', [['']])[0][0]
+
+        logistics = entities.get('Logistic', [['']])[0][0]
 
         switcher = {
             'How': how,
@@ -31,21 +28,20 @@ def get_message(response_type):
             'Where': where
         }
         # Get the function from switcher dictionary
-        func = switcher.get(list_intent[1], lambda: error.get_message())
+        func = switcher.get(question_type, lambda: error.get_message())
         # Execute the function
-        return func(data, entities)
+        return func(data, logistics)
 
 
-def how(data, entities):
+def how(data, logistic):
     """
     Retrieve response for `how` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param logistic: logistic.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        logistic = entities[0]['resolution']['values'][0].lower()
+    if logistic:
         log.debug(f'|RESPONSE|: About [{logistic}] getting HOW')
         array.append(data['logistic'][logistic]['how'])
     else:
@@ -53,16 +49,15 @@ def how(data, entities):
     return array
 
 
-def when(data, entities):
+def when(data, logistic):
     """
     Retrieve response for `when` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param logistic: logistic.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        logistic = entities[0]['resolution']['values'][0].lower()
+    if logistic:
         log.debug(f'|RESPONSE|: About [{logistic}] getting WHEN')
         array.append(data['logistic'][logistic]['when'])
     else:
@@ -70,16 +65,15 @@ def when(data, entities):
     return array
 
 
-def where(data, entities):
+def where(data, logistic):
     """
     Retrieve response for `where` question given a list of entities.
     :param data: Data.
-    :param entities: Entities.
+    :param logistic: logistic.
     :return: Array of responses.
     """
     array = []
-    if entities:
-        logistic = entities[0]['resolution']['values'][0].lower()
+    if logistic:
         log.debug(f'|RESPONSE|: About [{logistic}] getting WHERE')
         array.append(data['logistic'][logistic]['where'])
         array.append(data['default']['more'])

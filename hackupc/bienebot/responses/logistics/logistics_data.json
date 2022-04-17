@@ -9,6 +9,11 @@
             "how": "Come to the Check-in Zone with your ID and we'll give you your accreditation to join HackUPC 2022! :parrot:",
             "when": "The check-in will be open from 5PM to 6:45PM on Friday May 29th.:watch:\n If you are late no worries, there will be a Late Check-in after the Opening ceremony in the InfoDesk.",
             "where": "Check-in is located between A5 and A6 buildings :building_construction:"
+        },
+        "showers": {
+            "how": "You will need to have towel and soap! You know how to shower, right? :blush:",
+            "when": "Showers are open from 9:15AM to 11:00AM and from 5:00PM to 7:00PM on Saturday. Please don't forget to shower!",
+            "where": "Showers are on the university gym: https://g.page/diagonal_sports_fitness_club?share"
         }
     },
     "default": {
