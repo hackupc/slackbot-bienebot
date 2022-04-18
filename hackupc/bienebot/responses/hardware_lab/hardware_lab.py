@@ -4,7 +4,7 @@ import random
 from hackupc.bienebot.util import log
 
 
-ACCEPTED_QUESTION_TYPES = ['Exist', 'Help', 'How', 'List']
+ACCEPTED_QUESTION_TYPES = ['Exist', 'Help', 'How', 'Which']
 
 
 def get_message(response_type):
@@ -19,7 +19,7 @@ def get_message(response_type):
 
         entities = prediction['entities']
 
-        question_type = entities.get('QuestionType', [['List']])[0][0]
+        question_type = entities.get('QuestionType', [['Which']])[0][0]
 
         if question_type not in ACCEPTED_QUESTION_TYPES:
             question_type = 'How'
@@ -27,8 +27,8 @@ def get_message(response_type):
         # Log stuff
         log.debug(f'|RESPONSE| Looking for [{question_type}] from JSON element')
 
-        if question_type == 'List':
-            array = ['\n'.join(data['List'])]
+        if question_type == 'Which':
+            array = ['\n'.join(data['Which'])]
         else:
             array = [random.choice(data[question_type])]
         return array
