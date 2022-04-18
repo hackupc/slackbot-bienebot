@@ -35,6 +35,8 @@ def worker(message, channel, user, web_client):
     :param web_client: Slack web client.
     :return: Response sent.
     """
+    if not message:
+        return None
     # Biene in Random
     if channel == SLACK_API_RANDOM:
         if 'biene' in message.lower():
@@ -48,14 +50,14 @@ def worker(message, channel, user, web_client):
         except Exception:
             send_message('Error', channel=channel, web_client=web_client)
     # Luis interaction
-    elif message != '':
+    else:
         response, intent, score = luis.get_intent(message)
         for mess in response:
             send_message(mess, channel=channel, web_client=web_client)
             log.save_activity(user, channel, intent, score, message, mess)
 
 
-def send_message(message, channel=SLACK_API_CHANNEL, web_client=None):
+def send_message(message, channel=SLACK_API_ORGANIZERS, web_client=None):
     """
     Send message.
     :param message: Text to send.
