@@ -45,7 +45,7 @@ def worker(message, channel, user, web_client):
             response = manage_organizer_command(message=message.lower(), web_client=web_client, user=user)
             if response:
                 send_message('Photo sent!', channel=channel, web_client=web_client)
-        except Exception as e:
+        except Exception:
             send_message('Error', channel=channel, web_client=web_client)
     # Luis interaction
     elif message != '':

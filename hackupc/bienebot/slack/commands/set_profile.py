@@ -26,6 +26,6 @@ def set_profile(message, client, user):
     result = BytesIO()
     profile.save(result, 'PNG')
     response = client.conversations_open(users=user)
-    client.files_upload(content=result.getvalue(), filename='profile.png', filetype='png',
+    client.files_upload(file=result.getvalue(), filename='profile.png', filetype='png',
                         channels=response.data['channel']['id'])
     return True
