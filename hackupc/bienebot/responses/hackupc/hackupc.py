@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from hackupc.bienebot import SCHEDULE_JSON_URL
 from hackupc.bienebot.util import log, request
 
-ACCEPTED_QUESTION_TYPES = ['Where', 'When']
+ACCEPTED_QUESTION_TYPES = ['Where', 'When', 'Schedule', 'What']
 
 
 def get_message(response_type):

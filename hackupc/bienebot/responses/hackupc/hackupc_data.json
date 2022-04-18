@@ -10,6 +10,11 @@
         "Sunny Barcelona is the location of HackUPC :sunny:"
     ],
     "Schedule": [
-        "You can find all the schedule on our live page: https://live.hackupc.com/schedule"
+        "You can find all the schedule and more info on our live page: https://live.hackupc.com/schedule"
+    ],
+    "What": [
+        "HackUPC is the hackathon of... wait... you should know it, right?",
+        "HackUPC is the best hackathon, don't you think?",
+        "HackUPC is the hackathon of... didn't you apply to it?"
     ]
 }
