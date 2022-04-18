@@ -6,7 +6,7 @@
 			"where": "Sticker Exchange will be celebrated in the Cafeteria (A5106) :coffee:"
 		},
 		"talk": {
-			"what": "This edition we have a lot of talks for you. From tech topics to prepare yourself for a job interview. Here you have all talks we have:\n - *GitHub Talk*: Git and GitHub\n - *opentrends Talk*: Initial Brainstorming\n - *Everis Talk*: Data for good cities\n - *Facebook Talk:* Crush your coding interview workshop\n - *HP Talk*: The future of 3D Printing\n - *Vueling Talk*: Are you Redis?\n - *Typeform Talk*: APIs for first timers\n - *Hackers@UPC Talk*: Programmatic art & Online multiplayer Gamedev 101\n - *Skyscanner Talk*: Microservices at Scale\n - *McKinsey & Company Talk*: Clean code for Analytics\n - *McKinsey & Company Talk*: Implementing R projects as libraries\n - *GitHub: Meetup*: Hacktoberfest\n - *Hackers@UPC talk*: How to organize your hackathon\n - *McKinsey & Company workshop*: Robot building",
+			"what": "This edition we have a lot of talks for you. From tech topics to prepare yourself for a job interview. Here you have all talks we have:\n - *Git Talk*: Introduction to git\n - *Huawei Talk*: Make development easier with Huawei Mobile Service\n - *Mundimoto Talk*: \n - *InfoJobs Talk:* \n - *InfoJobs Talk*: \n - *HP Talk*: \n - *RestbAI Talk*: \n - *Anyul Rivas Talk*: Introduction to TDD\n - *Fatima Talk:* \n",
 			"when": "Talks will be given on Friday night and Saturday morning. You can check the schedule on our website live.hackupc.com :raised_hands:",
 			"where": "Talks will take place in different rooms on A5 Building, floor 0. To know exactly the room you can look for it on our website live.hackupc.com. Hope to see you there :happy:"
 		},
@@ -16,7 +16,7 @@
             "where": "Team building will take place in *A4002* and online.\n For more information you can check our webpage live.hackupc.com"
         },
         "mission": {
-            "what": "There are many more activites aside from coding, try to complete your chart and get some prizes. For more info check #mission or our website live.hackupc.com",
+            "what": "There are many more activites aside from coding, try to complete your chart and get some prizes. For more info check #mission or our website live.hackupc.com/the-mission",
             "when": "The mission starts alongisde with the hackathon, but to complete some objectives they must be done during the activity schedule.",
             "where": "To complete each objective, if you are live ask an organizer during the activity to complete the objective or go to the infoDesk. If you are online text @mission-tracker and prove your participation to complete the objective."
         },
@@ -79,7 +79,7 @@
 		"HackUPC isn't just programming. You can participate in the following activities :arrow_down:",
         "Sticker Exchange",
         "Talks",
-        "Mission",
+        "The Mission",
         "Team Building",
         "Lego Tournament",
         "Krunker",
