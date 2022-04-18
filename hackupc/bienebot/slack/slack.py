@@ -4,6 +4,7 @@ import threading
 
 from hackupc.bienebot import *
 from hackupc.bienebot.luis import luis
+from hackupc.bienebot.slack import commands
 from hackupc.bienebot.util import log
 
 
@@ -13,6 +14,16 @@ def get_rtm_client():
     :return: RTM client.
     """
     return slack.RTMClient(token=SLACK_API_TOKEN, timeout=30)
+
+
+def manage_organizer_command(message, web_client, user):
+    user_info = web_client.users_info(user=user)
+    if not user_info.data.get('ok', False) or not user_info.data['user']['profile']['email'].endswith('@hackupc.com'):
+        return False
+    response = False
+    if message.startswith('setprofile'):
+        response = commands.set_profile(message, web_client, user=user)
+    return response
 
 
 def worker(message, channel, user, web_client):
@@ -28,8 +39,16 @@ def worker(message, channel, user, web_client):
     if channel == SLACK_API_RANDOM:
         if 'biene' in message.lower():
             send_message('BIENE', channel=channel, web_client=web_client)
+
+    elif channel == SLACK_API_ORGANIZERS:
+        try:
+            response = manage_organizer_command(message=message.lower(), web_client=web_client, user=user)
+            if response:
+                send_message('Photo sent!', channel=channel, web_client=web_client)
+        except Exception as e:
+            send_message('Error', channel=channel, web_client=web_client)
     # Luis interaction
-    else:
+    elif message != '':
         response, intent, score = luis.get_intent(message)
         for mess in response:
             send_message(mess, channel=channel, web_client=web_client)
