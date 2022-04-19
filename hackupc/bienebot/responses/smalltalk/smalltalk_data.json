@@ -222,5 +222,8 @@
     ],
     "Exist": [
         "I don't know, but I exist to help you. How does it feel to be free? :eyes:"
+    ],
+    "Wifi": [
+        "We have special wifi for the event! Name: `bla-bla` Password: `12345`"
     ]
 }
