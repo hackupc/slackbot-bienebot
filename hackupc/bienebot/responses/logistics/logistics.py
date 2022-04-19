@@ -20,6 +20,9 @@ def get_message(response_type):
 
         question_type = entities.get('QuestionType', [['When']])[0][0]
 
+        if question_type not in ACCEPTED_QUESTION_TYPES:
+            question_type = 'When'
+
         logistics = entities.get('Logistic', [['']])[0][0]
 
         switcher = {
