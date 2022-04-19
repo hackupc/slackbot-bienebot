@@ -69,7 +69,7 @@ def analyze_response(response_data):
         # Initialize answer array
         answer = list()
 
-        # Check score
+        # Check score (if score retrieved from the API is lower than the config. value, discard the option and raise error.)
         if score < SCORE_THRESHOLD:
             answer.extend(error.get_message())
             return answer
@@ -125,7 +125,7 @@ def exists_biene(response_data):
     try:
         query_input = response_data['query']
         if 'biene' in query_input.lower():
-            log.debug('|LUIS| BIENE detected')
+            log.debug('|BIENE| BIENE detected')
             return True
         else:
             return False
