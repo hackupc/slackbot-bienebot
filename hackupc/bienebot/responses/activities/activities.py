@@ -16,7 +16,7 @@ def get_message(response_type):
 
         entities = prediction['entities']
 
-        question_type = entities['QuestionType'][0][0]
+        question_type = entities.get('QuestionType', [['']])[0][0]
 
         activity = entities.get('Activity', [['']])[0][0]
 
