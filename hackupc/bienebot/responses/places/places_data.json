@@ -60,7 +60,7 @@
     "default": {
         "when": "Sorry, I don't know which place you mean. But you can check live.hackupc.com and you will find all the possible places.",
         "where": "Sorry, I don't know which place you mean. But you can check live.hackupc.com and you will find all the possible places.",
-        "more": "For visual indications you can take a look at this wonderful web :smile: live.hackupc.com"
+        "more": "For visual indications, you can take a look at this wonderful web :smile: live.hackupc.com"
     },
     "help": [
         "Do you want to know about the HackUPC venue? You can ask me about :arrow_down:",
