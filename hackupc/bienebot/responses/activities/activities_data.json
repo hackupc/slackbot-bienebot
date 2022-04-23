@@ -26,9 +26,9 @@
             "where": "The Lego tournament by IThinkUPC will take place in *A5002*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "krunker": {
-            "what": "Are you a fan of shooters? Show us your skills in this activity",
+            "what": "Are you a fan of shooters? Show us your skills in this activity 🔫",
             "when": "The krunker activity will be held on *Saturday at 18:00h* :watch:",
-            "where": "The krunker activity will take place online in the #activity channel thourgh voice"
+            "where": "The krunker activity will take place online in the #activity channel through voice"
         },
         "quackstions": {
             "what": "Are you a trivia expert? Answer all the tech questions",
@@ -42,7 +42,7 @@
         },
         "the game": {
             "what": "The Game? What? :parrot:\n Oh, got it. You lost.",
-            "when": "The Game will start at :pi: hour, don't fall sleep. :sleeping:",
+            "when": "The Game will start at :pi: hour, don't fall asleep. :sleeping:",
             "where": "Are you asking for this? game.hackupc.com :parrot:\n Good luck :crossed_fingers:"
         },
         "nerfgun": {
@@ -51,9 +51,9 @@
             "where": "Nerf Gun Battles will take place in *A4101 & A4102*.\n For visual indications you can check our webpage live.hackupc.com :world_map:"
         },
         "slideshow": {
-            "what": "You *MUST* be there! Give a presentation on some slides you have never seen before. The best activity in the whole weekend. Laughs assured! :joy:",
+            "what": "You *MUST* be there! Give a presentation on some slides you have never seen before. The best activity of the whole weekend. Laughs assured! :joy:",
             "when": "The SlideShare Show will be held on *Saturday at 22:00h* :watch: and don't forget your voice :microphone:",
-            "where": "The SlideShare Show will take place in *A5001* and in twitch.tv/hackersupc .\n For visual indications you can check our webpage live.hackupc.com :world_map:"
+            "where": "The SlideShare Show will take place in *A5001* and in twitch.tv/hackersupc .\n For visual indications, you can check our webpage live.hackupc.com :world_map:"
         },
         "close ceremony": {
 			"what": "Closing ceremony with the final judging phase. Winners will be announced here. :see_no_evil:",
@@ -70,7 +70,7 @@
 		"what": "Sorry, I don't know what activity are you asking for. But you can check all the activities on live.hackupc.com.",
         "when": "Sorry, I don't know what activity are you asking for. But you can check all the activities on live.hackupc.com.",
         "where": "Sorry, I don't know what activity are you asking for.",
-		"more": "For visual indications you can take a look at this wonderful web :smile: live.hackupc.com"
+		"more": "For visual indications, you can take a look at this wonderful web :smile: live.hackupc.com"
 	},
 	"help": [
 		"I know about a lot of activities :smirk: Ask me about what/when/where is Sticker Exchange, Talks, Team Building, Lego Tournament, Krunker, Quackstions, Draw your Biene, The Game, Nerf Gun Battles, SlideShare Show or the Opening and Closing ceremony :blush:"
