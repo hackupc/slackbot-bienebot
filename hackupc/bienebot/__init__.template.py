@@ -21,7 +21,7 @@ SCHEDULE_JSON_URL = 'https://raw.githubusercontent.com/hackupc/frontend/master/s
 __all__ = [
     'SLACK_API_TOKEN',
     'SLACK_API_METHOD',
-    'SLACK_API_CHANNEL',
+    'SLACK_API_ACTIVE',
     'SLACK_API_RANDOM',
     'LUIS_SUBSCRIPTION_KEY',
     'LUIS_SERVER',
