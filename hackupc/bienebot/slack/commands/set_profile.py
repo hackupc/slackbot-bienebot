@@ -19,7 +19,10 @@ def set_profile(message, client, user):
     filter_photo = Image.open(join(path, filter_type)).convert("RGBA")
     user = user.upper()
     response = client.users_info(user=user)
-    url = response.data['user']['profile']['image_original']
+    try:
+        url = response.data['user']['profile']['image_original']
+    except KeyError:
+        url = response.data['user']['profile']['image_512']
     response = requests.get(url)
     profile = Image.open(BytesIO(response.content)).resize((512, 512)).convert("RGBA")
     profile.paste(filter_photo, (0, 0), filter_photo)
