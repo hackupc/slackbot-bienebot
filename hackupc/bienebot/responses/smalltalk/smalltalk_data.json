@@ -32,7 +32,7 @@
         "Take care! :kiss:"
     ],
     "Help": [
-        "Sure. I'd be happy to. I can talk about:\n - Activities :joystick:\n - HackUPC general information :hackupc:\n - Hardware Lab :computer:\n - Meals information :shallow_pan_of_food:\n - Mentors :female-teacher:\n - Venue locations :round_pushpin:\n - Project information :information_source:\n - Sponsors :man-raising-hand:"
+        "Sure. I'd be happy to. I can talk about:\n - Activities :joystick:\n - HackUPC general information :hackupc:\n - Hardware Lab :computer:\n - Meals information :shallow_pan_of_food:\n - Mentors :female-teacher:\n - Venue locations :round_pushpin:\n - Project information :information_source:"
     ],
     "Test": [
         "Hope I'm doing well. You're welcome to test me as often as you want.",
@@ -204,7 +204,7 @@
         ":blush:"
     ],
     "Twitch": [
-        "https://www.twitch.tv/hackersupc"
+        "https://www.twitch.tv/hackersupc and https://www.youtube.com/c/HackersUPC"
     ],
     "Song": [
         "I love listening to music, my favourite song is Marenostrum by Macedònia. https://www.youtube.com/watch?v=eyNlovbLO6w",
@@ -224,6 +224,6 @@
         "I don't know, but I exist to help you. How does it feel to be free? :eyes:"
     ],
     "Wifi": [
-        "We have special wifi for the event! Name: `bla-bla` Password: `12345`"
+        "We have special wifi for the event! SSID: `HACKUPC2022` Password: `Biene2022!`"
     ]
 }
