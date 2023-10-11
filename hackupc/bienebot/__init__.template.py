@@ -1,9 +1,9 @@
 # Slack API
 SLACK_API_TOKEN = ''  # Token for Biene bot
 SLACK_API_METHOD = 'chat.postMessage'
-SLACK_API_CHANNEL = '' # Get the ID of the channel that the bot wil send help (answering quesitions)
+SLACK_API_ACTIVE = True
 SLACK_API_RANDOM = '' # The ID of the channel with topic random (only BIENE responses)
-SLACK_API_ORGANIZERS = ''
+SLACK_API_ORGANIZERS = '' # Get the ID of the channel that the bot wil manage organizer commands
 
 # Luis stuff
 LUIS_SUBSCRIPTION_KEY = '' # Key 1 without dashes
@@ -21,7 +21,7 @@ SCHEDULE_JSON_URL = 'https://raw.githubusercontent.com/hackupc/frontend/master/s
 __all__ = [
     'SLACK_API_TOKEN',
     'SLACK_API_METHOD',
-    'SLACK_API_CHANNEL',
+    'SLACK_API_ACTIVE',
     'SLACK_API_RANDOM',
     'LUIS_SUBSCRIPTION_KEY',
     'LUIS_SERVER',

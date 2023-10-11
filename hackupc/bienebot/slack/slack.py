@@ -50,7 +50,7 @@ def worker(message, channel, user, web_client):
         except Exception:
             send_message('Error', channel=channel, web_client=web_client)
     # Luis interaction
-    else:
+    elif SLACK_API_ACTIVE:
         response, intent, score = luis.get_intent(message)
         for mess in response:
             send_message(mess, channel=channel, web_client=web_client)
